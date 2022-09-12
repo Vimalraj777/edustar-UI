@@ -1,0 +1,53 @@
+    <div class="row mt-2">
+        <div class="col-md-5"></div>
+        <div class="col-md-4">
+            <h2>Registration</h2>
+        </div>
+    </div>
+
+    <form [formGroup]="registerForm" (ngSubmit)="submit()">
+    <div class="row mt-2">
+        <div class="col-md-3 ms-5"></div>
+        <div class="col-md-1" style="background-color:grey;"></div>
+        <div class="col-md-3" style="background-color:grey;">
+            <!-- <span class="input-group-text"><i class="fa fa-bank custom"></i></span> -->
+            <br/><input class="form-control" type="text" formControlName="id" placeholder="Roll No" required>
+            <div *ngIf="registerForm.get('id')?.invalid && registerForm.get('id')?.touched" style="color:red;">required</div>
+
+            <input class="form-control mt-4" type="text" formControlName="username" placeholder="User Name" required>
+            <div *ngIf="registerForm.get('username')?.invalid && registerForm.get('username')?.touched" style="color:red;">required</div>
+
+            <input class="form-control mt-4" type="text" formControlName="password" placeholder="Password" required>
+            <div *ngIf="registerForm.get('password')?.invalid && registerForm.get('password')?.touched" style="color:red;">required</div>
+
+            <input class="form-control mt-4" type="text" formControlName="name" placeholder="Name" required>
+            <div *ngIf="registerForm.get('name')?.invalid && registerForm.get('name')?.touched" style="color:red;">required</div>
+
+            <input class="form-control mt-4" type="text" formControlName="age" placeholder="Age" required>
+            <div *ngIf="registerForm.get('age')?.invalid && registerForm.get('age')?.touched" style="color:red;">required</div>
+
+            <span style="color:LightGray;">Gender </span>
+            <input type="radio" formControlName="gender" value="male" required>Male
+            <input type="radio" formControlName="gender" value="female" required>FeMale
+
+            <input class="form-control mt-4" type="text" formControlName="fname" placeholder="Father Name" required>
+            <div *ngIf="registerForm.get('fname')?.invalid && registerForm.get('fname')?.touched" style="color:red;">required</div>
+
+            <input class="form-control mt-4" type="text" formControlName="mname" placeholder="Mother Name" required>
+            <div *ngIf="registerForm.get('mname')?.invalid && registerForm.get('mname')?.touched" style="color:red;">required</div>
+
+            <input class="form-control mt-4" type="number" formControlName="phnumber" placeholder="Phone Number" required>
+            <div *ngIf="registerForm.get('phnumber')?.invalid && registerForm.get('phnumber')?.touched" style="color:red;">required</div>
+
+            <textarea class="form-control mt-4" formControlName="address" placeholder="Address" required></textarea>
+            <div *ngIf="registerForm.get('address')?.invalid && registerForm.get('address')?.touched" style="color:red;">required</div>
+
+            <!-- <i class="fa fa-bar-chart custom"></i> -->
+            <div class="class text-center ">
+            <input type="submit" value="SUBMIT"class="btn btn-success mt-4">
+            </div>
+        </div>  
+        <div class="col-md-1" style="background-color:grey;"></div>
+    </div>
+    </form>
+

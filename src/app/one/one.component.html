@@ -1,0 +1,31 @@
+<!-- <div class="row mt-3">
+    <div class="col-md-5"></div>
+    <div class="col-md-4">
+        
+    </div>
+</div> -->
+<div class="div" style="background-color:darkgrey; padding-bottom: 24%; padding-top:5%;">
+    <!-- <div class="row mt-5"></div> -->
+    <form [formGroup]="loginForm" (ngSubmit)="submit()">
+
+        <div class="row mt-4">
+            <div class="col-md-3 ms-5"></div>
+            <div class="col-md-1" style="background-color:#ffa781;"></div>
+            <div class="col-md-3" style="background-color:#ffa781;">
+                <h2>Login Page </h2>
+                <!-- <span class="input-group-text"><i class="fa fa-bank custom"></i></span> -->
+                <br /><input class="form-control" type="text" formControlName="username" style="color: #5b0e2d;" placeholder="User Name" required>
+                <div *ngIf="loginForm.get('username')?.invalid && loginForm.get('username')?.touched" style="color:red">required</div>
+                <input type="text" class="form-control mt-2" formControlName="password" style="color: #5b0e2d;" placeholder="Password" required>
+                <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched" style="color:red;">required</div>
+                <div class="class ms-2">
+                    <input class="btn mt-3" type="submit" value="Login" style="background-color: #5b0e2d; color: white;">&nbsp;
+                    <button class="btn mt-3"  routerLink="/register" style="background-color: #5b0e2d; color: white;">Register</button>
+                </div><br />
+            </div>
+            <div class="col-md-1" style="background-color:#ffa781;"></div>
+        </div>
+
+    </form>
+</div>
+

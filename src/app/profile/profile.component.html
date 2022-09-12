@@ -1,0 +1,84 @@
+<div class="row mt-2">
+    <div class="col-md-5" style="background-color: #155B97;"></div>
+    <div class="col-md-4" style="background-color: #155B97; color: white;">
+        <h2>User Profile</h2>
+    </div>
+    <div class="col-md-3" style="background-color: #155B97;"></div>
+</div>
+<div class="container" style="background-color: white;">
+
+<form [formGroup]="profileForm" (ngSubmit)="submit()">
+<div class="row mt-2">
+
+    <div class="col-md-1"></div>
+    <div class="col-md-4">
+        <div class="row mt-1">
+            <label><b>Roll No</b></label>
+            <br/><input type="number" formControlName="id" placeholder="ID" required readonly style="background-color:gainsboro;"><br/><br/>
+        </div>
+        <div class="row mt-1">
+            <label><b>User Name</b></label>
+            <input type="text" formControlName="username" placeholder="User Name" required readonly style="background-color:gainsboro;"><br/><br/>
+
+        </div>
+        <!-- <div class="row mt-1">
+            <label><b>Password</b></label>
+            <input type="text" formControlName="password" placeholder="Password" required><br/><br/>
+
+        </div> -->
+        <div class="row mt-1">
+            <label><b>Name</b></label>
+            <input type="text" formControlName="name" placeholder="Name" required><br/><br/>
+
+        </div>
+        <div class="row mt-1">
+            <label><b>Age</b></label>
+            <input type="text" formControlName="age" placeholder="Age" required><br/><br/>
+
+        </div>
+    </div>
+
+    <div class="col-md-1"></div>
+    <div class="col-md-4">
+        <!-- <div class="row">
+            <br/><br/><span style="color:LightGray;">Gender </span>
+            <input type="radio" formControlName="gender" value="male" required>Male
+            <input type="radio" formControlName="gender" value="female" required>FeMale<br/><br/>
+        </div> -->
+        <div class="row mt-1">
+            <label><b>Father Name</b></label>
+            <input type="text" formControlName="fname" placeholder="Father Name" required><br/><br/>
+        </div>
+        <div class="row mt-1">
+            <label><b>Mother Name</b></label>
+            <input type="text" formControlName="mname" placeholder="Mother Name" required><br/><br/>
+        </div>
+        <div class="row mt-1">
+            <label><b>Phone Number</b></label>
+            <input type="number" formControlName="phnumber" placeholder="Phone Number" required><br/><br/>
+        </div>
+        <div class="row mt-1">
+            <label><b>Address</b></label>
+            <textarea formControlName="address" placeholder="Address" required></textarea><br/><br/>
+        </div>
+    </div>
+
+    <div class="col-md-2">
+    </div>
+        </div>
+       
+
+    
+
+<div class="row mt-5"></div>
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-1"><input type="button" value="CANCEL"class="btn btn-secondary" (click)="cancel()"></div>
+    <div class="col-md-2"></div>
+    <div class="col-md-1"><input type="submit" value="SAVE"class="btn btn-success"></div>
+    <div class="col-md-2"></div>
+    <div class="col-md-1"><input type="button" value="DELETE"class="btn btn-danger" (click)="deleted()"></div>
+</div>
+</form>
+</div>
+
