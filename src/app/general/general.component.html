@@ -1100,7 +1100,7 @@
                                         <option value="no">No</option>
                                     </select>
                                 </div>
-                            </div><br />
+                            </div><br/>
                         </div>
 
                         <!-- <div class="col-1"></div> -->
@@ -1112,6 +1112,8 @@
                                             class="fas fa-user-circle"></i></span>
                                     <input type="number" placeholder="45" formControlName="tscmembers" required
                                         class="form-control">
+                                        <span *ngIf="generalForm.get('tscmembers')?.invalid && generalForm.get('tscmembers')?.touched" style="color:red;">required</span>
+
                                 </div>
                             </div><br />
                         </div>
@@ -1127,6 +1129,7 @@
                                             class="fas fa-user-circle"></i></span>
                                     <input type="number" placeholder="09" formControlName="tsctenure" required
                                         class="form-control">
+                                    <span *ngIf="generalForm.get('tsctenure')?.invalid && generalForm.get('tsctenure')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1170,6 +1173,7 @@
                                             class="fas fa-user-circle"></i></span>
                                     <input type="number" placeholder="44" formControlName="epccmembers" required
                                         class="form-control">
+                                    <span *ngIf="generalForm.get('epccmembers')?.invalid && generalForm.get('epccmembers')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1185,6 +1189,7 @@
                                             class="fas fa-user-circle"></i></span>
                                     <input type="number" placeholder="45" formControlName="epcctenure" required
                                         class="form-control">
+                                    <span *ngIf="generalForm.get('epcctenure')?.invalid && generalForm.get('epcctenure')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1230,6 +1235,7 @@
                                             class="fas fa-user-circle"></i></span>
                                     <input type="number" placeholder="14" formControlName="ptmembers" required
                                         class="form-control">
+                                    <span *ngIf="generalForm.get('ptmembers')?.invalid && generalForm.get('ptmembers')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1245,6 +1251,7 @@
                                             class="fas fa-user-circle"></i></span>
                                     <input type="number" placeholder="22" formControlName="pttenure" required
                                         class="form-control">
+                                    <span *ngIf="generalForm.get('pttenure')?.invalid && generalForm.get('pttenure')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1317,6 +1324,7 @@
                                             class="fas fa-user-circle"></i></span>
                                     <input type="number" placeholder="90" formControlName="samembers" required
                                         class="form-control">
+                                    <span *ngIf="generalForm.get('samembers')?.invalid && generalForm.get('samembers')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1332,6 +1340,7 @@
                                             class="fas fa-user-circle"></i></span>
                                     <input type="number" placeholder="09" formControlName="satenure" required
                                         class="form-control">
+                                    <span *ngIf="generalForm.get('satenure')?.invalid && generalForm.get('satenure')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1415,6 +1424,7 @@
                                             class="fas fa-user-circle"></i></span>
                                     <input type="number" placeholder="95" formControlName="mcmembers" required
                                         class="form-control">
+                                    <span *ngIf="generalForm.get('mcmembers')?.invalid && generalForm.get('mcmembers')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1430,6 +1440,7 @@
                                             class="fas fa-user-circle"></i></span>
                                     <input type="number" placeholder="08" formControlName="mctenure" required
                                         class="form-control">
+                                    <span *ngIf="generalForm.get('mctenure')?.invalid && generalForm.get('mctenure')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1497,6 +1508,7 @@
                                             class="fas fa-building"></i></span>
                                     <input type="text" placeholder="20241.63 sq metre (Square Meter)"
                                         formControlName="scharea" required class="form-control">
+                                    <span *ngIf="generalForm.get('scharea')?.invalid && generalForm.get('scharea')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1512,6 +1524,7 @@
                                             class="fas fa-building"></i></span>
                                     <input type="text" placeholder="8775 sq metre (Square Meter)"
                                         formControlName="builduparea" required class="form-control">
+                                    <span *ngIf="generalForm.get('builduparea')?.invalid && generalForm.get('builduparea')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1529,6 +1542,7 @@
                                             class="fas fa-building"></i></span>
                                     <input type="text" placeholder="8093 sq metre (Square Meter)"
                                         formControlName="playarea" required class="form-control">
+                                    <span *ngIf="generalForm.get('playarea')?.invalid && generalForm.get('playarea')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1543,6 +1557,7 @@
                                             class="fas fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="7" formControlName="nobuildings" required
                                         class="form-control">
+                                    <span *ngIf="generalForm.get('nobuildings')?.invalid && generalForm.get('nobuildings')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1580,6 +1595,7 @@
                                             class="fas fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="14" formControlName="noofstairs" required
                                         class="form-control">
+                                    <span *ngIf="generalForm.get('noofstairs')?.invalid && generalForm.get('noofstairs')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1595,6 +1611,7 @@
                                             class="fas fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="22" formControlName="nooflifts" required
                                         class="form-control">
+                                    <span *ngIf="generalForm.get('nooflifts')?.invalid && generalForm.get('nooflifts')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1642,6 +1659,7 @@
                                             class="fas fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Class Rooms" formControlName="croom"
                                         required class="form-control">
+                                    <span *ngIf="generalForm.get('croom')?.invalid && generalForm.get('croom')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1656,6 +1674,7 @@
                                             class="fas fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Staff Rooms" formControlName="sroom"
                                         required class="form-control">
+                                    <span *ngIf="generalForm.get('sroom')?.invalid && generalForm.get('sroom')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1669,6 +1688,7 @@
                                             class="fas fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Physics lab " formControlName="pl"
                                         required class="form-control">
+                                    <span *ngIf="generalForm.get('pl')?.invalid && generalForm.get('pl')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1687,6 +1707,7 @@
                                             class="fas fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter the Chemistry Lab" formControlName="cl"
                                         required class="form-control">
+                                    <span *ngIf="generalForm.get('cl')?.invalid && generalForm.get('cl')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1701,6 +1722,7 @@
                                             class="fas fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Biology Lab" formControlName="bl"
                                         required class="form-control">
+                                    <span *ngIf="generalForm.get('bl')?.invalid && generalForm.get('bl')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1716,6 +1738,7 @@
                                             class="fas fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter the Mathematics Lab." formControlName="ml"
                                         required class="form-control">
+                                    <span *ngIf="generalForm.get('ml')?.invalid && generalForm.get('ml')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1734,6 +1757,7 @@
                                             class="fas fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Computer Science Lab"
                                         formControlName="csl" required class="form-control">
+                                    <span *ngIf="generalForm.get('csl')?.invalid && generalForm.get('csl')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1748,6 +1772,7 @@
                                             class="fas fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Language Lab" formControlName="ll"
                                         required class="form-control">
+                                    <span *ngIf="generalForm.get('ll')?.invalid && generalForm.get('ll')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1763,6 +1788,7 @@
                                             class="fas fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Home Science Lab" formControlName="hsl"
                                         required class="form-control">
+                                    <span *ngIf="generalForm.get('hsl')?.invalid && generalForm.get('hsl')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1781,6 +1807,7 @@
                                             class="fas fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder=" Enter The Library" formControlName="library"
                                         required class="form-control">
+                                    <span *ngIf="generalForm.get('library')?.invalid && generalForm.get('library')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1795,6 +1822,7 @@
                                             class="fas fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Auditorium " formControlName="audit"
                                         required class="form-control">
+                                        <span *ngIf="generalForm.get('audit')?.invalid && generalForm.get('audit')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1810,6 +1838,7 @@
                                             class="fas fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Counselors Room" formControlName="cr"
                                         required class="form-control">
+                                    <span *ngIf="generalForm.get('cr')?.invalid && generalForm.get('cr')?.touched" style="color:red;">required</span> 
                                 </div>
                             </div><br />
                         </div>
@@ -1829,6 +1858,7 @@
                                             class="fas fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Visitors Parlor (space)"
                                         formControlName="up" required class="form-control">
+                                    <span *ngIf="generalForm.get('up')?.invalid && generalForm.get('up')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1843,6 +1873,7 @@
                                             class="fas fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Prayer Room / Chapel"
                                         formControlName="prc" required class="form-control">
+                                    <span *ngIf="generalForm.get('prc')?.invalid && generalForm.get('prc')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1858,6 +1889,7 @@
                                             class="fas fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Infirmary / Sick Room."
                                         formControlName="sickr" required class="form-control">
+                                    <span *ngIf="generalForm.get('sickr')?.invalid && generalForm.get('sickr')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1876,6 +1908,7 @@
                                             class="fas fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder=" Enter The Canteen" formControlName="canteen"
                                         required class="form-control">
+                                    <span *ngIf="generalForm.get('canteen')?.invalid && generalForm.get('canteen')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1890,6 +1923,7 @@
                                             class="fas fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Security Room" formControlName="sr"
                                         required class="form-control">
+                                    <span *ngIf="generalForm.get('sr')?.invalid && generalForm.get('sr')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1905,6 +1939,7 @@
                                             class="fas fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Other Rooms / Halls"
                                         formControlName="orh" required class="form-control">
+                                    <span *ngIf="generalForm.get('orh')?.invalid && generalForm.get('orh')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1923,6 +1958,7 @@
                                             class="fas fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter Staff – Urinals / Toilets"
                                         formControlName="sut" required class="form-control">
+                                    <span *ngIf="generalForm.get('sut')?.invalid && generalForm.get('sut')?.touched" style="color:red;"> required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1937,6 +1973,7 @@
                                             class="fas fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter Student Urinals / Toilets "
                                         formControlName="stut" required class="form-control">
+                                    <span *ngIf="generalForm.get('stut')?.invalid && generalForm.get('stut')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1952,6 +1989,7 @@
                                             class="fas fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter Rooms" formControlName="rooms" required
                                         class="form-control">
+                                    <span *ngIf="generalForm.get('rooms')?.invalid && generalForm.get('rooms')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -2108,6 +2146,7 @@
                                     <input type="number" placeholder="Enter How many cameras?"
                                         formControlName="hmcamera" required class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('hmcamera')?.invalid && generalForm.get('hmcamera')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2138,6 +2177,7 @@
                                     <input type="number" placeholder="15" formControlName="hmmalesg" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('hmmalesg')?.invalid && generalForm.get('hmmalesg')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2176,6 +2216,7 @@
                                     <input type="number" placeholder="08" formControlName="hwfemalesg" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('hwfemalesg')?.invalid && generalForm.get('hwfemalesg')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2288,6 +2329,7 @@
                                     <input type="number" placeholder="Enter No. of buses owned by school"
                                         formControlName="nobuses" required class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('nobuses')?.invalid && generalForm.get('nobuses')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2303,6 +2345,7 @@
                                     <input type="number" placeholder="Enter GPS enabled camera" formControlName="gpsec"
                                         required class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('gpsec')?.invalid && generalForm.get('gpsec')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2317,22 +2360,15 @@
                                     <input type="number" placeholder="Enter No. of Lady Attendance(if needed)"
                                         formControlName="nola" required class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('nola')?.invalid && generalForm.get('nola')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
-
-
-
-
-
 
                     </div>
 
 
 
                     <div class="row mt-3">
-
-
-
 
                         <div class="col-md-3">
                             <label>First Aid kit</label>
@@ -2343,6 +2379,7 @@
                                     <input type="number" placeholder="Enter First Aid kit" formControlName="firstak"
                                         required class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('firstak')?.invalid && generalForm.get('firstak')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2358,6 +2395,7 @@
                                     <input type="number" placeholder="Enter Drinking Water" formControlName="drinkingwa"
                                         required class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('drinkingwa')?.invalid && generalForm.get('drinkingwa')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2372,6 +2410,7 @@
                                     <input type="number" placeholder="enter No. of buses sub-contracted"
                                         formControlName="nobusessc" required class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('nobusessc')?.invalid && generalForm.get('nobusessc')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2392,22 +2431,9 @@
                             </div><br />
                         </div>
 
-
-
-
-
-
                     </div>
 
-
-
-
-
-
-
-
                     <div class="row mt-3">
-
 
                         <div class="col-md-4">
                             <label>Free transport Service offered by the School?</label>
@@ -2472,6 +2498,7 @@
                                     <input type="time" placeholder="08:10" formControlName="lot" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('lot')?.invalid && generalForm.get('lot')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2484,6 +2511,7 @@
                                     <input type="time" placeholder="16:20" formControlName="lct" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('lct')?.invalid && generalForm.get('lct')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2497,6 +2525,7 @@
                                     <input type="number" placeholder="8400" formControlName="tnolb" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('tnolb')?.invalid && generalForm.get('tnolb')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2511,6 +2540,7 @@
                                     <input type="number" placeholder="20" formControlName="tnolm" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('tnolm')?.invalid && generalForm.get('tnolm')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2534,6 +2564,7 @@
                                     <input type="number" placeholder="49" formControlName="tnold" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('tnold')?.invalid && generalForm.get('tnold')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2550,6 +2581,7 @@
                                     <input type="number" placeholder="10022" formControlName="tnoeb" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('tnoeb')?.invalid && generalForm.get('tnoeb')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2723,16 +2755,20 @@
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('phmpmale')?.invalid && generalForm.get('phmpmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="phmpmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('phmpfmale')?.invalid && generalForm.get('phmpfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="phmpfmale" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('phmtmale')?.invalid && generalForm.get('phmtmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="phmtmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('phmtfmale')?.invalid && generalForm.get('phmtfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="phmtfmale" required class="form-control">
                         </div>
 
@@ -2756,16 +2792,20 @@
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('vppmale')?.invalid && generalForm.get('vppmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="vppmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('vppfmale')?.invalid && generalForm.get('vppfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="vppfmale" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('vptmale')?.invalid && generalForm.get('vptmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="vptmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('vptfmale')?.invalid && generalForm.get('vptfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="vptfmale" required class="form-control">
                         </div>
 
@@ -2791,16 +2831,20 @@
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('PGTpmale')?.invalid && generalForm.get('PGTpmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="PGTpmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('PGTpfmale')?.invalid && generalForm.get('PGTpfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="PGTpfmale" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('PGTtmale')?.invalid && generalForm.get('PGTtmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="PGTtmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('PGTtfmale')?.invalid && generalForm.get('PGTtfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="PGTtfmale" required class="form-control">
                         </div>
 
@@ -2827,16 +2871,20 @@
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('TGTpmale')?.invalid && generalForm.get('TGTpmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="TGTpmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('TGTpfmale')?.invalid && generalForm.get('TGTpfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="TGTpfmale" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('TGTtmale')?.invalid && generalForm.get('TGTtmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="TGTtmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('TGTtfmale')?.invalid && generalForm.get('TGTtfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="TGTtfmale" required class="form-control">
                         </div>
 
@@ -2862,16 +2910,20 @@
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('PRTpmale')?.invalid && generalForm.get('PRTpmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="PRTpmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('PRTpfmale')?.invalid && generalForm.get('PRTpfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="PRTpfmale" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('PRTtmale')?.invalid && generalForm.get('PRTtmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="PRTtmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('PRTtfmale')?.invalid && generalForm.get('PRTtfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="PRTtfmale" required class="form-control">
                         </div>
 
@@ -2895,16 +2947,20 @@
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('NTTpmale')?.invalid && generalForm.get('NTTpmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="NTTpmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('NTTpfmale')?.invalid && generalForm.get('NTTpfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="NTTpfmale" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('NTTtmale')?.invalid && generalForm.get('NTTtmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="NTTtmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('NTTtfmale')?.invalid && generalForm.get('NTTtfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="NTTtfmale" required class="form-control">
                         </div>
 
@@ -2930,16 +2986,20 @@
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('UTpmale')?.invalid && generalForm.get('UTpmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="UTpmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('UTpfmale')?.invalid && generalForm.get('UTpfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="UTpfmale" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('UTtmale')?.invalid && generalForm.get('UTtmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="UTtmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('UTtfmale')?.invalid && generalForm.get('UTtfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="UTtfmale" required class="form-control">
                         </div>
 
@@ -2965,16 +3025,20 @@
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('Lpmale')?.invalid && generalForm.get('Lpmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="Lpmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('Lpfmale')?.invalid && generalForm.get('Lpfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="Lpfmale" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('Ltmale')?.invalid && generalForm.get('Ltmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="Ltmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('Ltfmale')?.invalid && generalForm.get('Ltfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="Ltfmale" required class="form-control">
                         </div>
 
@@ -3001,16 +3065,20 @@
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('Artspmale')?.invalid && generalForm.get('Artspmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="Artspmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('Artspfmale')?.invalid && generalForm.get('Artspfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="Artspfmale" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('Artstmale')?.invalid && generalForm.get('Artstmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="Artstmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('Artstfmale')?.invalid && generalForm.get('Artstfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="Artstfmale" required class="form-control">
                         </div>
 
@@ -3036,16 +3104,20 @@
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('Cpmale')?.invalid && generalForm.get('Cpmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="Cpmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('Cpfmale')?.invalid && generalForm.get('Cpfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="Cpfmale" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('Ctmale')?.invalid && generalForm.get('Ctmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="Ctmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('Ctfmale')?.invalid && generalForm.get('Ctfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="Ctfmale" required class="form-control">
                         </div>
 
@@ -3071,16 +3143,20 @@
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('CLpmale')?.invalid && generalForm.get('CLpmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="CLpmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('CLpfmale')?.invalid && generalForm.get('CLpfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="CLpfmale" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('CLtmale')?.invalid && generalForm.get('CLtmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="CLtmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('CLtfmale')?.invalid && generalForm.get('CLtfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="CLtfmale" required class="form-control">
                         </div>
 
@@ -3106,16 +3182,20 @@
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('FMpmale')?.invalid && generalForm.get('FMpmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="FMpmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('FMpfmale')?.invalid && generalForm.get('FMpfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="FMpfmale" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('FMtmale')?.invalid && generalForm.get('FMtmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="FMtmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('FMtfmale')?.invalid && generalForm.get('FMtfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="FMtfmale" required class="form-control">
                         </div>
 
@@ -3141,16 +3221,20 @@
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('Nursepmale')?.invalid && generalForm.get('Nursepmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="Nursepmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('Nursepfmale')?.invalid && generalForm.get('Nursepfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="Nursepfmale" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('Nursetmale')?.invalid && generalForm.get('Nursetmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="Nursetmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('Nursetfmale')?.invalid && generalForm.get('Nursetfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="Nursetfmale" required class="form-control">
                         </div>
 
@@ -3176,16 +3260,20 @@
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('PTpmale')?.invalid && generalForm.get('PTpmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="PTpmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('PTpfmale')?.invalid && generalForm.get('PTpfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="PTpfmale" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
+                            <span *ngIf="generalForm.get('PTtmale')?.invalid && generalForm.get('PTtmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="PTtmale" required class="form-control">
                         </div>
                         <div class="col-md-2">
+                            <span *ngIf="generalForm.get('PTtfmale')?.invalid && generalForm.get('PTtfmale')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="PTtfmale" required class="form-control">
                         </div>
 
@@ -3329,8 +3417,6 @@
                             <label><b>Total</b></label>
                         </div>
 
-
-
                     </div>
 
 
@@ -3350,6 +3436,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="ofmaper" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('ofmaper')?.invalid && generalForm.get('ofmaper')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-3">
                             <div class="input-group">
@@ -3357,6 +3444,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="ofmatemp" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('ofmatemp')?.invalid && generalForm.get('ofmatemp')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-2">
@@ -3365,6 +3453,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="ofmapart" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('ofmapart')?.invalid && generalForm.get('ofmapart')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-2">
                             <div class="input-group">
@@ -3394,6 +3483,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="ofasper" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('ofasper')?.invalid && generalForm.get('ofasper')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-3">
                             <div class="input-group">
@@ -3401,6 +3491,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="ofastemp" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('ofastemp')?.invalid && generalForm.get('ofastemp')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-2">
@@ -3409,6 +3500,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="ofaspart" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('ofaspart')?.invalid && generalForm.get('ofaspart')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-2">
                             <div class="input-group">
@@ -3438,6 +3530,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="clerkper" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('clerkper')?.invalid && generalForm.get('clerkper')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-3">
                             <div class="input-group">
@@ -3445,6 +3538,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="clerktemp" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('clerktemp')?.invalid && generalForm.get('clerktemp')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-2">
@@ -3453,6 +3547,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="clerkpart" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('clerkpart')?.invalid && generalForm.get('clerkpart')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-2">
                             <div class="input-group">
@@ -3482,6 +3577,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="labper" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('labper')?.invalid && generalForm.get('labper')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-3">
                             <div class="input-group">
@@ -3489,6 +3585,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="labtemp" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('labtemp')?.invalid && generalForm.get('labtemp')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-2">
@@ -3497,6 +3594,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="labpart" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('labpart')?.invalid && generalForm.get('labpart')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-2">
                             <div class="input-group">
@@ -3526,6 +3624,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="accountper" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('accountper')?.invalid && generalForm.get('accountper')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-3">
                             <div class="input-group">
@@ -3533,6 +3632,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="accounttemp" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('accounttemp')?.invalid && generalForm.get('accounttemp')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-2">
@@ -3541,6 +3641,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="accountpart" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('accountpart')?.invalid && generalForm.get('accountpart')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-2">
                             <div class="input-group">
@@ -3571,6 +3672,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="peonsper" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('peonsper')?.invalid && generalForm.get('peonsper')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-3">
                             <div class="input-group">
@@ -3578,6 +3680,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="peonstemp" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('peonstemp')?.invalid && generalForm.get('peonstemp')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-2">
@@ -3586,6 +3689,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="peonspart" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('peonspart')?.invalid && generalForm.get('peonspart')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-2">
                             <div class="input-group">
@@ -3617,6 +3721,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="othersper" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('othersper')?.invalid && generalForm.get('othersper')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-3">
                             <div class="input-group">
@@ -3624,6 +3729,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="otherstemp" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('otherstemp')?.invalid && generalForm.get('otherstemp')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-2">
@@ -3632,6 +3738,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="otherspart" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('otherspart')?.invalid && generalForm.get('otherspart')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-2">
                             <div class="input-group">
@@ -3702,7 +3809,7 @@
                                     <input type="number" formControlName="no_of_activities" required
                                         class="form-control">
                                 </div>
-                            </div><br />
+                                <span *ngIf="generalForm.get('no_of_activities')?.invalid && generalForm.get('no_of_activities')?.touched" style="color:red;">required</span>                            </div><br />
                         </div>
 
                         <div class="col-md-4">
@@ -3713,6 +3820,7 @@
                                             class="fas fa-sort-numeric-down"></i></span>
                                     <input type="number" formControlName="no_of_groups" required class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('no_of_groups')?.invalid && generalForm.get('no_of_groups')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3725,6 +3833,7 @@
                                     <input type="number" formControlName="no_of_community" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('no_of_community')?.invalid && generalForm.get('no_of_community')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3752,6 +3861,7 @@
                                     <input type="number" formControlName="no_of_sports_school" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('no_of_sports_school')?.invalid && generalForm.get('no_of_sports_school')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3764,6 +3874,7 @@
                                     <input type="number" formControlName="no_of_sports_zonal" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('no_of_sports_zonal')?.invalid && generalForm.get('no_of_sports_zonal')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3776,6 +3887,7 @@
                                     <input type="number" formControlName="no_of_sports_district" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('no_of_sports_district')?.invalid && generalForm.get('no_of_sports_district')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3789,6 +3901,7 @@
                                     <input type="number" formControlName="no_of_sports_state" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('no_of_sports_state')?.invalid && generalForm.get('no_of_sports_state')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3802,6 +3915,7 @@
                                     <input type="number" formControlName="no_of_sports_national" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('no_of_sports_national')?.invalid && generalForm.get('no_of_sports_national')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3815,6 +3929,7 @@
                                     <input type="number" formControlName="no_of_sports_international" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('no_of_sports_international')?.invalid && generalForm.get('no_of_sports_international')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3843,6 +3958,7 @@
                                     <input type="number" formControlName="no_of_competition_school" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('no_of_competition_school')?.invalid && generalForm.get('no_of_competition_school')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3855,6 +3971,7 @@
                                     <input type="number" formControlName="no_of_competition_zonal" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('no_of_competition_zonal')?.invalid && generalForm.get('no_of_competition_zonal')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3867,6 +3984,7 @@
                                     <input type="number" formControlName="no_of_competition_district" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('no_of_competition_district')?.invalid && generalForm.get('no_of_competition_district')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3880,6 +3998,7 @@
                                     <input type="number" formControlName="no_of_competition_state" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('no_of_competition_state')?.invalid && generalForm.get('no_of_competition_state')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3893,6 +4012,7 @@
                                     <input type="number" formControlName="no_of_competition_national" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('no_of_competition_national')?.invalid && generalForm.get('no_of_competition_national')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3906,6 +4026,7 @@
                                     <input type="number" formControlName="no_of_competition_international" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('no_of_competition_international')?.invalid && generalForm.get('no_of_competition_international')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3938,6 +4059,7 @@
                                     <input type="number" formControlName="no_of_interprograms_school" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('no_of_interprograms_school')?.invalid && generalForm.get('no_of_interprograms_school')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3950,6 +4072,7 @@
                                     <input type="number" formControlName="no_of_interprograms_zonal" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('no_of_interprograms_zonal')?.invalid && generalForm.get('no_of_interprograms_zonal')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3962,6 +4085,7 @@
                                     <input type="number" formControlName="no_of_interprograms_district" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('no_of_interprograms_district')?.invalid && generalForm.get('no_of_interprograms_district')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3975,6 +4099,7 @@
                                     <input type="number" formControlName="no_of_interprograms_state" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('no_of_interprograms_state')?.invalid && generalForm.get('no_of_interprograms_state')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3988,6 +4113,7 @@
                                     <input type="number" formControlName="no_of_interprograms_national" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('no_of_interprograms_national')?.invalid && generalForm.get('no_of_interprograms_national')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -4001,6 +4127,7 @@
                                     <input type="number" formControlName="no_of_interprograms_international" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('no_of_interprograms_international')?.invalid && generalForm.get('no_of_interprograms_international')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -4137,6 +4264,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="workingdays_21_22" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('workingdays_21_22')?.invalid && generalForm.get('workingdays_21_22')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-3">
@@ -4146,6 +4274,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="workingdays_20_21" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('workingdays_20_21')?.invalid && generalForm.get('workingdays_20_21')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-3">
@@ -4155,6 +4284,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="workingdays_19_20" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('workingdays_19_20')?.invalid && generalForm.get('workingdays_19_20')?.touched" style="color:red;">required</span>
 
                         </div>
 
@@ -4175,6 +4305,7 @@
                                 <input type="number" formControlName="eachday_workhours_21_22" required
                                     class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('eachday_workhours_21_22')?.invalid && generalForm.get('eachday_workhours_21_22')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-3">
@@ -4185,6 +4316,7 @@
                                 <input type="number" formControlName="eachday_workhours_20_21" required
                                     class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('eachday_workhours_20_21')?.invalid && generalForm.get('eachday_workhours_20_21')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-3">
@@ -4195,6 +4327,7 @@
                                 <input type="number" formControlName="eachday_workhours_19_20" required
                                     class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('eachday_workhours_19_20')?.invalid && generalForm.get('eachday_workhours_19_20')?.touched" style="color:red;">required</span>
 
                         </div>
 
@@ -4214,6 +4347,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="totalhours_21_22" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('totalhours_21_22')?.invalid && generalForm.get('totalhours_21_22')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-3">
@@ -4223,6 +4357,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="totalhours_20_21" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('totalhours_20_21')?.invalid && generalForm.get('totalhours_20_21')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-3">
@@ -4232,6 +4367,7 @@
                                         class="fas fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="totalhours_19_20" required class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('totalhours_19_20')?.invalid && generalForm.get('totalhours_19_20')?.touched" style="color:red;">required</span>
 
                         </div>
 
@@ -4253,6 +4389,7 @@
                                 <input type="number" formControlName="non_instruct_workdays_21_22" required
                                     class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('non_instruct_workdays_21_22')?.invalid && generalForm.get('non_instruct_workdays_21_22')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-3">
@@ -4263,6 +4400,7 @@
                                 <input type="number" formControlName="non_instruct_workdays_20_21" required
                                     class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('non_instruct_workdays_20_21')?.invalid && generalForm.get('non_instruct_workdays_20_21')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-3">
@@ -4273,6 +4411,7 @@
                                 <input type="number" formControlName="non_instruct_workdays_19_20" required
                                     class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('non_instruct_workdays_19_20')?.invalid && generalForm.get('non_instruct_workdays_19_20')?.touched" style="color:red;">required</span>
 
                         </div>
 
@@ -4298,6 +4437,7 @@
                                 <input type="number" formControlName="holiday_except_holidays_21_22" required
                                     class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('holiday_except_holidays_21_22')?.invalid && generalForm.get('holiday_except_holidays_21_22')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-3">
@@ -4308,6 +4448,7 @@
                                 <input type="number" formControlName="holiday_except_holidays_20_21" required
                                     class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('holiday_except_holidays_20_21')?.invalid && generalForm.get('holiday_except_holidays_20_21')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-3">
@@ -4318,6 +4459,7 @@
                                 <input type="number" formControlName="holiday_except_holidays_19_20" required
                                     class="form-control">
                             </div>
+                            <span *ngIf="generalForm.get('holiday_except_holidays_19_20')?.invalid && generalForm.get('holiday_except_holidays_19_20')?.touched" style="color:red;">required</span>
 
                         </div>
 
@@ -4375,6 +4517,7 @@
                                     <input type="number" formControlName="teaching_periods_perweek" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('teaching_periods_perweek')?.invalid && generalForm.get('teaching_periods_perweek')?.touched" style="color:red;">required</span>
                             </div>
                         </div>
 
@@ -4391,6 +4534,7 @@
                                     <input type="number" formControlName="faith_periods_perweek" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('faith_periods_perweek')?.invalid && generalForm.get('faith_periods_perweek')?.touched" style="color:red;">required</span>
                             </div>
                         </div>
 
@@ -4412,6 +4556,7 @@
                                     <input type="number" formControlName="period_duration" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('period_duration')?.invalid && generalForm.get('period_duration')?.touched" style="color:red;">required</span>
                             </div>
                         </div>
 
@@ -4428,6 +4573,7 @@
                                     <input type="number" formControlName="totalhours_forclubs" required
                                         class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('totalhours_forclubs')?.invalid && generalForm.get('totalhours_forclubs')?.touched" style="color:red;">required</span>
                             </div>
                         </div>
 
@@ -4448,6 +4594,7 @@
                                             class="fas fa-clock"></i></span>
                                     <input type="time" formControlName="summer_timein" required class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('summer_timein')?.invalid && generalForm.get('summer_timein')?.touched" style="color:red;">required</span>
                             </div>
                         </div>
 
@@ -4463,6 +4610,7 @@
                                             class="fas fa-clock"></i></span>
                                     <input type="time" formControlName="summer_timeout" required class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('summer_timeout')?.invalid && generalForm.get('summer_timeout')?.touched" style="color:red;">required</span>
                             </div>
                         </div>
 
@@ -4478,6 +4626,7 @@
                                             class="fas fa-clock"></i></span>
                                     <input type="time" formControlName="winter_timein" required class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('winter_timein')?.invalid && generalForm.get('winter_timein')?.touched" style="color:red;">required</span>
                             </div>
                         </div>
 
@@ -4494,6 +4643,7 @@
                                             class="fas fa-clock"></i></span>
                                     <input type="time" formControlName="winter_timeout" required class="form-control">
                                 </div>
+                                <span *ngIf="generalForm.get('winter_timeout')?.invalid && generalForm.get('winter_timeout')?.touched" style="color:red;">required</span>
                             </div>
                         </div>
 
@@ -4579,7 +4729,7 @@
                                             <span class="input-group-text btn btn-success"
                                                 style="background-color:#4FA813;"><i
                                                     class="fas fa-sort-numeric-down"></i></span>
-                                            <input type="text" placeholder="3571598426"
+                                            <input type="text" placeholder="NSP"
                                                 formControlName="scholarshipName" required class="form-control">
                                         </div>
                                     </td>
