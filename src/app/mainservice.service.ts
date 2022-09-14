@@ -7,7 +7,7 @@ import {HttpClient, HttpHeaders} from "@angular/common/http";
 export class MainserviceService {
   token:any;
   constructor(private http:HttpClient) { }
-  // baseurl="http://127.0.0.1:8000" 
+  // baseurl="http://127.0.0.1:8000"
   baseurl="https://fastapi-edustarpro.herokuapp.com"
 
   login(url:any,data:any){

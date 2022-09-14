@@ -17,7 +17,7 @@ export class GeneralComponent implements OnInit {
 
 
   constructor(private fb:FormBuilder , private sub:SubserviceService , private route:Router ) { }
-  step=17;
+  step=0;
   butt=0;
   index=new Array(18);
 
