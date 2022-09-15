@@ -19,7 +19,7 @@ export class GeneralComponent implements OnInit {
   constructor(private fb:FormBuilder , private sub:SubserviceService , private route:Router ) { }
   step=0;
   butt=0;
-  index=new Array(18);
+  index=new Array(19);
 
 
   ngOnInit(): void {
@@ -334,7 +334,8 @@ export class GeneralComponent implements OnInit {
       winter_timein:[''],
       winter_timeout:[''],
       school_shift:[''],
-      scholarship:this.fb.array([])
+      scholarship:this.fb.array([]),
+      enrollment:this.fb.array([]),
       
     });
 
@@ -353,6 +354,11 @@ export class GeneralComponent implements OnInit {
         
          this.Scholarship().push(this.loadScholarship(element))        
       });
+
+      this.data.enrollment.forEach((element:any) => {
+        
+        this.Enrollment().push(this.loadEnrollment(element))        
+     });
    
    
       // this.loadData(); 
@@ -363,6 +369,9 @@ export class GeneralComponent implements OnInit {
 
   Scholarship():FormArray{
       return this.generalForm.get('scholarship') as FormArray;
+  }
+  Enrollment():FormArray{
+    return this.generalForm.get('enrollment') as FormArray;
   }
 
   newScholarship():FormGroup{
@@ -376,6 +385,18 @@ export class GeneralComponent implements OnInit {
     });
   }
 
+
+  newEnrollment():FormGroup{
+    return this.fb.group({
+       enrol_class:[],
+       enrol_no_of_section:[],
+       enrol_total_boys:[],
+       enrol_total_girls:[],
+       enrol_total_students:[]
+     
+     });
+   }
+
   loadScholarship(data : any):FormGroup{
     return this.fb.group({
        scholarshipName:[data[0]],
@@ -387,12 +408,33 @@ export class GeneralComponent implements OnInit {
      });
    }
 
+   loadEnrollment(data : any):FormGroup{
+    return this.fb.group({
+       enrol_class:[data[0]],
+       enrol_no_of_section:[data[1]],
+       enrol_total_boys:[data[2]],
+       enrol_total_girls:[data[3]],
+       enrol_total_students:[data[4]]
+     
+     });
+   }
+
+
   addScholarship(){
     this.Scholarship().push(this.newScholarship());
   }
 
+  addEnrollment(){
+    this.Enrollment().push(this.newEnrollment());
+  }
+
   removeScholarship(i:any){
     this.Scholarship().removeAt(i)
+  }
+
+
+  removeEnrollment(i:any){
+    this.Enrollment().removeAt(i)
   }
 
   // loadData(){

@@ -4823,6 +4823,96 @@
                 </div>
 
 
+                <div *ngIf="step==19">
+                    <div class="row">
+                        <div class="col-md-4" style="background-color:#155B97;"></div>
+                        <div class="col-md-5" style="background-color:#155B97;color:white;">
+                        <h2>19-Student Enrollment</h2>
+                        </div>
+                        <div class="col-md-3" style="background-color:#155B97"></div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <label style="text-align:center;">Enrolment of the Students by Class and Section</label>
+                    </div>
+
+                    <div class="row mt-5">
+                        <table formArrayName="enrollment" class="table table-bordered">
+                            <tbody>
+                            <tr>
+                                <th>Class</th>
+                                <th>No of sections</th>
+                                <th>Total No. of Boys</th>
+                                <th>Total No. of Girls</th>
+                                <th>Total No of students</th>
+                                <th>Actions <button type="button" class="btn btn-success" (click)="addEnrollment()">add</button> </th>
+                                    
+                            </tr>
+                            <tr *ngFor="let list of Enrollment().controls;let i=index;" formGroupName="{{i}}">
+                                <td>
+                                    <label>Enter the Class</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text btn btn-success" style="background-color:#4FA813"><i class="fas fa-book"></i></span>
+                                        <input type="text" formControlName="enrol_class" placeholder="Enter Class" class="form-control">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <label>Enter No. of section</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text btn btn-success" style="background-color:#4FA813"><i class="fas fa-sort-numeric-down"></i></span>
+                                        <input thype="number" placehoder="Enter No.of Sections" formControlName="enrol_no_of_section" class="form-control">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <label>Enter Total No. of Boys</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text btn btn-success" style="background-color:#4FA813"><i class="fas fa-sort-numeric-down"></i></span>
+                                        <input type="number" placeholder="No.of Boys" formControlName="enrol_total_boys" class="form-control">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <label>Total No. of Girls</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text btn btn-success" style="background-color:#4FA813"><i class="fas fa-sort-numeric-down"></i></span>
+                                        <input type="number" placeholder="No.of Girls" formControlName="enrol_total_girls" class="form-control">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <label>Enter Total No. of students</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text btn btn-success" style="background-color:#4FA813"><i class="fas fa-sort-numeric-down"></i></span>
+                                        <input type="number" placeholder="Total No.of Students" formControlName="enrol_total_students" class="form-control">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <button class="btn btn-danger" (click)="removeEnrollment(i)">Remove</button>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row">
+                        <div class="col-md-1">
+                            <button (click)="previous()" class="btn btn-secondary">Previous</button>
+                        </div>
+
+                        <div class="col-md-10"></div>
+                        <div class="col-md-1">
+                            <button (click)="submit()" class="btn btn-success">Save</button>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
             </div>
         </form>
         <div class="text-center mt-1">
