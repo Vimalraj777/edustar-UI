@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { SubserviceService } from '../subservice.service';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-one',
@@ -37,15 +38,26 @@ export class OneComponent implements OnInit {
 
       if(this.data.detail==null){
         localStorage.setItem('token',this.data.token);   // Here i am storing the token in a Local Storage.
+        Swal.fire(
+          'Logged Successfully',
+          'Click to go Home',
+          'success'
+        )
         this.router.navigate(['/home'])
       }
       else{
         alert("Invalid Credentials")
         
       }
+      
 
+    },
+    error=>{
+      alert("Invalid Credentials")
     })
+   
+    }
     
     
   }
-}
+
