@@ -10,9 +10,6 @@ import { ProfileComponent } from './profile/profile.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { GeneralComponent } from './general/general.component';
-import { SampleComponent } from './sample/sample.component';
-import { GeneralhomeComponent } from './generalhome/generalhome.component';
-import { GeneralprofileComponent } from './generalprofile/generalprofile.component';
 import {NgxPaginationModule} from 'ngx-pagination';
 // import { HomegeneralComponent } from './homegeneral/homegeneral.component';
 
@@ -24,9 +21,6 @@ import {NgxPaginationModule} from 'ngx-pagination';
     HomeComponent,
     ProfileComponent,
     GeneralComponent,
-    SampleComponent,
-    GeneralhomeComponent,
-    GeneralprofileComponent,
     // HomegeneralComponent,
   ],
   imports: [

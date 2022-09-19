@@ -1,33 +1,18 @@
-<!-- 
-
-<div class="row mt-3" style="background-color: aqua;">
-    <div class="col-md-2">
-        <button class="btn btn-info" (click)="submit()" >User Profile</button>
-    </div>
-    <div class="col-md-3"></div>
-    <div *ngIf="step==1" class="col-md-2">
-        <button class="btn btn-primary" (click)="Submit()">School Profile</button>
-    </div>
-    <div class="col-md-4"></div>
-        <div class="col-md-1">
-            <button class="btn btn-danger" (click)="logout()">Logout</button>
-        </div>
-            
-</div> -->
-
 <div class="row">
-    <h2 style="text-align:center;background-color:#155B97;color:white;">Home Page
-
-    </h2>
-
+    <h2 style="text-align:center;background-color:#155B97;color:white;">Home Page </h2>
 </div>
 
-<div>
+<div class="row">
+    <div class="col-md-4">
 <ul>
     <li><button class="btn btn-info form-control mt-2" (click)="submit()">User Profile</button></li>
     <li><button class="btn btn-info form-control mt-2" (click)="Submit()">School Profile</button></li>
     <li><button class="btn btn-info form-control mt-2" (click)="logout()">Logout</button></li>
   </ul>
+</div>
+<div class="col-md-4">
+   <img src="http://edustardb.org/edustar/assets/img/login_side_img.png">
+</div>
 </div>
 
  
