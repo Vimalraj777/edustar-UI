@@ -38,11 +38,12 @@ export class OneComponent implements OnInit {
 
       if(this.data.detail==null){
         localStorage.setItem('token',this.data.token);   // Here i am storing the token in a Local Storage.
-        Swal.fire(
-          'Logged Successfully',
-          'Click to go Home',
-          'success'
-        )
+        Swal.fire({
+         icon:'success',
+         title:'Logged in Successfully',
+         showConfirmButton:false,
+         timer:1500
+       })
         this.router.navigate(['/home'])
       }
       else{

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup,FormBuilder, FormArray } from '@angular/forms';
 import { SubserviceService } from '../subservice.service';
 import { Router , ActivatedRoute} from '@angular/router';
+import Swal from 'sweetalert2';
 // import { SubserviceService } from '../subservice.service';
 
 @Component({
@@ -795,7 +796,14 @@ export class GeneralComponent implements OnInit {
     this.sub.profileput(this.generalForm.value).subscribe((data:any)=>{
       console.log(data);
       this.Data=data;
-      this.route.navigate(['/home'])
+      Swal.fire({
+        title:'Saved Successfully',
+        showConfirmButton:false,
+        text:'',
+        icon:'success',
+        timer:1500
+      })
+      // this.route.navigate(['/home'])
 
     })
     // console.log("data",this.Data);

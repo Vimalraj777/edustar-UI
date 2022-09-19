@@ -36,7 +36,7 @@
                 <div class="row mt-3">
                     <label><b>Father Name</b></label>
                     <input class="form-control" type="text" formControlName="fname"
-                        placeholder="Enter Your Father Name">
+                        placeholder="Enter Your Father Name" required>
                     <div *ngIf="registerForm.get('fname')?.invalid && registerForm.get('fname')?.touched"
                         style="color:red;">required</div>
                 </div>

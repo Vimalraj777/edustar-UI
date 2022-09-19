@@ -24,7 +24,7 @@
                                     <span class="input-group-text btn btn-success" style="background-color: #4FA813;"><i
                                             class="fa fa-id-badge"></i></span>
                                     <input type="text" placeholder="roll no" formControlName="id" required
-                                        class="form-control">
+                                        class="form-control" readonly>
                                 </div>
                                 <div *ngIf="generalForm.get('id')?.invalid && (generalForm.get('id')?.dirty || generalForm.get('id')?.touched) && generalForm.get('id')?.errors?.['required']"
                                     style="color: red;">required</div>

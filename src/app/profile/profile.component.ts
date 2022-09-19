@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { ActivatedRoute ,Router} from '@angular/router';
+import { timer } from 'rxjs';
+import Swal from 'sweetalert2';
 import { SubserviceService } from '../subservice.service';
 // import { SubserviceService } from '../subservice.service';
 
@@ -56,13 +58,17 @@ export class ProfileComponent implements OnInit {
     })
   }
   submit(){
-    
-
     this.subservice.Post(this.profileForm.value).subscribe((data: any)=>{
       console.log(data);
       this.data=data;
       if(data!=null){
-        this.route.navigate(['/home'])
+        Swal.fire({
+          title:'Saved Successfully',
+          icon:'success',
+          showConfirmButton:false,
+          timer:1500
+        })
+        // this.route.navigate(['/home'])
       
     }
     })
@@ -71,13 +77,30 @@ export class ProfileComponent implements OnInit {
     this.route.navigate(['/home'])
   }
   deleted(){
-    this.subservice.deleted().subscribe((data: any)=>{
-      console.log(data);
-      this.data=data;
-      // if(data!=null){
-        this.route.navigate(['/one'])
-      
-    // }
-    })
+    Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        this.subservice.deleted().subscribe((data: any)=>{
+          console.log(data);
+          this.data=data; 
+          
+          Swal.fire({
+            title:'Deleted!',
+            showConfirmButton:false,
+            text:'Your file has been deleted.',
+            icon:'success',
+            timer:1500
+        })
+          this.route.navigate(['/one'])
+        })
+      }
+    }) 
   }
 }

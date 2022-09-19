@@ -5,6 +5,7 @@ import { FormBuilder ,FormGroup  } from '@angular/forms';
 import { SubserviceService } from '../subservice.service';
 import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-register',
@@ -39,9 +40,16 @@ export class RegisterComponent implements OnInit {
       this.data=data;
       console.log("okregister",this.data);
       if(this.data!=null){
+        Swal.fire(
+          'Registered Successfully!',
+          'click OK to Login',
+          'success',
+        )
         this.router.navigate(['/one'])
       }
   
+    },error=>{
+      confirm('Required Fields are Empty!')
     })
   }
 

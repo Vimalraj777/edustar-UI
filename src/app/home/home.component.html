@@ -6,7 +6,9 @@
     <div class="col-md-4">
 <ul>
     <li><button class="btn btn-info form-control mt-2" (click)="submit()">User Profile</button></li>
+    <div *ngIf="step==1">
     <li><button class="btn btn-info form-control mt-2" (click)="Submit()">School Profile</button></li>
+    </div>
     <li><button class="btn btn-info form-control mt-2" (click)="logout()">Logout</button></li>
   </ul>
 </div>

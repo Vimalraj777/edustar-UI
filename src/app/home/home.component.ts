@@ -26,9 +26,9 @@ export class HomeComponent implements OnInit {
       console.log(data);
 
       // this.step=0;
-    if(this.data.id==19297){
-      this.step=1;
-    }
+      if(this.data.id==19297){
+        this.step=1;
+      }
       
     },error=>{
       this.route.navigate(['/one'])
