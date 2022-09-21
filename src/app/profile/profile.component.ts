@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute ,Router} from '@angular/router';
-import { timer } from 'rxjs';
+import { max, min, timer } from 'rxjs';
 import Swal from 'sweetalert2';
 import { SubserviceService } from '../subservice.service';
 // import { SubserviceService } from '../subservice.service';
@@ -31,7 +31,7 @@ export class ProfileComponent implements OnInit {
       gender: [''],
       fname: [''],
       mname: [''],
-      phnumber: [''],
+      phnumber: ['',[Validators.required,Validators.pattern('(?=.*[0-9]).{10}')]],
       address: ['']
 
     })

@@ -44,10 +44,11 @@
             <input type="text" formControlName="mname" placeholder="Mother Name" class="form-control" required><br/><br/>
             <div *ngIf="profileForm.get('mname')?.touched && profileForm.get('mname')?.invalid" style="color: red;">required</div>
         </div>
+ 
         <div class="row mt-1">
             <label><b>Phone Number</b></label>
-            <input type="number" formControlName="phnumber" placeholder="Phone Number" class="form-control" required><br/><br/>
-            <div *ngIf="profileForm.get('phnumber')?.touched && profileForm.get('phnumber')?.invalid" style="color:red;">required</div>
+            <input type="text" formControlName="phnumber" placeholder="Phone Number" class="form-control" minlength="10" maxlength="10" required ><br/><br/>
+            <div *ngIf="profileForm.get('phnumber')?.touched && profileForm.get('phnumber')?.invalid" style="color:red;">Enter 10 Digits</div>
         </div>
         <div class="row mt-1">
             <label><b>Address</b></label>

@@ -42,14 +42,14 @@ export class RegisterComponent implements OnInit {
       if(this.data!=null){
         Swal.fire(
           'Registered Successfully!',
-          'click OK to Login',
+          'Click OK to Login',
           'success',
         )
         this.router.navigate(['/one'])
       }
   
     },error=>{
-      confirm('Required Fields are Empty!')
+      alert('Required Fields are Empty!')
     })
   }
 

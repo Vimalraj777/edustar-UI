@@ -7,7 +7,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
-  {path:'one',component:OneComponent},
+  {path:'',component:OneComponent},
   {path:'register',component:RegisterComponent},
   {path:'home',component:HomeComponent},
   {path:'profile',component:ProfileComponent},

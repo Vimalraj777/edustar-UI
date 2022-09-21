@@ -55,7 +55,7 @@ export class HomeComponent implements OnInit {
 
   logout(){
     localStorage.clear();
-    this.route.navigate(['/one']);
+    this.route.navigate(['/']);
 
   }
 

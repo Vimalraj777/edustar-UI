@@ -56,6 +56,14 @@ deleted(){
   const url="/deleted" 
   return this.Mainservice.deleted(url);
 }
+forgot(data:any){
+  const url="/forgot"
+  return this.Mainservice.forgot(url,data);
+}
+changepass(data:any){
+  const url="/change"
+  return this.Mainservice.changepass(url,data);
+}
 
 
 
