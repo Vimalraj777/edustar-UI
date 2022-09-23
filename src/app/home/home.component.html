@@ -21,19 +21,25 @@
 
   -->
 
-  <mat-toolbar style="background-color:blueviolet;">
+  <mat-toolbar style="background-color:#E17C00">
+    <img  class="db-logo" height="60" src="../../assets/img/dbstar_logo.png">
     <button mat-button (click)="sidenav.toggle()">
         <mat-icon>menu</mat-icon>
     </button>
+    <label style="color:white;">Don Bosco School of Excellence</label>
   </mat-toolbar>
   <mat-sidenav-container>
     <mat-sidenav mode="side" opened #sidenav>
         <button mat-button class="menu-button" (click)="submit()">
             <mat-icon>contacts</mat-icon>User Profile
         </button>
+
+        <div *ngIf="step==1">
         <button mat-button class="menu-button" (click)="Submit()">
             <mat-icon>account_balance</mat-icon>School Profile
         </button>
+        </div>
+
         <button mat-button class="menu-button" (click)="logout()">
             <mat-icon>keyboard_backspace</mat-icon>Logout
         </button>
