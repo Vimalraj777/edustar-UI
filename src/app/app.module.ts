@@ -11,6 +11,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { GeneralComponent } from './general/general.component';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatIconModule} from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
+import {MatButtonModule} from '@angular/material/button';
 // import { HomegeneralComponent } from './homegeneral/homegeneral.component';
 
 @NgModule({
@@ -28,7 +34,14 @@ import {NgxPaginationModule} from 'ngx-pagination';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatListModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatToolbarModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

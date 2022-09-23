@@ -1,9 +1,9 @@
-<div class="row">
-    <h2 style="text-align:center;background-color:#155B97;color:white;">Home Page </h2>
+<!-- <div class="row">
+    <h2 style="text-align:center;background-color:#155B97;color:white;position:static;">Home Page </h2>
 </div>
 
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-3">
 <ul>
     <li><button class="btn btn-info form-control mt-2" (click)="submit()">User Profile</button></li>
     <div *ngIf="step==1">
@@ -12,9 +12,35 @@
     <li><button class="btn btn-info form-control mt-2" (click)="logout()">Logout</button></li>
   </ul>
 </div>
-<div class="col-md-4">
-   <img src="http://edustardb.org/edustar/assets/img/login_side_img.png">
+<div class="col-md-9">
+    <img src="http://edustardb.org/edustar/assets/img/login_side_img.png"> 
+   <router-outlet></router-outlet>
 </div>
 </div>
 
- 
+
+  -->
+
+  <mat-toolbar style="background-color:blueviolet;">
+    <button mat-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar>
+  <mat-sidenav-container>
+    <mat-sidenav mode="side" opened #sidenav>
+        <button mat-button class="menu-button" (click)="submit()">
+            <mat-icon>contacts</mat-icon>User Profile
+        </button>
+        <button mat-button class="menu-button" (click)="Submit()">
+            <mat-icon>account_balance</mat-icon>School Profile
+        </button>
+        <button mat-button class="menu-button" (click)="logout()">
+            <mat-icon>keyboard_backspace</mat-icon>Logout
+        </button>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="content">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

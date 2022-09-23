@@ -9,11 +9,11 @@ import { RegisterComponent } from './register/register.component';
 const routes: Routes = [
   {path:'',component:OneComponent},
   {path:'register',component:RegisterComponent},
-  {path:'home',component:HomeComponent},
-  {path:'profile',component:ProfileComponent},
-  {path:'general',component:GeneralComponent},
-
-  
+  {path:'home',component:HomeComponent,
+    children:[
+      {path:'profile',component:ProfileComponent},
+      {path:'general',component:GeneralComponent}]
+  },
   
 ];
 

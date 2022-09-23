@@ -44,13 +44,13 @@ export class HomeComponent implements OnInit {
   submit(){
     // this.id=[this.data,this.data.id];
    
-    this.route.navigate(['/profile'])
+    this.route.navigate(['home/profile'])
   }
 
   Submit(){
     // this.id=[this.data,this.data.id];
    
-    this.route.navigate(['/general'])
+    this.route.navigate(['home/general'])
   }
 
   logout(){
