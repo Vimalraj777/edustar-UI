@@ -3,13 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { OneComponent } from './one/one.component';
-import { RegisterComponent } from './register/register.component';
-import { HomeComponent } from './home/home.component';
-import { ProfileComponent } from './profile/profile.component';
+import { OneComponent } from './Edustar/one/one.component';
+import { RegisterComponent } from './Edustar/register/register.component';
+import { HomeComponent } from './Edustar/home/home.component';
+import { ProfileComponent } from './Edustar/profile/profile.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { GeneralComponent } from './general/general.component';
+import { GeneralComponent } from './Edustar/general/general.component';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';

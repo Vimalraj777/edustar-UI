@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { SubserviceService } from '../subservice.service';
+import { SubserviceService } from '../../subservice.service';
 // import { SubserviceService } from '../subservice.service';
 
 @Component({

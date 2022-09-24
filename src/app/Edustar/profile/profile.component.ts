@@ -3,7 +3,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute ,Router} from '@angular/router';
 import { max, min, timer } from 'rxjs';
 import Swal from 'sweetalert2';
-import { SubserviceService } from '../subservice.service';
+import { SubserviceService } from '../../subservice.service';
 // import { SubserviceService } from '../subservice.service';
 
 @Component({

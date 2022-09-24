@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder ,FormGroup  } from '@angular/forms';
 // import { SubserviceService } from '../subservice.service';
-import { SubserviceService } from '../subservice.service';
+import { SubserviceService } from '../../subservice.service';
 import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 import Swal from 'sweetalert2';

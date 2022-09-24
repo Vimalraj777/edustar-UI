@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,FormBuilder, FormArray } from '@angular/forms';
-import { SubserviceService } from '../subservice.service';
+import { SubserviceService } from '../../subservice.service';
 import { Router , ActivatedRoute} from '@angular/router';
 import Swal from 'sweetalert2';
 // import { SubserviceService } from '../subservice.service';
