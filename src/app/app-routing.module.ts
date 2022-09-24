@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DashboardComponent } from './Edustar/dashboard/dashboard.component';
 import { GeneralComponent } from './Edustar/general/general.component';
 import { HomeComponent } from './Edustar/home/home.component';
 import { OneComponent } from './Edustar/one/one.component';
@@ -12,8 +13,10 @@ const routes: Routes = [
   {path:'home',component:HomeComponent,
     children:[
       {path:'profile',component:ProfileComponent},
-      {path:'general',component:GeneralComponent}]
+      {path:'general',component:GeneralComponent},
+      {path:'dashboard',component:DashboardComponent},]
   },
+  
   
 ];
 

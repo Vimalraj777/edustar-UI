@@ -30,6 +30,9 @@
   </mat-toolbar>
   <mat-sidenav-container>
     <mat-sidenav mode="side" opened #sidenav>
+        <button mat-button class="menu-button" (click)="dashboard()">
+            <mat-icon>home</mat-icon>Dashboard
+        </button>
         <button mat-button class="menu-button" (click)="submit()">
             <mat-icon>contacts</mat-icon>User Profile
         </button>

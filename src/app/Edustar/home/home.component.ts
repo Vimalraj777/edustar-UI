@@ -58,5 +58,9 @@ export class HomeComponent implements OnInit {
     this.route.navigate(['/']);
 
   }
+  dashboard(){
+    this.route.navigateByUrl("home/dashboard")
+  }
+
 
 }
