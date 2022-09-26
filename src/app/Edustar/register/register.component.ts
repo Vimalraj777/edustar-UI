@@ -40,11 +40,11 @@ export class RegisterComponent implements OnInit {
       this.data=data;
       console.log("okregister",this.data);
       if(this.data!=null){
-        Swal.fire(
-          'Registered Successfully!',
-          'Click OK to Login',
-          'success',
-        )
+        Swal.fire({
+          'title':'Registered Successfully!',
+          'icon':'success',
+          'timer':1500
+      })
         this.router.navigate(['/one'])
       }
   

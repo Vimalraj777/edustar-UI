@@ -24,6 +24,7 @@ export class HomeComponent implements OnInit {
     this.subservice.get().subscribe(data=>{
       this.data=data;
       console.log(data);
+      console.log('data id',this.data.id)
 
       // this.step=0;
       if(this.data.id==19297){
