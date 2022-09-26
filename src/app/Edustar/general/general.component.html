@@ -36,10 +36,10 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color: #4FA813;"><i
                                             class="fa fa-university"></i></span>
-                                    <input type="text" placeholder="Institution Name" formControlName="instiName"
+                                    <input type="text" placeholder="Institution Name" formControlName="institutionName"
                                         required class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('instiName')?.invalid && (generalForm.get('instiName')?.dirty || generalForm.get('instiName')?.touched) && generalForm.get('instiName')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('institutionName')?.invalid && (generalForm.get('institutionName')?.dirty || generalForm.get('institutionName')?.touched) && generalForm.get('institutionName')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -66,10 +66,10 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color: #4FA813;"><i
                                             class="fa fa-link"></i></span>
-                                    <input type="url" placeholder="www.dbxtirupattur.org" formControlName="urlname"
+                                    <input type="url" placeholder="www.dbxtirupattur.org" formControlName="urlName"
                                         required class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('urlname')?.invalid && (generalForm.get('urlname')?.dirty || generalForm.get('urlname')?.touched) && generalForm.get('urlname')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('urlName')?.invalid && (generalForm.get('urlName')?.dirty || generalForm.get('urlName')?.touched) && generalForm.get('urlName')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -83,16 +83,16 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color: #4FA813;"><i
                                             class="fa fa-envelope"></i></span>
-                                    <input type="email" placeholder="vimalvimal0111@gmail.com" formControlName="ofemail"
+                                    <input type="email" placeholder="vimalvimal0111@gmail.com" formControlName="officeEmailId"
                                         required class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('ofemail')?.invalid && (generalForm.get('ofemail')?.dirty || generalForm.get('ofemail')?.touched) && generalForm.get('ofemail')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('officeEmailId')?.invalid && (generalForm.get('officeEmailId')?.dirty || generalForm.get('officeEmailId')?.touched) && generalForm.get('officeEmailId')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
                             <div class="label"><label>Does your school admit children with special needs?</label>
-                                <input type="radio" value="yes" formControlName="needs" required>Yes &nbsp;&nbsp;
-                                <input type="radio" value="no" formControlName="needs" required>No
+                                <input type="radio" value="yes" formControlName="specialNeeds" required>Yes &nbsp;&nbsp;
+                                <input type="radio" value="no" formControlName="specialNeeds" required>No
                             </div> <br />
 
                             <label>District</label>
@@ -129,10 +129,10 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color: #4FA813;"><i
                                             class="fa fa-layer-group"></i></span>
-                                    <input type="number" placeholder="2016" formControlName="yearofest"
+                                    <input type="number" placeholder="2016" formControlName="yearOfEstablish"
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('yearofest')?.invalid && (generalForm.get('yearofest')?.dirty || generalForm.get('yearofest')?.touched) && generalForm.get('yearofest')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('yearOfEstablish')?.invalid && (generalForm.get('yearOfEstablish')?.dirty || generalForm.get('yearOfEstablish')?.touched) && generalForm.get('yearOfEstablish')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -142,7 +142,7 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color: #4FA813;"><i
                                             class="fa fa-file-signature"></i></span>
-                                    <select class="form-select" formControlName="natureofaffili">
+                                    <select class="form-select" formControlName="natureOfAffiliation">
                                         <option selected>--SELECT--</option>
                                         <option value="Private Aided">Private Aided
                                         </option>
@@ -159,10 +159,10 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color: #4FA813;"><i
                                             class="fa fa-female"></i></span>
-                                    <input type="number" placeholder="55" formControlName="cunofgirls" required
+                                    <input type="number" placeholder="55" formControlName="currentNoOfGirls" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('cunofgirls')?.invalid && (generalForm.get('cunofgirls')?.dirty || generalForm.get('cunofgirls')?.touched) && generalForm.get('cunofgirls')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('currentNoOfGirls')?.invalid && (generalForm.get('currentNoOfGirls')?.dirty || generalForm.get('currentNoOfGirls')?.touched) && generalForm.get('currentNoOfGirls')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -171,10 +171,10 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color: #4FA813;"><i
                                             class="fa fa-user-circle"></i></span>
-                                    <input type="number" placeholder="14" formControlName="nonteaching" required
+                                    <input type="number" placeholder="14" formControlName="totalOfNonTeachingStaff" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('nonteaching')?.invalid && (generalForm.get('nonteaching')?.dirty || generalForm.get('nonteaching')?.touched) && generalForm.get('nonteaching')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('totalOfNonTeachingStaff')?.invalid && (generalForm.get('totalOfNonTeachingStaff')?.dirty || generalForm.get('totalOfNonTeachingStaff')?.touched) && generalForm.get('totalOfNonTeachingStaff')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -230,10 +230,10 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813"><i
                                             class="fa fa-envelope"></i></span>
-                                    <input type="text" placeholder="Semozhi Nagar" formControlName="paddress" required
+                                    <input type="text" placeholder="Semozhi Nagar" formControlName="postalAddress" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('paddress')?.invalid && (generalForm.get('paddress')?.dirty || generalForm.get('paddress')?.touched) && generalForm.get('paddress')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('postalAddress')?.invalid && (generalForm.get('postalAddress')?.dirty || generalForm.get('postalAddress')?.touched) && generalForm.get('postalAddress')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -263,9 +263,9 @@
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813"><i
                                             class="fa fa-phone-alt"></i> </span>
                                     <input type="number" placeholder="Enter the official Phone Number"
-                                        formControlName="ofphno" required class="form-control">
+                                        formControlName="officialPhoneNumber" required class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('ofphno')?.invalid && (generalForm.get('ofphno')?.dirty || generalForm.get('ofphno')?.touched) && generalForm.get('ofphno')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('officialPhoneNumber')?.invalid && (generalForm.get('officialPhoneNumber')?.dirty || generalForm.get('officialPhoneNumber')?.touched) && generalForm.get('officialPhoneNumber')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -275,7 +275,7 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813"><i
                                             class="fa fa-award"></i></span>
-                                    <select class="form-select" formControlName="acadyear">
+                                    <select class="form-select" formControlName="assessmentAcademicYear">
                                         <option selected>--SELECT--</option>
                                         <option value="2022-23">2022-23</option>
                                         <option value="2021-22">2021-22</option>
@@ -307,10 +307,10 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813"><i
                                             class="fa fa-envelope"></i></span>
-                                    <input type="email" placeholder="alponesesdbg@gmail.com" formControlName="coemailid"
+                                    <input type="email" placeholder="alponesesdbg@gmail.com" formControlName="correspondentEmailId"
                                         required class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('coemailid')?.invalid && (generalForm.get('coemailid')?.dirty || generalForm.get('coemailid')?.touched) && generalForm.get('coemailid')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('correspondentEmailId')?.invalid && (generalForm.get('correspondentEmailId')?.dirty || generalForm.get('correspondentEmailId')?.touched) && generalForm.get('correspondentEmailId')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -320,7 +320,7 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813"><i
                                             class="fa fa-school"></i></span>
-                                    <select class="form-select" formControlName="sclevel">
+                                    <select class="form-select" formControlName="schoolLevel">
                                         <option selected>--SELECT--</option>
                                         <option value="Primary">Primary</option>
                                         <option value="Secondary">Secondary</option>
@@ -335,10 +335,10 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813"><i
                                             class="fa fa-mobile-alt"></i></span>
-                                    <input type="number" placeholder="7531598624" formControlName="headmono" required
+                                    <input type="number" placeholder="7531598624" formControlName="principalOrHeadMobileNo" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('headmono')?.invalid && (generalForm.get('headmono')?.dirty || generalForm.get('headmono')?.touched) && generalForm.get('headmono')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('principalOrHeadMobileNo')?.invalid && (generalForm.get('principalOrHeadMobileNo')?.dirty || generalForm.get('principalOrHeadMobileNo')?.touched) && generalForm.get('principalOrHeadMobileNo')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -384,10 +384,10 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color: #4FA813;"><i
                                             class="fa fa-user-circle"></i></span>
-                                    <input type="number" placeholder="64" formControlName="nostaff" required
+                                    <input type="number" placeholder="64" formControlName="totalNoOfTeachingStaff" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('nostaff')?.invalid && (generalForm.get('nostaff')?.dirty || generalForm.get('nostaff')?.touched) && generalForm.get('nostaff')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('totalNoOfTeachingStaff')?.invalid && (generalForm.get('totalNoOfTeachingStaff')?.dirty || generalForm.get('totalNoOfTeachingStaff')?.touched) && generalForm.get('totalNoOfTeachingStaff')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -396,10 +396,10 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color: #4FA813;"><i
                                             class="fa fa-male"></i></span>
-                                    <input type="number" placeholder="494" formControlName="noboys" required
+                                    <input type="number" placeholder="494" formControlName="totalBoys" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('noboys')?.invalid && (generalForm.get('noboys')?.dirty || generalForm.get('noboys')?.touched) && generalForm.get('noboys')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('totalBoys')?.invalid && (generalForm.get('totalBoys')?.dirty || generalForm.get('totalBoys')?.touched) && generalForm.get('totalBoys')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -408,10 +408,10 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color: #4FA813;"><i
                                             class="fa fa-user-alt"></i></span>
-                                    <input type="text" placeholder="Fr.Alphonese Philiph" formControlName="coname"
+                                    <input type="text" placeholder="Fr.Alphonese Philiph" formControlName="correspondentName"
                                         required class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('coname')?.invalid && (generalForm.get('coname')?.dirty || generalForm.get('coname')?.touched) && generalForm.get('coname')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('correspondentName')?.invalid && (generalForm.get('correspondentName')?.dirty || generalForm.get('correspondentName')?.touched) && generalForm.get('correspondentName')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -425,10 +425,10 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color: #4FA813;"><i
                                             class="fa fa-user-circle"></i></span>
-                                    <input type="number" placeholder="104" formControlName="cunofstu" required
+                                    <input type="number" placeholder="104" formControlName="currentNoOfStudents" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('cunofstu')?.invalid && (generalForm.get('cunofstu')?.dirty || generalForm.get('cunofstu')?.touched) && generalForm.get('cunofstu')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('currentNoOfStudents')?.invalid && (generalForm.get('currentNoOfStudents')?.dirty || generalForm.get('currentNoOfStudents')?.touched) && generalForm.get('currentNoOfStudents')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -438,10 +438,10 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color: #4FA813;"><i
                                             class="fa fa-phone-square-alt"></i></span>
-                                    <input type="number" placeholder="9444800413" formControlName="comono" required
+                                    <input type="number" placeholder="9444800413" formControlName="correspondentMobileNo" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('comono')?.invalid && (generalForm.get('comono')?.dirty || generalForm.get('comono')?.touched) && generalForm.get('comono')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('correspondentMobileNo')?.invalid && (generalForm.get('correspondentMobileNo')?.dirty || generalForm.get('correspondentMobileNo')?.touched) && generalForm.get('correspondentMobileNo')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -472,10 +472,10 @@
                                     <span class="input-group-text btn btn-success" style="background-color: #4FA813;"><i
                                             class="fa fa-envelope"></i></span>
                                     <input type="email" placeholder="arulsekar1974@gmail.com"
-                                        formControlName="heademailid" required class="form-control">
+                                        formControlName="principalOrHeadEmailId" required class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('heademailid')?.invalid && (generalForm.get('heademailid')?.touched || 
-                            generalForm.get('heademailid')?.dirty) && generalForm.get('heademailid')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('principalOrHeadEmailId')?.invalid && (generalForm.get('principalOrHeadEmailId')?.touched || 
+                            generalForm.get('principalOrHeadEmailId')?.dirty) && generalForm.get('principalOrHeadEmailId')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -484,11 +484,11 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color: #4FA813;"><i
                                             class="fa fa-user-circle"></i></span>
-                                    <input type="text" placeholder="Fr.Arul Sekar S" formControlName="nameofprince"
+                                    <input type="text" placeholder="Fr.Arul Sekar S" formControlName="nameOfPrincipal"
                                         required class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('nameofprince')?.invalid && (generalForm.get('nameofprince')?.touched || 
-                            generalForm.get('nameofprince')?.dirty) && generalForm.get('nameofprince')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('nameOfPrincipal')?.invalid && (generalForm.get('nameOfPrincipal')?.touched || 
+                            generalForm.get('nameOfPrincipal')?.dirty) && generalForm.get('nameOfPrincipal')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -498,11 +498,11 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color: #4FA813;"><i
                                             class="fa fa-blender-phone"></i></span>
-                                    <input type="email" placeholder="9517532486" formControlName="headofphno" required
+                                    <input type="email" placeholder="9517532486" formControlName="principalOrHeadOfficePhoneNo" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('headofphno')?.invalid && (generalForm.get('headofphno')?.touched || 
-                            generalForm.get('headofphno')?.dirty) && generalForm.get('headofphno')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('principalOrHeadOfficePhoneNo')?.invalid && (generalForm.get('principalOrHeadOfficePhoneNo')?.touched || 
+                            generalForm.get('principalOrHeadOfficePhoneNo')?.dirty) && generalForm.get('principalOrHeadOfficePhoneNo')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -551,7 +551,7 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-list-ul"></i></span>
-                                    <select class="form-select" formControlName="instirecog">
+                                    <select class="form-select" formControlName="isInstituteRecognizedByGovt">
                                         <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                         <option selected>--SELECT--</option>
                                         <option value="yes">Yes</option>
@@ -571,7 +571,7 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-list-ul"></i></span>
-                                    <select class="form-select" formControlName="nameboard">
+                                    <select class="form-select" formControlName="nameOfBoardAffiliated">
                                         <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                         <option selected>--SELECT--</option>
                                         <option value="matric">Matriculation</option>
@@ -591,11 +591,11 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-sort-numeric-down"></i></span>
-                                    <input type="number" placeholder="3571598426" formControlName="affiliationno"
+                                    <input type="number" placeholder="3571598426" formControlName="affiliationNo"
                                         required class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('affiliationno')?.invalid && (generalForm.get('affiliationno')?.touched || 
-                            generalForm.get('affiliationno')?.dirty) && generalForm.get('affiliationno')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('affiliationNo')?.invalid && (generalForm.get('affiliationNo')?.touched || 
+                            generalForm.get('affiliationNo')?.dirty) && generalForm.get('affiliationNo')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
                         </div>
@@ -611,10 +611,10 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-layer-group"></i></span>
-                                    <input type="number" placeholder="2021" formControlName="affiliyear" required
+                                    <input type="number" placeholder="2021" formControlName="yearOfAffiliation" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('affiliyear')?.invalid && generalForm.get('affiliyear')?.touched"
+                                <div *ngIf="generalForm.get('yearOfAffiliation')?.invalid && generalForm.get('yearOfAffiliation')?.touched"
                                     style="color:red;">required</div>
                             </div><br />
                         </div>
@@ -627,7 +627,7 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-list-ul"></i></span>
-                                    <select class="form-select" formControlName="affilipertemp">
+                                    <select class="form-select" formControlName="isAffiliationPermanentOrTemp">
                                         <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                         <option selected>--SELECT--</option>
                                         <option value="permanent">Permanent</option>
@@ -645,10 +645,10 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-envelope"></i></span>
-                                    <input type="text" placeholder="3571598426" formControlName="affilicondition"
+                                    <input type="text" placeholder="3571598426" formControlName="conditionsOfAffiliation"
                                         required class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('affilicondition')?.invalid && generalForm.get('affilicondition')?.touched"
+                                <div *ngIf="generalForm.get('conditionsOfAffiliation')?.invalid && generalForm.get('conditionsOfAffiliation')?.touched"
                                     style="color:red;">required</div>
                             </div><br />
                         </div>
@@ -665,7 +665,7 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-list-ul"></i></span>
-                                    <select class="form-select" formControlName="minstatus">
+                                    <select class="form-select" formControlName="minorityStausCertificate">
                                         <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                         <option selected>--SELECT--</option>
                                         <option value="yes">Yes</option>
@@ -755,10 +755,10 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-sort-numeric-down"></i></span>
-                                    <input type="numbers" placeholder="13" formControlName="nonbelievers" required
+                                    <input type="numbers" placeholder="13" formControlName="nonBelievers" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('nonbelievers')?.invalid && generalForm.get('nonbelievers')?.touched"
+                                <div *ngIf="generalForm.get('nonBelievers')?.invalid && generalForm.get('nonBelievers')?.touched"
                                     style="color: red;">required</div>
                             </div><br />
                         </div>
@@ -771,26 +771,26 @@
                     <div class="row">
                         <div class="col-md-1"></div>
                         <div class="col-md-3"><label>Fire Safety Certificate</label></div>
-                        <div class="col-md-1"><input type="radio" value="yes" formControlName="firecer" required>Yes
+                        <div class="col-md-1"><input type="radio" value="yes" formControlName="fireSafetyCertificate" required>Yes
                         </div>
-                        <div class="col-md-1"><input type="radio" value="no" formControlName="firecer" required>No</div>
+                        <div class="col-md-1"><input type="radio" value="no" formControlName="fireSafetyCertificate" required>No</div>
                     </div>
 
                     <div class="row">
                         <div class="col-md-1"></div>
                         <div class="col-md-3"><label>Sanitation Certificate</label></div>
-                        <div class="col-md-1"><input type="radio" value="yes" formControlName="sanicer" required>Yes
+                        <div class="col-md-1"><input type="radio" value="yes" formControlName="sanitationCertificate" required>Yes
                         </div>
-                        <div class="col-md-1"><input type="radio" value="no" formControlName="sanicer" required>No</div>
+                        <div class="col-md-1"><input type="radio" value="no" formControlName="sanitationCertificate" required>No</div>
                     </div>
 
 
                     <div class="row">
                         <div class="col-md-1"></div>
                         <div class="col-md-3"><label>Building Safety Certificate</label></div>
-                        <div class="col-md-1"><input type="radio" value="yes" formControlName="buildcer" required>Yes
+                        <div class="col-md-1"><input type="radio" value="yes" formControlName="buildingSafetyCertificate" required>Yes
                         </div>
-                        <div class="col-md-1"><input type="radio" value="no" formControlName="buildcer" required>No
+                        <div class="col-md-1"><input type="radio" value="no" formControlName="buildingSafetyCertificate" required>No
                         </div>
                     </div><br />
 
@@ -839,7 +839,7 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-school"></i></span>
-                                    <select class="form-select" formControlName="schown">
+                                    <select class="form-select" formControlName="schoolOwnedBy">
                                         <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                         <option selected>--SELECT--</option>
                                         <option value="Government">Government</option>
@@ -859,10 +859,10 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-user-circle"></i></span>
-                                    <input type="text" placeholder="The Donbosco Society" formControlName="nametrust"
+                                    <input type="text" placeholder="The Donbosco Society" formControlName="nameOfTheTrustOrCompany"
                                         required class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('nametrust')?.invalid && generalForm.get('nametrust')?.touched"
+                                <div *ngIf="generalForm.get('nameOfTheTrustOrCompany')?.invalid && generalForm.get('nameOfTheTrustOrCompany')?.touched"
                                     style="color:red;">required</div>
                             </div><br />
                         </div>
@@ -875,7 +875,7 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-copyright"></i></span>
-                                    <select class="form-select" formControlName="registertrust">
+                                    <select class="form-select" formControlName="isTrustOrCompanyRegistered">
                                         <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                         <option selected>--SELECT--</option>
                                         <option value="yes">Yes</option>
@@ -913,10 +913,10 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-solid fa-calendar"></i></span>
-                                    <input type="number" placeholder="2022" formControlName="yearregis" required
+                                    <input type="number" placeholder="2022" formControlName="yearOfRegistration" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('yearregis')?.invalid && generalForm.get('yearregis')?.touched"
+                                <div *ngIf="generalForm.get('yearOfRegistration')?.invalid && generalForm.get('yearOfRegistration')?.touched"
                                     style="color: red;">required</div>
                             </div><br />
                         </div>
@@ -930,10 +930,10 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-sort-numeric-down"></i></span>
-                                    <input type="number" placeholder="9517532486." formControlName="registernu" required
+                                    <input type="number" placeholder="9517532486." formControlName="registrationNo" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('registernu')?.invalid && generalForm.get('registernu')?.touched"
+                                <div *ngIf="generalForm.get('registrationNo')?.invalid && generalForm.get('registrationNo')?.touched"
                                     style="color: red;">required</div>
                             </div><br />
                         </div>
@@ -950,10 +950,10 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-sort-numeric-down"></i></span>
-                                    <input type="number" placeholder="2022" formControlName="validreg" required
+                                    <input type="number" placeholder="2022" formControlName="validityOfRegistrationPeriod" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('validreg')?.invalid && generalForm.get('validreg')?.touched"
+                                <div *ngIf="generalForm.get('validityOfRegistrationPeriod')?.invalid && generalForm.get('validityOfRegistrationPeriod')?.touched"
                                     style="color: red;">required</div>
                             </div><br />
                         </div>
@@ -966,10 +966,10 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-user-circle"></i></span>
-                                    <input type="text" placeholder="Thaddeus" formControlName="namepcm" required
+                                    <input type="text" placeholder="Thaddeus" formControlName="nameOfPresidentOrChairman" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('namepcm')?.invalid && generalForm.get('namepcm')?.touched"
+                                <div *ngIf="generalForm.get('nameOfPresidentOrChairman')?.invalid && generalForm.get('nameOfPresidentOrChairman')?.touched"
                                     style="color: red;">required</div>
                             </div><br />
                         </div>
@@ -983,10 +983,10 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-user-circle"></i></span>
-                                    <input type="text" placeholder="President" formControlName="desigpcm" required
+                                    <input type="text" placeholder="President" formControlName="designationOfPresidentOrChairman" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('desigpcm')?.invalid && generalForm.get('desigpcm')?.touched"
+                                <div *ngIf="generalForm.get('designationOfPresidentOrChairman')?.invalid && generalForm.get('designationOfPresidentOrChairman')?.touched"
                                     style="color: red;">required</div>
                             </div><br />
                         </div>
@@ -1003,10 +1003,10 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-envelope"></i></span>
-                                    <input type="text" placeholder="chennai" formControlName="addresspcm" required
+                                    <input type="text" placeholder="chennai" formControlName="addressOfPresidentOrChairman" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('addresspcm')?.invalid && generalForm.get('addresspcm')?.touched"
+                                <div *ngIf="generalForm.get('addressOfPresidentOrChairman')?.invalid && generalForm.get('addressOfPresidentOrChairman')?.touched"
                                     style="color:red;">required</div>
                             </div><br />
                         </div>
@@ -1019,10 +1019,10 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-phone-volume"></i></span>
-                                    <input type="number" placeholder="9585086688 " formControlName="phonepcm" required
+                                    <input type="number" placeholder="9585086688 " formControlName="phoneNoOfPresidentOrChairman" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('phonepcm')?.invalid && generalForm.get('phonepcm')?.touched"
+                                <div *ngIf="generalForm.get('phoneNoOfPresidentOrChairman')?.invalid && generalForm.get('phoneNoOfPresidentOrChairman')?.touched"
                                     style="color:red;">required</div>
                             </div><br />
                         </div>
@@ -1036,10 +1036,10 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-envelope"></i></span>
-                                    <input type="email" placeholder="dbxtirupattur@gmail.com" formControlName="emailpcm"
+                                    <input type="email" placeholder="dbxtirupattur@gmail.com" formControlName="emailAddressOfPresidentOrChairman"
                                         required class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('emailpcm')?.invalid && generalForm.get('emailpcm')?.touched"
+                                <div *ngIf="generalForm.get('emailAddressOfPresidentOrChairman')?.invalid && generalForm.get('emailAddressOfPresidentOrChairman')?.touched"
                                     style="color:red;">required</div>
                             </div><br />
                         </div>
@@ -1096,7 +1096,7 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-list-ul"></i></span>
-                                    <select class="form-select" formControlName="tsc">
+                                    <select class="form-select" formControlName="governingBodyOfTrustOrCompany">
                                         <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                         <option selected>--SELECT--</option>
                                         <option value="yes">Yes</option>
@@ -1113,9 +1113,9 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-user-circle"></i></span>
-                                    <input type="number" placeholder="45" formControlName="tscmembers" required
+                                    <input type="number" placeholder="45" formControlName="NoOfMembersInTrustOrCompany" required
                                         class="form-control">
-                                        <span *ngIf="generalForm.get('tscmembers')?.invalid && generalForm.get('tscmembers')?.touched" style="color:red;">required</span>
+                                        <span *ngIf="generalForm.get('NoOfMembersInTrustOrCompany')?.invalid && generalForm.get('NoOfMembersInTrustOrCompany')?.touched" style="color:red;">required</span>
 
                                 </div>
                             </div><br />
@@ -1130,9 +1130,9 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-user-circle"></i></span>
-                                    <input type="number" placeholder="09" formControlName="tsctenure" required
+                                    <input type="number" placeholder="09" formControlName="tenureOfEachMemberInTrust" required
                                         class="form-control">
-                                    <span *ngIf="generalForm.get('tsctenure')?.invalid && generalForm.get('tsctenure')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('tenureOfEachMemberInTrust')?.invalid && generalForm.get('tenureOfEachMemberInTrust')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1156,7 +1156,7 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-list-ul"></i></span>
-                                    <select class="form-select" formControlName="epcc">
+                                    <select class="form-select" formControlName="educativePastoralCommunityCouncil">
                                         <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                         <option selected>--SELECT--</option>
                                         <option value="yes">Yes</option>
@@ -1174,9 +1174,9 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-user-circle"></i></span>
-                                    <input type="number" placeholder="44" formControlName="epccmembers" required
+                                    <input type="number" placeholder="44" formControlName="membersOfEducativePastoralComCouncil" required
                                         class="form-control">
-                                    <span *ngIf="generalForm.get('epccmembers')?.invalid && generalForm.get('epccmembers')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('membersOfEducativePastoralComCouncil')?.invalid && generalForm.get('membersOfEducativePastoralComCouncil')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1190,9 +1190,9 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-user-circle"></i></span>
-                                    <input type="number" placeholder="45" formControlName="epcctenure" required
+                                    <input type="number" placeholder="45" formControlName="tenureOfEducativePastoralComCouncil" required
                                         class="form-control">
-                                    <span *ngIf="generalForm.get('epcctenure')?.invalid && generalForm.get('epcctenure')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('tenureOfEducativePastoralComCouncil')?.invalid && generalForm.get('tenureOfEducativePastoralComCouncil')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1219,7 +1219,7 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-users"></i></span>
-                                    <select class="form-select" formControlName="pt">
+                                    <select class="form-select" formControlName="parentTeacherAssosiateExecuteBody">
                                         <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                         <option selected>--SELECT--</option>
                                         <option value="yes">Yes</option>
@@ -1236,9 +1236,9 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-user-circle"></i></span>
-                                    <input type="number" placeholder="14" formControlName="ptmembers" required
+                                    <input type="number" placeholder="14" formControlName="membersOfParentTeacherExecuteBody" required
                                         class="form-control">
-                                    <span *ngIf="generalForm.get('ptmembers')?.invalid && generalForm.get('ptmembers')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('membersOfParentTeacherExecuteBody')?.invalid && generalForm.get('membersOfParentTeacherExecuteBody')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1252,9 +1252,9 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-user-circle"></i></span>
-                                    <input type="number" placeholder="22" formControlName="pttenure" required
+                                    <input type="number" placeholder="22" formControlName="tenureOfParentTeacherExecuteBody" required
                                         class="form-control">
-                                    <span *ngIf="generalForm.get('pttenure')?.invalid && generalForm.get('pttenure')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('tenureOfParentTeacherExecuteBody')?.invalid && generalForm.get('tenureOfParentTeacherExecuteBody')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1311,7 +1311,7 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813 ;"><i
                                             class="fa fa-list-ul"></i></span>
-                                    <select class="form-select" formControlName="sacouncil">
+                                    <select class="form-select" formControlName="studentAssociationCouncil">
                                         <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                         <option selected>--SELECT--</option>
                                         <option value="yes">Yes</option>
@@ -1328,9 +1328,9 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813 ;"><i
                                             class="fa fa-user-circle"></i></span>
-                                    <input type="number" placeholder="90" formControlName="samembers" required
+                                    <input type="number" placeholder="90" formControlName="membersOfStudentAssociationCouncil" required
                                         class="form-control">
-                                    <span *ngIf="generalForm.get('samembers')?.invalid && generalForm.get('samembers')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('membersOfStudentAssociationCouncil')?.invalid && generalForm.get('membersOfStudentAssociationCouncil')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1344,9 +1344,9 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813 ;"><i
                                             class="fa fa-user-circle"></i></span>
-                                    <input type="number" placeholder="09" formControlName="satenure" required
+                                    <input type="number" placeholder="09" formControlName="tenureOfStudentAssociationCouncil" required
                                         class="form-control">
-                                    <span *ngIf="generalForm.get('satenure')?.invalid && generalForm.get('satenure')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('tenureOfStudentAssociationCouncil')?.invalid && generalForm.get('tenureOfStudentAssociationCouncil')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1358,7 +1358,7 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813 ;"><i
                                             class="fa fa-list-ul"></i></span>
-                                    <select class="form-select" formControlName="ggcc">
+                                    <select class="form-select" formControlName="generalGrieveOrComplaintCell">
                                         <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                         <option selected>--SELECT--</option>
                                         <option value="yes">Yes</option>
@@ -1388,7 +1388,7 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813 ;"><i
                                             class="fa fa-list-ul"></i></span>
-                                    <select class="form-select" formControlName="schoolmc">
+                                    <select class="form-select" formControlName="schoolManagementCommittee">
                                         <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                         <option selected>--SELECT--</option>
                                         <option value="yes">Yes</option>
@@ -1405,7 +1405,7 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813 ;"><i
                                             class="fa fa-list-ul"></i></span>
-                                    <select class="form-select" formControlName="constitutionmc">
+                                    <select class="form-select" formControlName="constitutionOfManagementCommittee">
                                         <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                         <option selected>--SELECT--</option>
                                         <option value="CompanyMembers">Company Members</option>
@@ -1428,9 +1428,9 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813 ;"><i
                                             class="fa fa-user-circle"></i></span>
-                                    <input type="number" placeholder="95" formControlName="mcmembers" required
+                                    <input type="number" placeholder="95" formControlName="membersOfManagementCommittee" required
                                         class="form-control">
-                                    <span *ngIf="generalForm.get('mcmembers')?.invalid && generalForm.get('mcmembers')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('membersOfManagementCommittee')?.invalid && generalForm.get('membersOfManagementCommittee')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1444,9 +1444,9 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813 ;"><i
                                             class="fa fa-user-circle"></i></span>
-                                    <input type="number" placeholder="08" formControlName="mctenure" required
+                                    <input type="number" placeholder="08" formControlName="tenureOfManagementCommittee" required
                                         class="form-control">
-                                    <span *ngIf="generalForm.get('mctenure')?.invalid && generalForm.get('mctenure')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('tenureOfManagementCommittee')?.invalid && generalForm.get('tenureOfManagementCommittee')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1495,7 +1495,7 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-list-ul"></i></span>
-                                    <select class="form-select" formControlName="schlocation">
+                                    <select class="form-select" formControlName="isSchoolLocatedInRentedOrOwnBuilding">
                                         <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                         <option selected>--SELECT School Location--</option>
                                         <option value="OwnBuiding">Own Buiding</option>
@@ -1513,8 +1513,8 @@
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-building"></i></span>
                                     <input type="text" placeholder="20241.63 sq metre (Square Meter)"
-                                        formControlName="scharea" required class="form-control">
-                                    <span *ngIf="generalForm.get('scharea')?.invalid && generalForm.get('scharea')?.touched" style="color:red;">required</span>
+                                        formControlName="areaOfSchoolCampus" required class="form-control">
+                                    <span *ngIf="generalForm.get('areaOfSchoolCampus')?.invalid && generalForm.get('areaOfSchoolCampus')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1529,8 +1529,8 @@
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-building"></i></span>
                                     <input type="text" placeholder="8775 sq metre (Square Meter)"
-                                        formControlName="builduparea" required class="form-control">
-                                    <span *ngIf="generalForm.get('builduparea')?.invalid && generalForm.get('builduparea')?.touched" style="color:red;">required</span>
+                                        formControlName="builtUpArea" required class="form-control">
+                                    <span *ngIf="generalForm.get('builtUpArea')?.invalid && generalForm.get('builtUpArea')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1547,8 +1547,8 @@
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-building"></i></span>
                                     <input type="text" placeholder="8093 sq metre (Square Meter)"
-                                        formControlName="playarea" required class="form-control">
-                                    <span *ngIf="generalForm.get('playarea')?.invalid && generalForm.get('playarea')?.touched" style="color:red;">required</span>
+                                        formControlName="playGroundArea" required class="form-control">
+                                    <span *ngIf="generalForm.get('playGroundArea')?.invalid && generalForm.get('playGroundArea')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1561,9 +1561,9 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-sort-numeric-down"></i></span>
-                                    <input type="number" placeholder="7" formControlName="nobuildings" required
+                                    <input type="number" placeholder="7" formControlName="noOfBuildingsOrFloors" required
                                         class="form-control">
-                                    <span *ngIf="generalForm.get('nobuildings')?.invalid && generalForm.get('nobuildings')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('noOfBuildingsOrFloors')?.invalid && generalForm.get('noOfBuildingsOrFloors')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1576,7 +1576,7 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-list-ul"></i></span>
-                                    <select class="form-select" formControlName="differentlyavail">
+                                    <select class="form-select" formControlName="isProvisionsAvailableDifferently">
                                         <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                         <option selected>--SELECT--</option>
                                         <option value="yes">Yes</option>
@@ -1599,9 +1599,9 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-sort-numeric-down"></i></span>
-                                    <input type="number" placeholder="14" formControlName="noofstairs" required
+                                    <input type="number" placeholder="14" formControlName="noOfStairCase" required
                                         class="form-control">
-                                    <span *ngIf="generalForm.get('noofstairs')?.invalid && generalForm.get('noofstairs')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('noOfStairCase')?.invalid && generalForm.get('noOfStairCase')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1615,9 +1615,9 @@
                                 <div class="input-group">
                                     <span class="input-group-text btn btn-success" style="background-color:#4FA813;"><i
                                             class="fa fa-sort-numeric-down"></i></span>
-                                    <input type="number" placeholder="22" formControlName="nooflifts" required
+                                    <input type="number" placeholder="22" formControlName="noOfLifts" required
                                         class="form-control">
-                                    <span *ngIf="generalForm.get('nooflifts')?.invalid && generalForm.get('nooflifts')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('noOfLifts')?.invalid && generalForm.get('noOfLifts')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
