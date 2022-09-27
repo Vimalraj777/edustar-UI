@@ -51,7 +51,7 @@ export class OneComponent implements OnInit {
     console.log("DATA",this.form);
     this.subService.login(this.form).subscribe(data=>{
       console.log("access_token for login as response",data);
-      this.data = data;
+      this.data = data;      
 
       if(this.data.detail==null){
         localStorage.setItem('token',this.data.token);   // Here i am storing the token in a Local Storage.
@@ -63,15 +63,10 @@ export class OneComponent implements OnInit {
        })
         this.router.navigate(['/home'])
       }
-      else{
-        alert("Invalid Credentials")
-        
-      }
+     
+    },errors=>{
+      alert("Invalid Credentials");
       
-
-    },
-    error=>{
-      alert("Invalid Credentials")
     })
    
     }

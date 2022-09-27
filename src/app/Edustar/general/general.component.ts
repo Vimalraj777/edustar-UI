@@ -15,6 +15,7 @@ export class GeneralComponent implements OnInit {
   Data:any;
   id:any;
   data:any;
+  
 
 
   constructor(private fb:FormBuilder , private sub:SubserviceService , private route:Router ) { }
@@ -29,88 +30,114 @@ export class GeneralComponent implements OnInit {
 
 
     this.generalForm=this.fb.group({
-      id:[''],
-      institutionName:[''],
-      state:[''],
-      urlName:[''],
-      location:[''],
-      postalAddress:[''],
-      city:[''],
-      totalNoOfTeachingStaff:[''],
-      totalBoys:[''],
-      correspondentName:[''],
-      medium:[''],
-      officeEmailId:[''],
-      specialNeeds:[''],
-      district:[''],
-      pincode:[''],
-      officialPhoneNumber:[''],
-      assessmentAcademicYear:[''],
-      gender:[''],
-      currentNoOfStudents:[''],
-      correspondentMobileNo:[''],
-      nameOfPrincipal:[''],
-      yearOfEstablish:[''],
-      natureOfAffiliation:[''],
-      currentNoOfGirls:[''],
-      totalOfNonTeachingStaff:[''],
-      correspondentEmailId:[''],
-      schoolLevel:[''],
-      principalOrHeadMobileNo:[''],
-      principalOrHeadEmailId:[''],
-      principalOrHeadOfficePhoneNo:[''],
-      isInstituteRecognizedByGovt:[''],
-      nameOfBoardAffiliated:[''],
-      affiliationNo:[''],
-      yearOfAffiliation:[''],
-      isAffiliationPermanentOrTemp:[''],
-      conditionsOfAffiliation:[''],
-      minorityStausCertificate:[''],
-      christian:[''],
-      hindu:[''],
-      islam:[''],
-      others:[''],
-      nonBelievers:[''],
-      fireSafetyCertificate:[''],
-      sanitationCertificate:[''],
-      buildingSafetyCertificate:[''],
-      schoolOwnedBy:[''],
-      nameOfTheTrustOrCompany:[''],
-      isTrustOrCompanyRegistered:[''],
-      underWhichAct:[''],
-      yearOfRegistration:[''],
-      registrationNo:[''],
-      validityOfRegistrationPeriod:[''],
-      nameOfPresidentOrChairman:[''],
-      designationOfPresidentOrChairman:[''],
-      addressOfPresidentOrChairman:[''],
-      phoneNoOfPresidentOrChairman:[''],
-      emailAddressOfPresidentOrChairman:[''],
-      governingBodyOfTrustOrCompany:[''],
-      NoOfMembersInTrustOrCompany:[''],
-      tenureOfEachMemberInTrust:[''],
-      educativePastoralCommunityCouncil:[''],
-      membersOfEducativePastoralComCouncil:[''],
-      tenureOfEducativePastoralComCouncil:[''],
-      parentTeacherAssosiateExecuteBody:[''],
-      membersOfParentTeacherExecuteBody:[''],
-      tenureOfParentTeacherExecuteBody:[''],
-      studentAssociationCouncil:[''],
-      membersOfStudentAssociationCouncil:[''],
-      tenureOfStudentAssociationCouncil:[''],
-      generalGrieveOrComplaintCell:[''],
-      schoolManagementCommittee:[''],
-      constitutionOfManagementCommittee:[''],
-      membersOfManagementCommittee:[''],
-      tenureOfManagementCommittee:[''],
-      isSchoolLocatedInRentedOrOwnBuilding:[''],
-      areaOfSchoolCampus:[''],
-      builtUpArea:[''],
-      playGroundArea:[''],
-      noOfBuildingsOrFloors:[''],
-      isProvisionsAvailableDifferently:[''],
-      noOfStairCase:[''],
-      noOfLifts:[''],
+      School1:this.fb.group({
+        id:[''],
+        institutionName:[''],
+        state:[''],
+        urlName:[''],
+        officeEmailId:[''],
+        district:[''],
+        pincode:[''],
+        specialNeeds:[''],
+        yearOfEstablish:[''],
+        natureOfAffiliation:[''],
+        currentNoOfGirls:[''],
+        totalOfNonTeachingStaff:[''],
+      }),
+      School2:this.fb.group({
+        location:[''],
+        postalAddress:[''],
+        city:[''],
+        officialPhoneNumber:[''],
+        assessmentAcademicYear:[''],
+        gender:[''],
+        correspondentEmailId:[''],
+        schoolLevel:[''],
+        principalOrHeadMobileNo:[''],
+      }),
+      School3:this.fb.group({
+        totalNoOfTeachingStaff:[''],
+        totalBoys:[''],
+        correspondentName:[''],
+        medium:[''],     
+        currentNoOfStudents:[''],
+        correspondentMobileNo:[''],
+        nameOfPrincipal:[''],
+        principalOrHeadEmailId:[''],
+        principalOrHeadOfficePhoneNo:[''],
+      }),
+      School4:this.fb.group({
+        isInstituteRecognizedByGovt:[''],
+        nameOfBoardAffiliated:[''],
+        affiliationNo:[''],
+        yearOfAffiliation:[''],
+        isAffiliationPermanentOrTemp:[''],
+        conditionsOfAffiliation:[''],
+        minorityStausCertificate:[''],
+        christian:[''],
+        hindu:[''],
+        islam:[''],
+        others:[''],
+        nonBelievers:[''],
+        fireSafetyCertificate:[''],
+        sanitationCertificate:[''],
+        buildingSafetyCertificate:[''],
+      }),
+      School5:this.fb.group({
+        schoolOwnedBy:[''],
+        nameOfTheTrustOrCompany:[''],
+        isTrustOrCompanyRegistered:[''],
+        underWhichAct:[''],
+        yearOfRegistration:[''],
+        registrationNo:[''],
+        validityOfRegistrationPeriod:[''],
+        nameOfPresidentOrChairman:[''],
+        designationOfPresidentOrChairman:[''],
+        addressOfPresidentOrChairman:[''],
+        phoneNoOfPresidentOrChairman:[''],
+        emailAddressOfPresidentOrChairman:[''],
+      }),
+      School6:this.fb.group({
+        governingBodyOfTrustOrCompany:[''],
+        NoOfMembersInTrustOrCompany:[''],
+        tenureOfEachMemberInTrust:[''],
+        educativePastoralCommunityCouncil:[''],
+        membersOfEducativePastoralComCouncil:[''],
+        tenureOfEducativePastoralComCouncil:[''],
+        parentTeacherAssosiateExecuteBody:[''],
+        membersOfParentTeacherExecuteBody:[''],
+        tenureOfParentTeacherExecuteBody:[''],
+      }),
+      
+      School7:this.fb.group({
+        studentAssociationCouncil:[''],
+        membersOfStudentAssociationCouncil:[''],
+        tenureOfStudentAssociationCouncil:[''],
+        generalGrieveOrComplaintCell:[''],
+        schoolManagementCommittee:[''],
+        constitutionOfManagementCommittee:[''],
+        membersOfManagementCommittee:[''],
+        tenureOfManagementCommittee:[''],
+      }),
+      
+      School8:this.fb.group({
+        isSchoolLocatedInRentedOrOwnBuilding:[''],
+        areaOfSchoolCampus:[''],
+        builtUpArea:[''],
+        playGroundArea:[''],
+        noOfBuildingsOrFloors:[''],
+        isProvisionsAvailableDifferently:[''],
+        noOfStairCase:[''],
+        noOfLifts:[''],
+      }),
+      
+
+      
+
+      
+
+      
+
       classRooms:[''],
       staffRooms:[''],
       physicsLab:[''],
@@ -293,8 +320,14 @@ export class GeneralComponent implements OnInit {
       schoolTimeInWinterToCome:[''],
       schoolTimeInWinterToOut:[''],
       isSchoolWorkingInShifts:[''],
-      scholarship:this.fb.array([]),
-      enrollment:this.fb.array([]),
+      School18:this.fb.group({
+        scholarship:this.fb.array([]),
+
+      }),
+      School19:this.fb.group({
+        enrollment:this.fb.array([]),
+
+      }),
       
     });
 
@@ -302,19 +335,15 @@ export class GeneralComponent implements OnInit {
       this.generalForm.patchValue(arg);
 
       this.data = arg;
-      console.log(this.data.scholarship);
-    
-      // this.generalForm.get('scholarship')?.patchValue(this.data.scholarship)
+      // console.log("work",this.data.School19['enrollment']);
 
-
-      console.log(this.data.scholarship);
       
-      this.data.scholarship.forEach((element:any) => {
+      this.data.School18['scholarship'].forEach((element:any) => {
         
          this.Scholarship().push(this.loadScholarship(element))        
       });
 
-      this.data.enrollment.forEach((element:any) => {
+      this.data.School19['enrollment'].forEach((element:any) => {
         
         this.Enrollment().push(this.loadEnrollment(element))        
      });
@@ -327,10 +356,10 @@ export class GeneralComponent implements OnInit {
   }
 
   Scholarship():FormArray{
-      return this.generalForm.get('scholarship') as FormArray;
+      return this.generalForm.get('School18.scholarship') as FormArray;
   }
   Enrollment():FormArray{
-    return this.generalForm.get('enrollment') as FormArray;
+    return this.generalForm.get('School19.enrollment') as FormArray;
   }
 
   newScholarship():FormGroup{
@@ -748,10 +777,11 @@ export class GeneralComponent implements OnInit {
 
 
 
-  submit(){
-    console.log("data",this.generalForm.value);
-
-    this.sub.profileput(this.generalForm.value).subscribe((data:any)=>{
+  submit(data:any){
+    
+    // console.log("before form 1",this.generalForm.controls[name].value);
+    
+    this.sub.profileput(this.generalForm.controls[data].value).subscribe((data:any)=>{
       console.log(data);
       this.Data=data;
       Swal.fire({

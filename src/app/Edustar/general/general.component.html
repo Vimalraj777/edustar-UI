@@ -1,12 +1,13 @@
 <div class="card">
 
     <div class="container-fluid">
-        <form [formGroup]="generalForm" (ngSubmit)="submit()">
+        <form [formGroup]="generalForm">
             <div *ngFor="let item of index | paginate:{itemsPerPage:1,currentPage:step}">
 
 
                 <!-- 1st row -->
                 <div *ngIf="step==1">
+                    <div formGroupName="School1">
                     <div class="row">
                         <div class="col-md-4" style="background-color:#155B97 ;"></div>
                         <div class="col-md-4" style="background-color:#155B97;">
@@ -26,7 +27,7 @@
                                     <input type="text" placeholder="roll no" formControlName="id" required
                                         class="form-control" readonly>
                                 </div>
-                                <div *ngIf="generalForm.get('id')?.invalid && (generalForm.get('id')?.dirty || generalForm.get('id')?.touched) && generalForm.get('id')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('School1.id')?.invalid && (generalForm.get('School1.id')?.dirty || generalForm.get('School1.id')?.touched) && generalForm.get('School1.id')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -39,7 +40,7 @@
                                     <input type="text" placeholder="Institution Name" formControlName="institutionName"
                                         required class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('institutionName')?.invalid && (generalForm.get('institutionName')?.dirty || generalForm.get('institutionName')?.touched) && generalForm.get('institutionName')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('School1.institutionName')?.invalid && (generalForm.get('School1.institutionName')?.dirty || generalForm.get('School1.institutionName')?.touched) && generalForm.get('School1.institutionName')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -56,7 +57,7 @@
                                         <option value="Andhra">Andhra</option>
                                     </select>
                                 </div>
-                                <div *ngIf="generalForm.get('state')?.invalid && (generalForm.get('state')?.dirty || generalForm.get('state')?.touched) && generalForm.get('state')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('School1.state')?.invalid && (generalForm.get('School1.state')?.dirty || generalForm.get('School1.state')?.touched) && generalForm.get('School1.state')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -69,7 +70,7 @@
                                     <input type="url" placeholder="www.dbxtirupattur.org" formControlName="urlName"
                                         required class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('urlName')?.invalid && (generalForm.get('urlName')?.dirty || generalForm.get('urlName')?.touched) && generalForm.get('urlName')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('School1.urlName')?.invalid && (generalForm.get('School1.urlName')?.dirty || generalForm.get('School1.urlName')?.touched) && generalForm.get('School1.urlName')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -86,7 +87,7 @@
                                     <input type="email" placeholder="vimalvimal0111@gmail.com" formControlName="officeEmailId"
                                         required class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('officeEmailId')?.invalid && (generalForm.get('officeEmailId')?.dirty || generalForm.get('officeEmailId')?.touched) && generalForm.get('officeEmailId')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('School1.officeEmailId')?.invalid && (generalForm.get('School1.officeEmailId')?.dirty || generalForm.get('School1.officeEmailId')?.touched) && generalForm.get('School1.officeEmailId')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -103,7 +104,7 @@
                                     <input type="text" placeholder="Tiruvannamalai" formControlName="district" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('district')?.invalid && (generalForm.get('district')?.dirty || generalForm.get('district')?.touched) && generalForm.get('district')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('School1.district')?.invalid && (generalForm.get('School1.district')?.dirty || generalForm.get('School1.district')?.touched) && generalForm.get('School1.district')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -115,7 +116,7 @@
                                     <input type="number" placeholder="606753" formControlName="pincode" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('pincode')?.invalid && (generalForm.get('pincode')?.dirty || generalForm.get('pincode')?.touched) && generalForm.get('pincode')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('School1.pincode')?.invalid && (generalForm.get('School1.pincode')?.dirty || generalForm.get('School1.pincode')?.touched) && generalForm.get('School1.pincode')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -132,7 +133,7 @@
                                     <input type="number" placeholder="2016" formControlName="yearOfEstablish"
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('yearOfEstablish')?.invalid && (generalForm.get('yearOfEstablish')?.dirty || generalForm.get('yearOfEstablish')?.touched) && generalForm.get('yearOfEstablish')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('School1.yearOfEstablish')?.invalid && (generalForm.get('School1.yearOfEstablish')?.dirty || generalForm.get('School1.yearOfEstablish')?.touched) && generalForm.get('School1.yearOfEstablish')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -162,7 +163,7 @@
                                     <input type="number" placeholder="55" formControlName="currentNoOfGirls" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('currentNoOfGirls')?.invalid && (generalForm.get('currentNoOfGirls')?.dirty || generalForm.get('currentNoOfGirls')?.touched) && generalForm.get('currentNoOfGirls')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('School1.currentNoOfGirls')?.invalid && (generalForm.get('School1.currentNoOfGirls')?.dirty || generalForm.get('School1.currentNoOfGirls')?.touched) && generalForm.get('School1.currentNoOfGirls')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -174,7 +175,7 @@
                                     <input type="number" placeholder="14" formControlName="totalOfNonTeachingStaff" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('totalOfNonTeachingStaff')?.invalid && (generalForm.get('totalOfNonTeachingStaff')?.dirty || generalForm.get('totalOfNonTeachingStaff')?.touched) && generalForm.get('totalOfNonTeachingStaff')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('School1.totalOfNonTeachingStaff')?.invalid && (generalForm.get('School1.totalOfNonTeachingStaff')?.dirty || generalForm.get('School1.totalOfNonTeachingStaff')?.touched) && generalForm.get('School1.totalOfNonTeachingStaff')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -185,7 +186,7 @@
                         <div class="row">
                             <div class="col-md-10"></div>
                             <div class="col-md-1">
-                                <button (click)="submit()" class="btn btn-success">Save</button>
+                                <button (click)="submit('School1')" class="btn btn-success">Save</button>
                             </div>
                             <div class="col-md-1">
                                 <button (click)="next()" class="btn btn-primary">next</button>
@@ -193,12 +194,14 @@
                         </div>
                     </div>
                 </div>
+                </div>
 
 
 
                 <!-- 2nd row -->
 
                 <div *ngIf="step==2">
+                    <div formGroupName="School2">
                     <div class="row">
                         <div class="col-md-4" style="background-color:#155B97 ;"></div>
                         <div class="col-md-4" style="background-color:#155B97 ;">
@@ -233,7 +236,7 @@
                                     <input type="text" placeholder="Semozhi Nagar" formControlName="postalAddress" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('postalAddress')?.invalid && (generalForm.get('postalAddress')?.dirty || generalForm.get('postalAddress')?.touched) && generalForm.get('postalAddress')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('School2.postalAddress')?.invalid && (generalForm.get('School2.postalAddress')?.dirty || generalForm.get('School2.postalAddress')?.touched) && generalForm.get('School2.postalAddress')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -265,7 +268,7 @@
                                     <input type="number" placeholder="Enter the official Phone Number"
                                         formControlName="officialPhoneNumber" required class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('officialPhoneNumber')?.invalid && (generalForm.get('officialPhoneNumber')?.dirty || generalForm.get('officialPhoneNumber')?.touched) && generalForm.get('officialPhoneNumber')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('School2.officialPhoneNumber')?.invalid && (generalForm.get('School2.officialPhoneNumber')?.dirty || generalForm.get('School2.officialPhoneNumber')?.touched) && generalForm.get('School2.officialPhoneNumber')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -292,7 +295,7 @@
                                     <input type="text" placeholder="co-educational" formControlName="gender" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('gender')?.invalid && (generalForm.get('gender')?.dirty || generalForm.get('gender')?.touched) && generalForm.get('gender')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('School2.gender')?.invalid && (generalForm.get('School2.gender')?.dirty || generalForm.get('School2.gender')?.touched) && generalForm.get('School2.gender')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -310,7 +313,7 @@
                                     <input type="email" placeholder="alponesesdbg@gmail.com" formControlName="correspondentEmailId"
                                         required class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('correspondentEmailId')?.invalid && (generalForm.get('correspondentEmailId')?.dirty || generalForm.get('correspondentEmailId')?.touched) && generalForm.get('correspondentEmailId')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('School3.correspondentEmailId')?.invalid && (generalForm.get('School3.correspondentEmailId')?.dirty || generalForm.get('School3.correspondentEmailId')?.touched) && generalForm.get('School3.correspondentEmailId')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -338,7 +341,7 @@
                                     <input type="number" placeholder="7531598624" formControlName="principalOrHeadMobileNo" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('principalOrHeadMobileNo')?.invalid && (generalForm.get('principalOrHeadMobileNo')?.dirty || generalForm.get('principalOrHeadMobileNo')?.touched) && generalForm.get('principalOrHeadMobileNo')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('School2.principalOrHeadMobileNo')?.invalid && (generalForm.get('School2.principalOrHeadMobileNo')?.dirty || generalForm.get('School2.principalOrHeadMobileNo')?.touched) && generalForm.get('School2.principalOrHeadMobileNo')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -352,14 +355,14 @@
                             </div>
                             <div class="col-md-9"></div>
                             <div class="col-md-1">
-                                <button (click)="submit()" class="btn btn-success">Save</button>
+                                <button (click)="submit('School2')" class="btn btn-success">Save</button>
                             </div>
                             <div class="col-md-1">
                                 <button (click)="next()" class="btn btn-primary">next</button>
                             </div>
                         </div>
                     </div>
-
+                    </div>
                 </div>
 
 
@@ -367,6 +370,7 @@
 
                 <!-- 3RD row -->
                 <div *ngIf="step==3">
+                    <div formGroupName="School3">
                     <div class="row">
                         <div class="col-md-4" style="background-color:#155B97 ;"></div>
                         <div class="col-md-4" style="background-color:#155B97 ;">
@@ -387,7 +391,7 @@
                                     <input type="number" placeholder="64" formControlName="totalNoOfTeachingStaff" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('totalNoOfTeachingStaff')?.invalid && (generalForm.get('totalNoOfTeachingStaff')?.dirty || generalForm.get('totalNoOfTeachingStaff')?.touched) && generalForm.get('totalNoOfTeachingStaff')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('School3.totalNoOfTeachingStaff')?.invalid && (generalForm.get('School3.totalNoOfTeachingStaff')?.dirty || generalForm.get('School3.totalNoOfTeachingStaff')?.touched) && generalForm.get('School3.totalNoOfTeachingStaff')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -399,7 +403,7 @@
                                     <input type="number" placeholder="494" formControlName="totalBoys" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('totalBoys')?.invalid && (generalForm.get('totalBoys')?.dirty || generalForm.get('totalBoys')?.touched) && generalForm.get('totalBoys')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('School3.totalBoys')?.invalid && (generalForm.get('School3.totalBoys')?.dirty || generalForm.get('School3.totalBoys')?.touched) && generalForm.get('School3.totalBoys')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -411,7 +415,7 @@
                                     <input type="text" placeholder="Fr.Alphonese Philiph" formControlName="correspondentName"
                                         required class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('correspondentName')?.invalid && (generalForm.get('correspondentName')?.dirty || generalForm.get('correspondentName')?.touched) && generalForm.get('correspondentName')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('School3.correspondentName')?.invalid && (generalForm.get('School3.correspondentName')?.dirty || generalForm.get('School3.correspondentName')?.touched) && generalForm.get('School3.correspondentName')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -428,7 +432,7 @@
                                     <input type="number" placeholder="104" formControlName="currentNoOfStudents" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('currentNoOfStudents')?.invalid && (generalForm.get('currentNoOfStudents')?.dirty || generalForm.get('currentNoOfStudents')?.touched) && generalForm.get('currentNoOfStudents')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('School3.currentNoOfStudents')?.invalid && (generalForm.get('School3.currentNoOfStudents')?.dirty || generalForm.get('School3.currentNoOfStudents')?.touched) && generalForm.get('School3.currentNoOfStudents')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -441,7 +445,7 @@
                                     <input type="number" placeholder="9444800413" formControlName="correspondentMobileNo" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('correspondentMobileNo')?.invalid && (generalForm.get('correspondentMobileNo')?.dirty || generalForm.get('correspondentMobileNo')?.touched) && generalForm.get('correspondentMobileNo')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('School3.correspondentMobileNo')?.invalid && (generalForm.get('School3.correspondentMobileNo')?.dirty || generalForm.get('School3.correspondentMobileNo')?.touched) && generalForm.get('School3.correspondentMobileNo')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -474,8 +478,8 @@
                                     <input type="email" placeholder="arulsekar1974@gmail.com"
                                         formControlName="principalOrHeadEmailId" required class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('principalOrHeadEmailId')?.invalid && (generalForm.get('principalOrHeadEmailId')?.touched || 
-                            generalForm.get('principalOrHeadEmailId')?.dirty) && generalForm.get('principalOrHeadEmailId')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('School3.principalOrHeadEmailId')?.invalid && (generalForm.get('School3.principalOrHeadEmailId')?.touched || 
+                            generalForm.get('School3.principalOrHeadEmailId')?.dirty) && generalForm.get('School3.principalOrHeadEmailId')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -487,8 +491,8 @@
                                     <input type="text" placeholder="Fr.Arul Sekar S" formControlName="nameOfPrincipal"
                                         required class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('nameOfPrincipal')?.invalid && (generalForm.get('nameOfPrincipal')?.touched || 
-                            generalForm.get('nameOfPrincipal')?.dirty) && generalForm.get('nameOfPrincipal')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('School3.nameOfPrincipal')?.invalid && (generalForm.get('School3.nameOfPrincipal')?.touched || 
+                            generalForm.get('School3.nameOfPrincipal')?.dirty) && generalForm.get('School3.nameOfPrincipal')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -501,8 +505,8 @@
                                     <input type="email" placeholder="9517532486" formControlName="principalOrHeadOfficePhoneNo" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('principalOrHeadOfficePhoneNo')?.invalid && (generalForm.get('principalOrHeadOfficePhoneNo')?.touched || 
-                            generalForm.get('principalOrHeadOfficePhoneNo')?.dirty) && generalForm.get('principalOrHeadOfficePhoneNo')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('School3.principalOrHeadOfficePhoneNo')?.invalid && (generalForm.get('School3.principalOrHeadOfficePhoneNo')?.touched || 
+                            generalForm.get('School3.principalOrHeadOfficePhoneNo')?.dirty) && generalForm.get('School3.principalOrHeadOfficePhoneNo')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
 
@@ -516,14 +520,14 @@
                             </div>
                             <div class="col-md-9"></div>
                             <div class="col-md-1">
-                                <button (click)="submit()" class="btn btn-success">Save</button>
+                                <button (click)="submit('School3')" class="btn btn-success">Save</button>
                             </div> 
                             <div class="col-md-1">
                                 <button (click)="next()" class="btn btn-primary">Next</button>
                             </div>
                         </div>
                     </div>
-
+                </div>
 
                 </div>
 
@@ -533,6 +537,7 @@
 
                 <!-- 4th row -->
                 <div *ngIf="step==4">
+                    <div formGroupName="School4">
                     <div class="row">
                         <div class="col-md-1" style="background-color:#155B97 ;"></div>
                         <div class="col-md-10" style="background-color:#155B97 ;">
@@ -594,8 +599,8 @@
                                     <input type="number" placeholder="3571598426" formControlName="affiliationNo"
                                         required class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('affiliationNo')?.invalid && (generalForm.get('affiliationNo')?.touched || 
-                            generalForm.get('affiliationNo')?.dirty) && generalForm.get('affiliationNo')?.errors?.['required']"
+                                <div *ngIf="generalForm.get('School4.affiliationNo')?.invalid && (generalForm.get('School4.affiliationNo')?.touched || 
+                            generalForm.get('School4.affiliationNo')?.dirty) && generalForm.get('School4.affiliationNo')?.errors?.['required']"
                                     style="color: red;">required</div>
                             </div><br />
                         </div>
@@ -614,7 +619,7 @@
                                     <input type="number" placeholder="2021" formControlName="yearOfAffiliation" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('yearOfAffiliation')?.invalid && generalForm.get('yearOfAffiliation')?.touched"
+                                <div *ngIf="generalForm.get('School4.yearOfAffiliation')?.invalid && generalForm.get('School4.yearOfAffiliation')?.touched"
                                     style="color:red;">required</div>
                             </div><br />
                         </div>
@@ -648,7 +653,7 @@
                                     <input type="text" placeholder="3571598426" formControlName="conditionsOfAffiliation"
                                         required class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('conditionsOfAffiliation')?.invalid && generalForm.get('conditionsOfAffiliation')?.touched"
+                                <div *ngIf="generalForm.get('School4.conditionsOfAffiliation')?.invalid && generalForm.get('School4.conditionsOfAffiliation')?.touched"
                                     style="color:red;">required</div>
                             </div><br />
                         </div>
@@ -696,7 +701,7 @@
                                     <input type="number" placeholder="64" formControlName="christian" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('christian')?.invalid && generalForm.get('christian')?.touched"
+                                <div *ngIf="generalForm.get('School4.christian')?.invalid && generalForm.get('School4.christian')?.touched"
                                     style="color: red;">required</div>
                             </div><br />
                         </div>
@@ -711,7 +716,7 @@
                                     <input type="number" placeholder="104" formControlName="hindu" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('hindu')?.invalid && generalForm.get('hindu')?.touched"
+                                <div *ngIf="generalForm.get('School4.hindu')?.invalid && generalForm.get('School4.hindu')?.touched"
                                     style="color: red;">required</div>
                             </div><br />
                         </div>
@@ -728,7 +733,7 @@
                                     <input type="number" placeholder="87" formControlName="islam" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('islam')?.invalid && generalForm.get('islam')?.touched"
+                                <div *ngIf="generalForm.get('School4.islam')?.invalid && generalForm.get('School4.islam')?.touched"
                                     style="color: red;">required</div>
                             </div><br />
                         </div>
@@ -743,7 +748,7 @@
                                     <input type="numbers" placeholder="24" formControlName="others" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('others')?.invalid && generalForm.get('others')?.touched"
+                                <div *ngIf="generalForm.get('School4.others')?.invalid && generalForm.get('School4.others')?.touched"
                                     style="color: red;">required</div>
                             </div><br />
                         </div>
@@ -758,7 +763,7 @@
                                     <input type="numbers" placeholder="13" formControlName="nonBelievers" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('nonBelievers')?.invalid && generalForm.get('nonBelievers')?.touched"
+                                <div *ngIf="generalForm.get('School4.nonBelievers')?.invalid && generalForm.get('School4.nonBelievers')?.touched"
                                     style="color: red;">required</div>
                             </div><br />
                         </div>
@@ -805,7 +810,7 @@
                             </div>
                             <div class="col-md-9"></div>
                             <div class="col-md-1">
-                                <button (click)="submit()" class="btn btn-success">Save</button>
+                                <button (click)="submit('School4')" class="btn btn-success">Save</button>
                             </div>
                             <div class="col-md-1">
                                 <button (click)="next()" class="btn btn-primary">Next</button>
@@ -813,7 +818,7 @@
                         </div>
                     </div>
 
-
+                </div>
                 </div>
 
 
@@ -821,6 +826,7 @@
 
                 <!-- 5th row -->
                 <div *ngIf="step==5">
+                    <div formGroupName="School5">
                     <div class="row">
                         <div class="col-md-1" style="background-color:#155B97;"></div>
                         <div class="col-md-10" style="background-color:#155B97 ;">
@@ -862,7 +868,7 @@
                                     <input type="text" placeholder="The Donbosco Society" formControlName="nameOfTheTrustOrCompany"
                                         required class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('nameOfTheTrustOrCompany')?.invalid && generalForm.get('nameOfTheTrustOrCompany')?.touched"
+                                <div *ngIf="generalForm.get('School5.nameOfTheTrustOrCompany')?.invalid && generalForm.get('School5.nameOfTheTrustOrCompany')?.touched"
                                     style="color:red;">required</div>
                             </div><br />
                         </div>
@@ -900,7 +906,7 @@
                                     <input type="text" placeholder="Government" formControlName="act" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('act')?.invalid && generalForm.get('act')?.touched"
+                                <div *ngIf="generalForm.get('School5.act')?.invalid && generalForm.get('School5.act')?.touched"
                                     style="color: red;">required</div>
                             </div><br />
                         </div>
@@ -916,7 +922,7 @@
                                     <input type="number" placeholder="2022" formControlName="yearOfRegistration" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('yearOfRegistration')?.invalid && generalForm.get('yearOfRegistration')?.touched"
+                                <div *ngIf="generalForm.get('School5.yearOfRegistration')?.invalid && generalForm.get('School5.yearOfRegistration')?.touched"
                                     style="color: red;">required</div>
                             </div><br />
                         </div>
@@ -933,7 +939,7 @@
                                     <input type="number" placeholder="9517532486." formControlName="registrationNo" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('registrationNo')?.invalid && generalForm.get('registrationNo')?.touched"
+                                <div *ngIf="generalForm.get('School5.registrationNo')?.invalid && generalForm.get('School5.registrationNo')?.touched"
                                     style="color: red;">required</div>
                             </div><br />
                         </div>
@@ -953,7 +959,7 @@
                                     <input type="number" placeholder="2022" formControlName="validityOfRegistrationPeriod" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('validityOfRegistrationPeriod')?.invalid && generalForm.get('validityOfRegistrationPeriod')?.touched"
+                                <div *ngIf="generalForm.get('School5.validityOfRegistrationPeriod')?.invalid && generalForm.get('School5.validityOfRegistrationPeriod')?.touched"
                                     style="color: red;">required</div>
                             </div><br />
                         </div>
@@ -969,7 +975,7 @@
                                     <input type="text" placeholder="Thaddeus" formControlName="nameOfPresidentOrChairman" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('nameOfPresidentOrChairman')?.invalid && generalForm.get('nameOfPresidentOrChairman')?.touched"
+                                <div *ngIf="generalForm.get('School5.nameOfPresidentOrChairman')?.invalid && generalForm.get('School5.nameOfPresidentOrChairman')?.touched"
                                     style="color: red;">required</div>
                             </div><br />
                         </div>
@@ -986,7 +992,7 @@
                                     <input type="text" placeholder="President" formControlName="designationOfPresidentOrChairman" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('designationOfPresidentOrChairman')?.invalid && generalForm.get('designationOfPresidentOrChairman')?.touched"
+                                <div *ngIf="generalForm.get('School5.designationOfPresidentOrChairman')?.invalid && generalForm.get('School5.designationOfPresidentOrChairman')?.touched"
                                     style="color: red;">required</div>
                             </div><br />
                         </div>
@@ -1006,7 +1012,7 @@
                                     <input type="text" placeholder="chennai" formControlName="addressOfPresidentOrChairman" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('addressOfPresidentOrChairman')?.invalid && generalForm.get('addressOfPresidentOrChairman')?.touched"
+                                <div *ngIf="generalForm.get('School5.addressOfPresidentOrChairman')?.invalid && generalForm.get('School5.addressOfPresidentOrChairman')?.touched"
                                     style="color:red;">required</div>
                             </div><br />
                         </div>
@@ -1022,7 +1028,7 @@
                                     <input type="number" placeholder="9585086688 " formControlName="phoneNoOfPresidentOrChairman" required
                                         class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('phoneNoOfPresidentOrChairman')?.invalid && generalForm.get('phoneNoOfPresidentOrChairman')?.touched"
+                                <div *ngIf="generalForm.get('School5.phoneNoOfPresidentOrChairman')?.invalid && generalForm.get('School5.phoneNoOfPresidentOrChairman')?.touched"
                                     style="color:red;">required</div>
                             </div><br />
                         </div>
@@ -1039,7 +1045,7 @@
                                     <input type="email" placeholder="dbxtirupattur@gmail.com" formControlName="emailAddressOfPresidentOrChairman"
                                         required class="form-control">
                                 </div>
-                                <div *ngIf="generalForm.get('emailAddressOfPresidentOrChairman')?.invalid && generalForm.get('emailAddressOfPresidentOrChairman')?.touched"
+                                <div *ngIf="generalForm.get('School5.emailAddressOfPresidentOrChairman')?.invalid && generalForm.get('School5.emailAddressOfPresidentOrChairman')?.touched"
                                     style="color:red;">required</div>
                             </div><br />
                         </div>
@@ -1054,7 +1060,7 @@
                             </div>
                             <div class="col-md-9"></div>
                             <div class="col-md-1">
-                                <button (click)="submit()" class="btn btn-success">Save</button>
+                                <button (click)="submit('School5')" class="btn btn-success">Save</button>
                             </div>
                             <div class="col-md-1">
                                 <button (click)="next()" class="btn btn-primary">Next</button>
@@ -1062,7 +1068,7 @@
                         </div>
                     </div>
 
-
+                </div>
                 </div>
 
 
@@ -1070,6 +1076,7 @@
 
                 <!-- 6th row -->
                 <div *ngIf="step==6">
+                    <div formGroupName="School6">
                     <div class="row">
                         <div class="col-md-1" style="background-color:#155B97 ;"></div>
                         <div class="col-md-10" style="background-color:#155B97;">
@@ -1115,7 +1122,7 @@
                                             class="fa fa-user-circle"></i></span>
                                     <input type="number" placeholder="45" formControlName="NoOfMembersInTrustOrCompany" required
                                         class="form-control">
-                                        <span *ngIf="generalForm.get('NoOfMembersInTrustOrCompany')?.invalid && generalForm.get('NoOfMembersInTrustOrCompany')?.touched" style="color:red;">required</span>
+                                        <span *ngIf="generalForm.get('School6.NoOfMembersInTrustOrCompany')?.invalid && generalForm.get('School6.NoOfMembersInTrustOrCompany')?.touched" style="color:red;">required</span>
 
                                 </div>
                             </div><br />
@@ -1132,7 +1139,7 @@
                                             class="fa fa-user-circle"></i></span>
                                     <input type="number" placeholder="09" formControlName="tenureOfEachMemberInTrust" required
                                         class="form-control">
-                                    <span *ngIf="generalForm.get('tenureOfEachMemberInTrust')?.invalid && generalForm.get('tenureOfEachMemberInTrust')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School6.tenureOfEachMemberInTrust')?.invalid && generalForm.get('School6.tenureOfEachMemberInTrust')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1176,7 +1183,7 @@
                                             class="fa fa-user-circle"></i></span>
                                     <input type="number" placeholder="44" formControlName="membersOfEducativePastoralComCouncil" required
                                         class="form-control">
-                                    <span *ngIf="generalForm.get('membersOfEducativePastoralComCouncil')?.invalid && generalForm.get('membersOfEducativePastoralComCouncil')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School6.membersOfEducativePastoralComCouncil')?.invalid && generalForm.get('School6.membersOfEducativePastoralComCouncil')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1192,7 +1199,7 @@
                                             class="fa fa-user-circle"></i></span>
                                     <input type="number" placeholder="45" formControlName="tenureOfEducativePastoralComCouncil" required
                                         class="form-control">
-                                    <span *ngIf="generalForm.get('tenureOfEducativePastoralComCouncil')?.invalid && generalForm.get('tenureOfEducativePastoralComCouncil')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School6.tenureOfEducativePastoralComCouncil')?.invalid && generalForm.get('School6.tenureOfEducativePastoralComCouncil')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1238,7 +1245,7 @@
                                             class="fa fa-user-circle"></i></span>
                                     <input type="number" placeholder="14" formControlName="membersOfParentTeacherExecuteBody" required
                                         class="form-control">
-                                    <span *ngIf="generalForm.get('membersOfParentTeacherExecuteBody')?.invalid && generalForm.get('membersOfParentTeacherExecuteBody')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School6.membersOfParentTeacherExecuteBody')?.invalid && generalForm.get('School6.membersOfParentTeacherExecuteBody')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1254,7 +1261,7 @@
                                             class="fa fa-user-circle"></i></span>
                                     <input type="number" placeholder="22" formControlName="tenureOfParentTeacherExecuteBody" required
                                         class="form-control">
-                                    <span *ngIf="generalForm.get('tenureOfParentTeacherExecuteBody')?.invalid && generalForm.get('tenureOfParentTeacherExecuteBody')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School6.tenureOfParentTeacherExecuteBody')?.invalid && generalForm.get('School6.tenureOfParentTeacherExecuteBody')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1269,14 +1276,14 @@
                             </div>
                             <div class="col-md-9"></div>
                             <div class="col-md-1">
-                                <button (click)="submit()" class="btn btn-success">Save</button>
+                                <button (click)="submit('School6')" class="btn btn-success">Save</button>
                             </div>
                             <div class="col-md-1">
                                 <button (click)="next()" class="btn btn-primary">Next</button>
                             </div>
                         </div>
                     </div>
-
+                </div>
 
                 </div>
 
@@ -1285,6 +1292,7 @@
 
                 <!-- 7th row -->
                 <div *ngIf="step==7">
+                    <div formGroupName="School7">
                     <div class="row">
                         <div class="col-md-1" style="background-color:#155B97;"></div>
                         <div class="col-md-10" style="background-color:#155B97 ;">
@@ -1330,7 +1338,7 @@
                                             class="fa fa-user-circle"></i></span>
                                     <input type="number" placeholder="90" formControlName="membersOfStudentAssociationCouncil" required
                                         class="form-control">
-                                    <span *ngIf="generalForm.get('membersOfStudentAssociationCouncil')?.invalid && generalForm.get('membersOfStudentAssociationCouncil')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School7.membersOfStudentAssociationCouncil')?.invalid && generalForm.get('School7.membersOfStudentAssociationCouncil')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1346,7 +1354,7 @@
                                             class="fa fa-user-circle"></i></span>
                                     <input type="number" placeholder="09" formControlName="tenureOfStudentAssociationCouncil" required
                                         class="form-control">
-                                    <span *ngIf="generalForm.get('tenureOfStudentAssociationCouncil')?.invalid && generalForm.get('tenureOfStudentAssociationCouncil')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School7.tenureOfStudentAssociationCouncil')?.invalid && generalForm.get('School7.tenureOfStudentAssociationCouncil')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1430,7 +1438,7 @@
                                             class="fa fa-user-circle"></i></span>
                                     <input type="number" placeholder="95" formControlName="membersOfManagementCommittee" required
                                         class="form-control">
-                                    <span *ngIf="generalForm.get('membersOfManagementCommittee')?.invalid && generalForm.get('membersOfManagementCommittee')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School7.membersOfManagementCommittee')?.invalid && generalForm.get('School7.membersOfManagementCommittee')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1446,7 +1454,7 @@
                                             class="fa fa-user-circle"></i></span>
                                     <input type="number" placeholder="08" formControlName="tenureOfManagementCommittee" required
                                         class="form-control">
-                                    <span *ngIf="generalForm.get('tenureOfManagementCommittee')?.invalid && generalForm.get('tenureOfManagementCommittee')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School7.tenureOfManagementCommittee')?.invalid && generalForm.get('School7.tenureOfManagementCommittee')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1461,7 +1469,7 @@
                             </div>
                             <div class="col-md-9"></div>
                             <div class="col-md-1">
-                                <button (click)="submit()" class="btn btn-success">Save</button>
+                                <button (click)="submit('School7')" class="btn btn-success">Save</button>
                             </div>
                             <div class="col-md-1">
                                 <button (click)="next()" class="btn btn-primary">Next</button>
@@ -1469,7 +1477,7 @@
                         </div>
                     </div>
 
-
+                </div>
                 </div>
 
 
@@ -1477,6 +1485,7 @@
 
                 <!-- 8th row -->
                 <div *ngIf="step==8">
+                    <div formGroupName="School8">
                     <div class="row">
                         <div class="col-md-1" style="background-color:#155B97;"></div>
                         <div class="col-md-10" style="background-color:#155B97;">
@@ -1514,7 +1523,7 @@
                                             class="fa fa-building"></i></span>
                                     <input type="text" placeholder="20241.63 sq metre (Square Meter)"
                                         formControlName="areaOfSchoolCampus" required class="form-control">
-                                    <span *ngIf="generalForm.get('areaOfSchoolCampus')?.invalid && generalForm.get('areaOfSchoolCampus')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School8.areaOfSchoolCampus')?.invalid && generalForm.get('School8.areaOfSchoolCampus')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1530,7 +1539,7 @@
                                             class="fa fa-building"></i></span>
                                     <input type="text" placeholder="8775 sq metre (Square Meter)"
                                         formControlName="builtUpArea" required class="form-control">
-                                    <span *ngIf="generalForm.get('builtUpArea')?.invalid && generalForm.get('builtUpArea')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School8.builtUpArea')?.invalid && generalForm.get('School8.builtUpArea')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1548,7 +1557,7 @@
                                             class="fa fa-building"></i></span>
                                     <input type="text" placeholder="8093 sq metre (Square Meter)"
                                         formControlName="playGroundArea" required class="form-control">
-                                    <span *ngIf="generalForm.get('playGroundArea')?.invalid && generalForm.get('playGroundArea')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School8.playGroundArea')?.invalid && generalForm.get('School8.playGroundArea')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1563,7 +1572,7 @@
                                             class="fa fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="7" formControlName="noOfBuildingsOrFloors" required
                                         class="form-control">
-                                    <span *ngIf="generalForm.get('noOfBuildingsOrFloors')?.invalid && generalForm.get('noOfBuildingsOrFloors')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School8.noOfBuildingsOrFloors')?.invalid && generalForm.get('School8.noOfBuildingsOrFloors')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1601,7 +1610,7 @@
                                             class="fa fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="14" formControlName="noOfStairCase" required
                                         class="form-control">
-                                    <span *ngIf="generalForm.get('noOfStairCase')?.invalid && generalForm.get('noOfStairCase')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School8.noOfStairCase')?.invalid && generalForm.get('School8.noOfStairCase')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1617,7 +1626,7 @@
                                             class="fa fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="22" formControlName="noOfLifts" required
                                         class="form-control">
-                                    <span *ngIf="generalForm.get('noOfLifts')?.invalid && generalForm.get('noOfLifts')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School8.noOfLifts')?.invalid && generalForm.get('School8.noOfLifts')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1632,7 +1641,7 @@
                             </div>
                             <div class="col-md-9"></div>
                             <div class="col-md-1">
-                                <button (click)="submit()" class="btn btn-success">Save</button>
+                                <button (click)="submit('School8')" class="btn btn-success">Save</button>
                             </div>
                             <div class="col-md-1">
                                 <button (click)="next()" class="btn btn-primary">Next</button>
@@ -1640,7 +1649,7 @@
                         </div>
                     </div>
 
-
+                </div>
                 </div>
 
 
@@ -2041,7 +2050,7 @@
                             </div>
                             <div class="col-md-9"></div>
                             <div class="col-md-1">
-                                <button (click)="submit()" class="btn btn-success">Save</button>
+                                <button (click)="submit('School9')" class="btn btn-success">Save</button>
                             </div>
                             <div class="col-md-1">
                                 <button (click)="next()" class="btn btn-primary">Next</button>
@@ -2276,7 +2285,7 @@
                             </div>
                             <div class="col-md-9"></div>
                             <div class="col-md-1">
-                                <button (click)="submit()" class="btn btn-success">Save</button>
+                                <button (click)="submit('School10')" class="btn btn-success">Save</button>
                             </div>
                             <div class="col-md-1">
                                 <button (click)="next()" class="btn btn-primary">Next</button>
@@ -2473,7 +2482,7 @@
                             </div>
                             <div class="col-md-9"></div>
                             <div class="col-md-1">
-                                <button (click)="submit()" class="btn btn-success">Save</button>
+                                <button (click)="submit('School11')" class="btn btn-success">Save</button>
                             </div>
                             <div class="col-md-1">
                                 <button (click)="next()" class="btn btn-primary">Next</button>
@@ -2682,7 +2691,7 @@
                             </div>
                             <div class="col-md-9"></div>
                                 <div class="col-md-1">
-                                    <button (click)="submit()" class="btn btn-success">Save</button>
+                                    <button (click)="submit('School12')" class="btn btn-success">Save</button>
                                 </div>
                             <div class="col-md-1">
                                 <button (click)="next()" class="btn btn-primary">Next</button>
@@ -3367,7 +3376,7 @@
                             </div>
                             <div class="col-md-9"></div>
                             <div class="col-md-1">
-                                <button (click)="submit()" class="btn btn-success">Save</button>
+                                <button (click)="submit('School13')" class="btn btn-success">Save</button>
                             </div>
                             <div class="col-md-1">
                                 <button (click)="next()" class="btn btn-primary">Next</button>
@@ -3775,7 +3784,7 @@
                             </div>
                             <div class="col-md-9"></div>
                             <div class="col-md-1">
-                                <button (click)="submit()" class="btn btn-success">Save</button>
+                                <button (click)="submit('School14')" class="btn btn-success">Save</button>
                             </div>
                             <div class="col-md-1">
                                 <button (click)="next()" class="btn btn-primary">Next</button>
@@ -4154,7 +4163,7 @@
                             </div>
                             <div class="col-md-9"></div>
                             <div class="col-md-1">
-                                <button (click)="submit()" class="btn btn-success">Save</button>
+                                <button (click)="submit('School15')" class="btn btn-success">Save</button>
                             </div>
                             <div class="col-md-1">
                                 <button class="btn btn-primary" (click)="next()">Next</button>
@@ -4489,7 +4498,7 @@
                             </div>
                             <div class="col-md-9"></div>
                             <div class="col-md-1">
-                                <button (click)="submit()" class="btn btn-success">Save</button>
+                                <button (click)="submit('School16')" class="btn btn-success">Save</button>
                             </div>
                             <div class="col-md-1">
                                 <button class="btn btn-primary" (click)="next()">Next</button>
@@ -4690,7 +4699,7 @@
                             </div>
                             <div class="col-md-9"></div>
                             <div class="col-md-1">
-                                <button (click)="submit()" class="btn btn-success">Save</button>
+                                <button (click)="submit('School17')" class="btn btn-success">Save</button>
                             </div>
                             <!-- <div class="col-md-10"><button (click)="but(10)">10</button></div> -->
                             <div class="col-md-1">
@@ -4708,6 +4717,7 @@
 
                 <!-- 18th row -->
                 <div *ngIf="step==18">
+                    <div formGroupName="School18">
                     <div class="row">
                         <div class="col-md-3" style="background-color:#155B97 ;"></div>
                         <div class="col-md-7" style="background-color:#155B97;">
@@ -4812,18 +4822,19 @@
                             </div>
                             <div class="col-md-9"></div>
                             <div class="col-md-1">
-                                <button (click)="submit()" class="btn btn-success">Save</button>
+                                <button (click)="submit('School18')" class="btn btn-success">Save</button>
                             </div>
                             <div class="col-md-1">
                                 <button class="btn btn-primary" (click)="next()">Next</button>
                             </div>
                         </div>
                     </div>
-
+                    </div>
                 </div>
 
 
                 <div *ngIf="step==19">
+                    <div formGroupName="School19">
                     <div class="row">
                         <div class="col-md-4" style="background-color:#155B97;"></div>
                         <div class="col-md-5" style="background-color:#155B97;color:white;">
@@ -4905,14 +4916,15 @@
 
                         <div class="col-md-10"></div>
                         <div class="col-md-1">
-                            <button (click)="submit()" class="btn btn-primary">Update</button>
+                            <button (click)="submit('School19')" class="btn btn-primary">Update</button>
                         </div>
                         </div>
                     </div>
-
+                    </div>
                 </div>
 
 
+            
             </div>
         </form>
         <div class="text-center mt-1">
