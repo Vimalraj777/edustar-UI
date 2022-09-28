@@ -1656,6 +1656,7 @@
 
                 <!-- 9th row -->
                 <div *ngIf="step==9">
+                    <div formGroupName="School9">
                     <div class="row">
                         <div class="col-md-1" style="background-color:#155B97;"></div>
                         <div class="col-md-10" style="background-color:#155B97;">
@@ -1677,7 +1678,7 @@
                                             class="fa fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Class Rooms" formControlName="classRooms"
                                         required class="form-control">
-                                    <span *ngIf="generalForm.get('classRooms')?.invalid && generalForm.get('classRooms')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School9.classRooms')?.invalid && generalForm.get('School9.classRooms')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1692,7 +1693,7 @@
                                             class="fa fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Staff Rooms" formControlName="staffRooms"
                                         required class="form-control">
-                                    <span *ngIf="generalForm.get('staffRooms')?.invalid && generalForm.get('staffRooms')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School9.staffRooms')?.invalid && generalForm.get('School9.staffRooms')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1706,7 +1707,7 @@
                                             class="fa fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Physics lab " formControlName="physicsLab"
                                         required class="form-control">
-                                    <span *ngIf="generalForm.get('physicsLab')?.invalid && generalForm.get('physicsLab')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School9.physicsLab')?.invalid && generalForm.get('School9.physicsLab')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1725,7 +1726,7 @@
                                             class="fa fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter the Chemistry Lab" formControlName="chemistryLab"
                                         required class="form-control">
-                                    <span *ngIf="generalForm.get('chemistryLab')?.invalid && generalForm.get('chemistryLab')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School9.chemistryLab')?.invalid && generalForm.get('School9.chemistryLab')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1740,7 +1741,7 @@
                                             class="fa fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Biology Lab" formControlName="biologyLab"
                                         required class="form-control">
-                                    <span *ngIf="generalForm.get('biologyLab')?.invalid && generalForm.get('biologyLab')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School9.biologyLab')?.invalid && generalForm.get('School9.biologyLab')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1756,7 +1757,7 @@
                                             class="fa fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter the Mathematics Lab." formControlName="mathsLab"
                                         required class="form-control">
-                                    <span *ngIf="generalForm.get('mathsLab')?.invalid && generalForm.get('mathsLab')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School9.mathsLab')?.invalid && generalForm.get('School9.mathsLab')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1775,7 +1776,7 @@
                                             class="fa fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Computer Science Lab"
                                         formControlName="computerScienceLab" required class="form-control">
-                                    <span *ngIf="generalForm.get('computerScienceLab')?.invalid && generalForm.get('computerScienceLab')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School9.computerScienceLab')?.invalid && generalForm.get('School9.computerScienceLab')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1790,7 +1791,7 @@
                                             class="fa fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Language Lab" formControlName="languageLab"
                                         required class="form-control">
-                                    <span *ngIf="generalForm.get('languageLab')?.invalid && generalForm.get('languageLab')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School9.languageLab')?.invalid && generalForm.get('School9.languageLab')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1806,7 +1807,7 @@
                                             class="fa fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Home Science Lab" formControlName="homeScienceLab"
                                         required class="form-control">
-                                    <span *ngIf="generalForm.get('homeScienceLab')?.invalid && generalForm.get('homeScienceLab')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School9.homeScienceLab')?.invalid && generalForm.get('School9.homeScienceLab')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1825,7 +1826,7 @@
                                             class="fa fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder=" Enter The Library" formControlName="library"
                                         required class="form-control">
-                                    <span *ngIf="generalForm.get('library')?.invalid && generalForm.get('library')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School9.library')?.invalid && generalForm.get('School9.library')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1840,7 +1841,7 @@
                                             class="fa fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Auditorium " formControlName="auditorium"
                                         required class="form-control">
-                                        <span *ngIf="generalForm.get('auditorium')?.invalid && generalForm.get('auditorium')?.touched" style="color:red;">required</span>
+                                        <span *ngIf="generalForm.get('School9.auditorium')?.invalid && generalForm.get('School9.auditorium')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1856,7 +1857,7 @@
                                             class="fa fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Counselors Room" formControlName="counselorsRoom"
                                         required class="form-control">
-                                    <span *ngIf="generalForm.get('counselorsRoom')?.invalid && generalForm.get('counselorsRoom')?.touched" style="color:red;">required</span> 
+                                    <span *ngIf="generalForm.get('School9.counselorsRoom')?.invalid && generalForm.get('School9.counselorsRoom')?.touched" style="color:red;">required</span> 
                                 </div>
                             </div><br />
                         </div>
@@ -1876,7 +1877,7 @@
                                             class="fa fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Visitors Parlor (space)"
                                         formControlName="visitorsParlor" required class="form-control">
-                                    <span *ngIf="generalForm.get('visitorsParlor')?.invalid && generalForm.get('visitorsParlor')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School9.visitorsParlor')?.invalid && generalForm.get('School9.visitorsParlor')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1891,7 +1892,7 @@
                                             class="fa fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Prayer Room / Chapel"
                                         formControlName="prayerRoomChapel" required class="form-control">
-                                    <span *ngIf="generalForm.get('prayerRoomChapel')?.invalid && generalForm.get('prayerRoomChapel')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School9.prayerRoomChapel')?.invalid && generalForm.get('School9.prayerRoomChapel')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1907,7 +1908,7 @@
                                             class="fa fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Infirmary / Sick Room."
                                         formControlName="sickRoomOrInfirmary" required class="form-control">
-                                    <span *ngIf="generalForm.get('sickRoomOrInfirmary')?.invalid && generalForm.get('sickRoomOrInfirmary')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School9.sickRoomOrInfirmary')?.invalid && generalForm.get('School9.sickRoomOrInfirmary')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1926,7 +1927,7 @@
                                             class="fa fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder=" Enter The Canteen" formControlName="canteen"
                                         required class="form-control">
-                                    <span *ngIf="generalForm.get('canteen')?.invalid && generalForm.get('canteen')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School9.canteen')?.invalid && generalForm.get('School9.canteen')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1941,7 +1942,7 @@
                                             class="fa fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Security Room" formControlName="securityRoom"
                                         required class="form-control">
-                                    <span *ngIf="generalForm.get('securityRoom')?.invalid && generalForm.get('securityRoom')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School9.securityRoom')?.invalid && generalForm.get('School9.securityRoom')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1957,7 +1958,7 @@
                                             class="fa fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter The Other Rooms / Halls"
                                         formControlName="otherRoomsHalls" required class="form-control">
-                                    <span *ngIf="generalForm.get('otherRoomsHalls')?.invalid && generalForm.get('otherRoomsHalls')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School9.otherRoomsHalls')?.invalid && generalForm.get('School9.otherRoomsHalls')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1976,7 +1977,7 @@
                                             class="fa fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter Staff – Urinals / Toilets"
                                         formControlName="staffUrinalsOrToilets" required class="form-control">
-                                    <span *ngIf="generalForm.get('staffUrinalsOrToilets')?.invalid && generalForm.get('staffUrinalsOrToilets')?.touched" style="color:red;"> required</span>
+                                    <span *ngIf="generalForm.get('School9.staffUrinalsOrToilets')?.invalid && generalForm.get('School9.staffUrinalsOrToilets')?.touched" style="color:red;"> required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -1991,7 +1992,7 @@
                                             class="fa fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter Student Urinals / Toilets "
                                         formControlName="studentUrinalsOrToilets" required class="form-control">
-                                    <span *ngIf="generalForm.get('studentUrinalsOrToilets')?.invalid && generalForm.get('studentUrinalsOrToilets')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School9.studentUrinalsOrToilets')?.invalid && generalForm.get('School9.studentUrinalsOrToilets')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -2007,7 +2008,7 @@
                                             class="fa fa-sort-numeric-down"></i></span>
                                     <input type="number" placeholder="Enter Rooms" formControlName="rooms" required
                                         class="form-control">
-                                    <span *ngIf="generalForm.get('rooms')?.invalid && generalForm.get('rooms')?.touched" style="color:red;">required</span>
+                                    <span *ngIf="generalForm.get('School9.rooms')?.invalid && generalForm.get('School9.rooms')?.touched" style="color:red;">required</span>
                                 </div>
                             </div><br />
                         </div>
@@ -2057,7 +2058,7 @@
                             </div>
                         </div>
                     </div>
-
+                    </div>
 
                 </div>
 
@@ -2066,6 +2067,7 @@
 
                 <!-- 10th row -->
                 <div *ngIf="step==10">
+                    <div formGroupName="School10">
                     <div class="row">
                         <div class="col-md-1" style="background-color:#155B97 ;"></div>
                         <div class="col-md-10" style="background-color:#155B97;">
@@ -2167,7 +2169,7 @@
                                     <input type="number" placeholder="Enter How many cameras?"
                                         formControlName="noOfCameras" required class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfCameras')?.invalid && generalForm.get('noOfCameras')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School10.noOfCameras')?.invalid && generalForm.get('School10.noOfCameras')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2198,7 +2200,7 @@
                                     <input type="number" placeholder="15" formControlName="noOfMaleSecurity" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfMaleSecurity')?.invalid && generalForm.get('noOfMaleSecurity')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School10.noOfMaleSecurity')?.invalid && generalForm.get('School10.noOfMaleSecurity')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2237,7 +2239,7 @@
                                     <input type="number" placeholder="08" formControlName="noOfFemaleSecurity" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfFemaleSecurity')?.invalid && generalForm.get('noOfFemaleSecurity')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School10.noOfFemaleSecurity')?.invalid && generalForm.get('School10.noOfFemaleSecurity')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2292,7 +2294,7 @@
                             </div>
                         </div>
                     </div>
-
+                    </div>
 
                 </div>
 
@@ -2301,6 +2303,7 @@
 
                 <!-- 11th row -->
                 <div *ngIf="step==11">
+                    <div formGroupName="School11">
                     <div class="row">
                         <div class="col-md-1" style="background-color:#155B97;"></div>
                         <div class="col-md-10" style="background-color:#155B97;">
@@ -2350,7 +2353,7 @@
                                     <input type="number" placeholder="Enter No. of buses owned by school"
                                         formControlName="noOfSchoolBuses" required class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfSchoolBuses')?.invalid && generalForm.get('noOfSchoolBuses')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School11.noOfSchoolBuses')?.invalid && generalForm.get('School11.noOfSchoolBuses')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2366,7 +2369,7 @@
                                     <input type="number" placeholder="Enter GPS enabled camera" formControlName="gpsEnabledCamera"
                                         required class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('gpsEnabledCamera')?.invalid && generalForm.get('gpsEnabledCamera')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School11.gpsEnabledCamera')?.invalid && generalForm.get('School11.gpsEnabledCamera')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2381,7 +2384,7 @@
                                     <input type="number" placeholder="Enter No. of Lady Attendance(if needed)"
                                         formControlName="noOfLadyAttendor" required class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfLadyAttendor')?.invalid && generalForm.get('noOfLadyAttendor')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School11.noOfLadyAttendor')?.invalid && generalForm.get('School11.noOfLadyAttendor')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2400,7 +2403,7 @@
                                     <input type="number" placeholder="Enter First Aid kit" formControlName="firstAidKit"
                                         required class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('firstAidKit')?.invalid && generalForm.get('firstAidKit')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School11.firstAidKit')?.invalid && generalForm.get('School11.firstAidKit')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2416,7 +2419,7 @@
                                     <input type="number" placeholder="Enter Drinking Water" formControlName="drinkingWater"
                                         required class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('drinkingWater')?.invalid && generalForm.get('drinkingWater')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School11.drinkingWater')?.invalid && generalForm.get('School11.drinkingWater')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2431,7 +2434,7 @@
                                     <input type="number" placeholder="enter No. of buses sub-contracted"
                                         formControlName="noOfBusesSubContracted" required class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfBusesSubContracted')?.invalid && generalForm.get('noOfBusesSubContracted')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School11.noOfBusesSubContracted')?.invalid && generalForm.get('School11.noOfBusesSubContracted')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2489,7 +2492,7 @@
                             </div>
                         </div>
                     </div>
-
+                    </div>
 
                 </div>
 
@@ -2499,6 +2502,7 @@
 
                 <!-- 12th row -->
                 <div *ngIf="step==12">
+                    <div formGroupName="School12">
                     <div class="row">
                         <div class="col-md-1" style="background-color:#155B97;"></div>
                         <div class="col-md-10" style="background-color:#155B97 ;">
@@ -2519,7 +2523,7 @@
                                     <input type="time" placeholder="08:10" formControlName="libraryOpenTime" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('libraryOpenTime')?.invalid && generalForm.get('libraryOpenTime')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School12.libraryOpenTime')?.invalid && generalForm.get('School12.libraryOpenTime')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2532,7 +2536,7 @@
                                     <input type="time" placeholder="16:20" formControlName="libraryCloseTime" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('libraryCloseTime')?.invalid && generalForm.get('libraryCloseTime')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School12.libraryCloseTime')?.invalid && generalForm.get('School12.libraryCloseTime')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2546,7 +2550,7 @@
                                     <input type="number" placeholder="8400" formControlName="totalNoOfLibraryBooks" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('totalNoOfLibraryBooks')?.invalid && generalForm.get('totalNoOfLibraryBooks')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School12.totalNoOfLibraryBooks')?.invalid && generalForm.get('School12.totalNoOfLibraryBooks')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2561,7 +2565,7 @@
                                     <input type="number" placeholder="20" formControlName="totalNoOfLibraryMagazines" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('totalNoOfLibraryMagazines')?.invalid && generalForm.get('totalNoOfLibraryMagazines')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School12.totalNoOfLibraryMagazines')?.invalid && generalForm.get('School12.totalNoOfLibraryMagazines')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2585,7 +2589,7 @@
                                     <input type="number" placeholder="49" formControlName="totalNoOfLibraryDailyNewspapers" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('totalNoOfLibraryDailyNewspapers')?.invalid && generalForm.get('totalNoOfLibraryDailyNewspapers')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School12.totalNoOfLibraryDailyNewspapers')?.invalid && generalForm.get('School12.totalNoOfLibraryDailyNewspapers')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2602,7 +2606,7 @@
                                     <input type="number" placeholder="10022" formControlName="totalNoOfEbooks" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('totalNoOfEbooks')?.invalid && generalForm.get('totalNoOfEbooks')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School12.totalNoOfEbooks')?.invalid && generalForm.get('School12.totalNoOfEbooks')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -2698,7 +2702,7 @@
                             </div>
                         </div>
                     </div>
-
+                    </div>
 
                 </div>
 
@@ -2706,6 +2710,7 @@
 
                 <!-- 13th row -->
                 <div *ngIf="step==13">
+                    <div formGroupName="School13">
                     <div class="row">
                         <div class="col-md-5" style="background-color:#155B97 ;"></div>
                         <div class="col-md-5" style="background-color:#155B97 ;">
@@ -2775,32 +2780,32 @@
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('permanentMaleForPrincipalOrHM')?.invalid && generalForm.get('permanentMaleForPrincipalOrHM')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentMaleForPrincipalOrHM')?.invalid && generalForm.get('School13.permanentMaleForPrincipalOrHM')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentMaleForPrincipalOrHM" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('permanentFeMaleForPrincipalOrHM')?.invalid && generalForm.get('permanentFeMaleForPrincipalOrHM')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentFeMaleForPrincipalOrHM')?.invalid && generalForm.get('School13.permanentFeMaleForPrincipalOrHM')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentFeMaleForPrincipalOrHM" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('temporaryMaleForPrincipalOrHM')?.invalid && generalForm.get('temporaryMaleForPrincipalOrHM')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryMaleForPrincipalOrHM')?.invalid && generalForm.get('School13.temporaryMaleForPrincipalOrHM')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryMaleForPrincipalOrHM" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('temporaryFeMaleForPrincipalOrHM')?.invalid && generalForm.get('temporaryFeMaleForPrincipalOrHM')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryFeMaleForPrincipalOrHM')?.invalid && generalForm.get('School13.temporaryFeMaleForPrincipalOrHM')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryFeMaleForPrincipalOrHM" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentMaleForPrincipalOrHM'].value+generalForm.controls['temporaryMaleForPrincipalOrHM'].value}}"
+                                value="{{generalForm.get('School13.permanentMaleForPrincipalOrHM')?.value+generalForm.get('School13.temporaryMaleForPrincipalOrHM')?.value}}"
                                 required class="form-control">
                         </div>
                         <div class="col-md-2">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentFeMaleForPrincipalOrHM'].value+generalForm.controls['temporaryFeMaleForPrincipalOrHM'].value}}"
-                                required class="form-control">
+                            value="{{generalForm.get('School13.permanentFeMaleForPrincipalOrHM')?.value+generalForm.get('School13.temporaryFeMaleForPrincipalOrHM')?.value}}"
+                            required class="form-control">
                         </div>
 
                     </div>
@@ -2812,32 +2817,32 @@
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('permanentMaleForVicePrincipalOrHM')?.invalid && generalForm.get('permanentMaleForVicePrincipalOrHM')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentMaleForVicePrincipalOrHM')?.invalid && generalForm.get('School13.permanentMaleForVicePrincipalOrHM')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentMaleForVicePrincipalOrHM" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('permanentFeMaleForVicePrincipalOrHM')?.invalid && generalForm.get('permanentFeMaleForVicePrincipalOrHM')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentFeMaleForVicePrincipalOrHM')?.invalid && generalForm.get('School13.permanentFeMaleForVicePrincipalOrHM')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentFeMaleForVicePrincipalOrHM" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('temporaryMaleForVicePrincipalOrHM')?.invalid && generalForm.get('temporaryMaleForVicePrincipalOrHM')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryMaleForVicePrincipalOrHM')?.invalid && generalForm.get('School13.temporaryMaleForVicePrincipalOrHM')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryMaleForVicePrincipalOrHM" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('temporaryFeMaleForVicePrincipalOrHM')?.invalid && generalForm.get('temporaryFeMaleForVicePrincipalOrHM')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryFeMaleForVicePrincipalOrHM')?.invalid && generalForm.get('School13.temporaryFeMaleForVicePrincipalOrHM')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryFeMaleForVicePrincipalOrHM" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentMaleForVicePrincipalOrHM'].value+generalForm.controls['temporaryMaleForVicePrincipalOrHM'].value}}"
+                                value="{{generalForm.get('School13.permanentMaleForVicePrincipalOrHM')?.value+generalForm.get('School13.temporaryMaleForVicePrincipalOrHM')?.value}}"
                                 required class="form-control">
                         </div>
                         <div class="col-md-2">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentFeMaleForVicePrincipalOrHM'].value+generalForm.controls['temporaryFeMaleForVicePrincipalOrHM'].value}}"
-                                required class="form-control">
+                            value="{{generalForm.get('School13.permanentFeMaleForVicePrincipalOrHM')?.value+generalForm.get('School13.temporaryFeMaleForVicePrincipalOrHM')?.value}}"
+                            required class="form-control">
                         </div>
 
                     </div>
@@ -2851,32 +2856,32 @@
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('permanentMalePostGraduateTeachers')?.invalid && generalForm.get('permanentMalePostGraduateTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentMalePostGraduateTeachers')?.invalid && generalForm.get('School13.permanentMalePostGraduateTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentMalePostGraduateTeachers" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('permanentFeMalePostGraduateTeachers')?.invalid && generalForm.get('permanentFeMalePostGraduateTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentFeMalePostGraduateTeachers')?.invalid && generalForm.get('School13.permanentFeMalePostGraduateTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentFeMalePostGraduateTeachers" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('temporaryMalePostGraduateTeachers')?.invalid && generalForm.get('temporaryMalePostGraduateTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryMalePostGraduateTeachers')?.invalid && generalForm.get('School13.temporaryMalePostGraduateTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryMalePostGraduateTeachers" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('temporaryFeMalePostGraduateTeachers')?.invalid && generalForm.get('temporaryFeMalePostGraduateTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryFeMalePostGraduateTeachers')?.invalid && generalForm.get('School13.temporaryFeMalePostGraduateTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryFeMalePostGraduateTeachers" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentMalePostGraduateTeachers'].value+generalForm.controls['temporaryMalePostGraduateTeachers'].value}}"
+                                value="{{generalForm.get('School13.permanentMalePostGraduateTeachers')?.value+generalForm.get('School13.temporaryMalePostGraduateTeachers')?.value}}"
                                 required class="form-control">
                         </div>
                         <div class="col-md-2">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentFeMalePostGraduateTeachers'].value+generalForm.controls['temporaryFeMalePostGraduateTeachers'].value}}"
-                                required class="form-control">
+                            value="{{generalForm.get('School13.permanentFeMalePostGraduateTeachers')?.value+generalForm.get('School13.temporaryFeMalePostGraduateTeachers')?.value}}"
+                            required class="form-control">
                         </div>
 
                     </div>
@@ -2891,32 +2896,32 @@
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('permanentMaleTrainedGraduateTeachers')?.invalid && generalForm.get('permanentMaleTrainedGraduateTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentMaleTrainedGraduateTeachers')?.invalid && generalForm.get('School13.permanentMaleTrainedGraduateTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentMaleTrainedGraduateTeachers" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('permanentFeMaleTrainedGraduateTeachers')?.invalid && generalForm.get('permanentFeMaleTrainedGraduateTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentFeMaleTrainedGraduateTeachers')?.invalid && generalForm.get('School13.permanentFeMaleTrainedGraduateTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentFeMaleTrainedGraduateTeachers" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('temporaryMaleTrainedGraduateTeachers')?.invalid && generalForm.get('temporaryMaleTrainedGraduateTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryMaleTrainedGraduateTeachers')?.invalid && generalForm.get('School13.temporaryMaleTrainedGraduateTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryMaleTrainedGraduateTeachers" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('temporaryFeMaleTrainedGraduateTeachers')?.invalid && generalForm.get('temporaryFeMaleTrainedGraduateTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryFeMaleTrainedGraduateTeachers')?.invalid && generalForm.get('School13.temporaryFeMaleTrainedGraduateTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryFeMaleTrainedGraduateTeachers" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentMaleTrainedGraduateTeachers'].value+generalForm.controls['temporaryMaleTrainedGraduateTeachers'].value}}"
+                                value="{{generalForm.get('School13.permanentMaleTrainedGraduateTeachers')?.value+generalForm.get('School13.temporaryMaleTrainedGraduateTeachers')?.value}}"
                                 required class="form-control">
                         </div>
                         <div class="col-md-2">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentFeMaleTrainedGraduateTeachers'].value+generalForm.controls['temporaryFeMaleTrainedGraduateTeachers'].value}}"
-                                required class="form-control">
+                            value="{{generalForm.get('School13.permanentFeMaleTrainedGraduateTeachers')?.value+generalForm.get('School13.temporaryFeMaleTrainedGraduateTeachers')?.value}}"
+                            required class="form-control">
                         </div>
 
                     </div>
@@ -2930,32 +2935,32 @@
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('permanentMalePrimaryTeachers')?.invalid && generalForm.get('permanentMalePrimaryTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentMalePrimaryTeachers')?.invalid && generalForm.get('School13.permanentMalePrimaryTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentMalePrimaryTeachers" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('permanentFeMalePrimaryTeachers')?.invalid && generalForm.get('permanentFeMalePrimaryTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentFeMalePrimaryTeachers')?.invalid && generalForm.get('School13.permanentFeMalePrimaryTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentFeMalePrimaryTeachers" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('temporaryMalePrimaryTeachers')?.invalid && generalForm.get('temporaryMalePrimaryTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryMalePrimaryTeachers')?.invalid && generalForm.get('School13.temporaryMalePrimaryTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryMalePrimaryTeachers" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('temporaryFeMalePrimaryTeachers')?.invalid && generalForm.get('temporaryFeMalePrimaryTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryFeMalePrimaryTeachers')?.invalid && generalForm.get('School13.temporaryFeMalePrimaryTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryFeMalePrimaryTeachers" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentMalePrimaryTeachers'].value+generalForm.controls['temporaryMalePrimaryTeachers'].value}}"
+                                value="{{generalForm.get('School13.permanentMalePrimaryTeachers')?.value+generalForm.get('School13.temporaryMalePrimaryTeachers')?.value}}"
                                 required class="form-control">
                         </div>
                         <div class="col-md-2">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentFeMalePrimaryTeachers'].value+generalForm.controls['temporaryFeMalePrimaryTeachers'].value}}"
-                                required class="form-control">
+                            value="{{generalForm.get('School13.permanentFeMalePrimaryTeachers')?.value+generalForm.get('School13.temporaryFeMalePrimaryTeachers')?.value}}"
+                            required class="form-control">
                         </div>
 
                     </div>
@@ -2967,32 +2972,32 @@
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('permanentMaleNurseryTrainedTeachers')?.invalid && generalForm.get('permanentMaleNurseryTrainedTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentMaleNurseryTrainedTeachers')?.invalid && generalForm.get('School13.permanentMaleNurseryTrainedTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentMaleNurseryTrainedTeachers" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('permanentFeMaleNurseryTrainedTeachers')?.invalid && generalForm.get('permanentFeMaleNurseryTrainedTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentFeMaleNurseryTrainedTeachers')?.invalid && generalForm.get('School13.permanentFeMaleNurseryTrainedTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentFeMaleNurseryTrainedTeachers" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('temporaryMaleNurseryTrainedTeachers')?.invalid && generalForm.get('temporaryMaleNurseryTrainedTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryMaleNurseryTrainedTeachers')?.invalid && generalForm.get('School13.temporaryMaleNurseryTrainedTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryMaleNurseryTrainedTeachers" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('temporaryFeMaleNurseryTrainedTeachers')?.invalid && generalForm.get('temporaryFeMaleNurseryTrainedTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryFeMaleNurseryTrainedTeachers')?.invalid && generalForm.get('School13.temporaryFeMaleNurseryTrainedTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryFeMaleNurseryTrainedTeachers" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentMaleNurseryTrainedTeachers'].value+generalForm.controls['temporaryMaleNurseryTrainedTeachers'].value}}"
+                                value="{{generalForm.get('School13.permanentMaleNurseryTrainedTeachers')?.value+generalForm.get('School13.temporaryMaleNurseryTrainedTeachers')?.value}}"
                                 required class="form-control">
                         </div>
                         <div class="col-md-2">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentFeMaleNurseryTrainedTeachers'].value+generalForm.controls['temporaryFeMaleNurseryTrainedTeachers'].value}}"
-                                required class="form-control">
+                            value="{{generalForm.get('School13.permanentFeMaleNurseryTrainedTeachers')?.value+generalForm.get('School13.temporaryFeMaleNurseryTrainedTeachers')?.value}}"
+                            required class="form-control">
                         </div>
 
                     </div>
@@ -3006,32 +3011,32 @@
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('permanentMaleUntrainedTeachers')?.invalid && generalForm.get('permanentMaleUntrainedTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentMaleUntrainedTeachers')?.invalid && generalForm.get('School13.permanentMaleUntrainedTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentMaleUntrainedTeachers" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('permanentFeMaleUntrainedTeachers')?.invalid && generalForm.get('permanentFeMaleUntrainedTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentFeMaleUntrainedTeachers')?.invalid && generalForm.get('School13.permanentFeMaleUntrainedTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentFeMaleUntrainedTeachers" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('temporaryMaleUntrainedTeachers')?.invalid && generalForm.get('temporaryMaleUntrainedTeachers')?.touched" style="color:red;">*</span>
-                            <input type="number" formControlName="temporaryMaleUntrainedTeachers" required class="form-control">
+                            <span *ngIf="generalForm.get('School13.UTtmtemporaryMaleUntrainedTeachersale')?.invalid && generalForm.get('School13.UTtmtemporaryMaleUntrainedTeachersale')?.touched" style="color:red;">*</span>
+                            <input type="number" formControlName="UTtmtemporaryMaleUntrainedTeachersale" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('temporaryFeMaleUntrainedTeachers')?.invalid && generalForm.get('temporaryFeMaleUntrainedTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryFeMaleUntrainedTeachers')?.invalid && generalForm.get('School13.temporaryFeMaleUntrainedTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryFeMaleUntrainedTeachers" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentMaleUntrainedTeachers'].value+generalForm.controls['temporaryMaleUntrainedTeachers'].value}}"
+                                value="{{generalForm.get('School13.permanentMaleUntrainedTeachers')?.value+generalForm.get('School13.UTtmtemporaryMaleUntrainedTeachersale')?.value}}"
                                 required class="form-control">
                         </div>
                         <div class="col-md-2">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentFeMaleUntrainedTeachers'].value+generalForm.controls['temporaryFeMaleUntrainedTeachers'].value}}"
-                                required class="form-control">
+                            value="{{generalForm.get('School13.permanentFeMaleUntrainedTeachers')?.value+generalForm.get('School13.temporaryFeMaleUntrainedTeachers')?.value}}"
+                            required class="form-control">
                         </div>
 
                     </div>
@@ -3045,32 +3050,32 @@
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('permanentMaleLibrarian')?.invalid && generalForm.get('permanentMaleLibrarian')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentMaleLibrarian')?.invalid && generalForm.get('School13.permanentMaleLibrarian')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentMaleLibrarian" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('permanentFeMaleLibrarian')?.invalid && generalForm.get('permanentFeMaleLibrarian')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentFeMaleLibrarian')?.invalid && generalForm.get('School13.permanentFeMaleLibrarian')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentFeMaleLibrarian" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('temporaryMaleLibrarian')?.invalid && generalForm.get('temporaryMaleLibrarian')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryMaleLibrarian')?.invalid && generalForm.get('School13.temporaryMaleLibrarian')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryMaleLibrarian" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('temporaryFeMaleLibrarian')?.invalid && generalForm.get('temporaryFeMaleLibrarian')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryFeMaleLibrarian')?.invalid && generalForm.get('School13.temporaryFeMaleLibrarian')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryFeMaleLibrarian" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentMaleLibrarian'].value+generalForm.controls['temporaryMaleLibrarian'].value}}"
+                                value="{{generalForm.get('School13.permanentMaleLibrarian')?.value+generalForm.get('School13.temporaryMaleLibrarian')?.value}}"
                                 required class="form-control">
                         </div>
                         <div class="col-md-2">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentFeMaleLibrarian'].value+generalForm.controls['temporaryFeMaleLibrarian'].value}}"
-                                required class="form-control">
+                            value="{{generalForm.get('School13.permanentFeMaleLibrarian')?.value+generalForm.get('School13.temporaryFeMaleLibrarian')?.value}}"
+                            required class="form-control">
                         </div>
 
                     </div>
@@ -3085,32 +3090,32 @@
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('permanentMaleArtsDanceMusicTeachers')?.invalid && generalForm.get('permanentMaleArtsDanceMusicTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentMaleArtsDanceMusicTeachers')?.invalid && generalForm.get('School13.permanentMaleArtsDanceMusicTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentMaleArtsDanceMusicTeachers" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('permanentFeMaleArtsDanceMusicTeachers')?.invalid && generalForm.get('permanentFeMaleArtsDanceMusicTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentFeMaleArtsDanceMusicTeachers')?.invalid && generalForm.get('School13.permanentFeMaleArtsDanceMusicTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentFeMaleArtsDanceMusicTeachers" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('temporaryMaleArtsDanceMusicTeachers')?.invalid && generalForm.get('temporaryMaleArtsDanceMusicTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryMaleArtsDanceMusicTeachers')?.invalid && generalForm.get('School13.temporaryMaleArtsDanceMusicTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryMaleArtsDanceMusicTeachers" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('temporaryFeMaleArtsDanceMusicTeachers')?.invalid && generalForm.get('temporaryFeMaleArtsDanceMusicTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryFeMaleArtsDanceMusicTeachers')?.invalid && generalForm.get('School13.temporaryFeMaleArtsDanceMusicTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryFeMaleArtsDanceMusicTeachers" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentMaleArtsDanceMusicTeachers'].value+generalForm.controls['temporaryMaleArtsDanceMusicTeachers'].value}}"
+                                value="{{generalForm.get('School13.permanentMaleArtsDanceMusicTeachers')?.value+generalForm.get('School13.temporaryMaleArtsDanceMusicTeachers')?.value}}"
                                 required class="form-control">
                         </div>
                         <div class="col-md-2">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentFeMaleArtsDanceMusicTeachers'].value+generalForm.controls['temporaryFeMaleArtsDanceMusicTeachers'].value}}"
-                                required class="form-control">
+                            value="{{generalForm.get('School13.permanentFeMaleArtsDanceMusicTeachers')?.value+generalForm.get('School13.temporaryFeMaleArtsDanceMusicTeachers')?.value}}"
+                            required class="form-control">
                         </div>
 
                     </div>
@@ -3124,32 +3129,32 @@
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('permanentMaleCounsilors')?.invalid && generalForm.get('permanentMaleCounsilors')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentMaleCounsilors')?.invalid && generalForm.get('School13.permanentMaleCounsilors')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentMaleCounsilors" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('permanentFeMaleCounsilors')?.invalid && generalForm.get('permanentFeMaleCounsilors')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentFeMaleCounsilors')?.invalid && generalForm.get('School13.permanentFeMaleCounsilors')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentFeMaleCounsilors" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('temporaryMaleCounsilors')?.invalid && generalForm.get('temporaryMaleCounsilors')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryMaleCounsilors')?.invalid && generalForm.get('School13.temporaryMaleCounsilors')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryMaleCounsilors" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('temporaryFeMaleCounsilors')?.invalid && generalForm.get('temporaryFeMaleCounsilors')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryFeMaleCounsilors')?.invalid && generalForm.get('School13.temporaryFeMaleCounsilors')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryFeMaleCounsilors" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentMaleCounsilors'].value+generalForm.controls['temporaryMaleCounsilors'].value}}"
+                                value="{{generalForm.get('School13.permanentMaleCounsilors')?.value+generalForm.get('School13.temporaryMaleCounsilors')?.value}}"
                                 required class="form-control">
                         </div>
                         <div class="col-md-2">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentFeMaleCounsilors'].value+generalForm.controls['temporaryFeMaleCounsilors'].value}}"
-                                required class="form-control">
+                            value="{{generalForm.get('School13.permanentFeMaleCounsilors')?.value+generalForm.get('School13.temporaryFeMaleCounsilors')?.value}}"
+                            required class="form-control">
                         </div>
 
                     </div>
@@ -3163,32 +3168,32 @@
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('permanentMaleComputerLiteracy')?.invalid && generalForm.get('permanentMaleComputerLiteracy')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentMaleComputerLiteracy')?.invalid && generalForm.get('School13.permanentMaleComputerLiteracy')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentMaleComputerLiteracy" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('permanentFeMaleComputerLiteracy')?.invalid && generalForm.get('permanentFeMaleComputerLiteracy')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentFeMaleComputerLiteracy')?.invalid && generalForm.get('School13.permanentFeMaleComputerLiteracy')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentFeMaleComputerLiteracy" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('temporaryMaleComputerLiteracy')?.invalid && generalForm.get('temporaryMaleComputerLiteracy')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryMaleComputerLiteracy')?.invalid && generalForm.get('School13.temporaryMaleComputerLiteracy')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryMaleComputerLiteracy" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('temporaryFeMaleComputerLiteracy')?.invalid && generalForm.get('temporaryFeMaleComputerLiteracy')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryFeMaleComputerLiteracy')?.invalid && generalForm.get('School13.temporaryFeMaleComputerLiteracy')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryFeMaleComputerLiteracy" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentMaleComputerLiteracy'].value+generalForm.controls['temporaryMaleComputerLiteracy'].value}}"
+                                value="{{generalForm.get('School13.permanentMaleComputerLiteracy')?.value+generalForm.get('School13.temporaryMaleComputerLiteracy')?.value}}"
                                 required class="form-control">
                         </div>
                         <div class="col-md-2">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentFeMaleComputerLiteracy'].value+generalForm.controls['temporaryFeMaleComputerLiteracy'].value}}"
-                                required class="form-control">
+                            value="{{generalForm.get('School13.permanentFeMaleComputerLiteracy')?.value+generalForm.get('School13.temporaryFeMaleComputerLiteracy')?.value}}"
+                            required class="form-control">
                         </div>
 
                     </div>
@@ -3202,31 +3207,31 @@
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('permanentMaleFaithMinisters')?.invalid && generalForm.get('permanentMaleFaithMinisters')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentMaleFaithMinisters')?.invalid && generalForm.get('School13.permanentMaleFaithMinisters')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentMaleFaithMinisters" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('permanentFeMaleFaithMinisters')?.invalid && generalForm.get('permanentFeMaleFaithMinisters')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentFeMaleFaithMinisters')?.invalid && generalForm.get('School13.permanentFeMaleFaithMinisters')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentFeMaleFaithMinisters" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('temporaryMaleFaithMinisters')?.invalid && generalForm.get('temporaryMaleFaithMinisters')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryMaleFaithMinisters')?.invalid && generalForm.get('School13.temporaryMaleFaithMinisters')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryMaleFaithMinisters" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('temporaryFeMaleFaithMinisters')?.invalid && generalForm.get('temporaryFeMaleFaithMinisters')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryFeMaleFaithMinisters')?.invalid && generalForm.get('School13.temporaryFeMaleFaithMinisters')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryFeMaleFaithMinisters" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentMaleFaithMinisters'].value+generalForm.controls['temporaryMaleFaithMinisters'].value}}"
+                                value="{{generalForm.get('School13.permanentMaleFaithMinisters')?.value+generalForm.get('School13.temporaryMaleFaithMinisters')?.value}}"
                                 required class="form-control">
                         </div>
                         <div class="col-md-2">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentFeMaleFaithMinisters'].value+generalForm.controls['temporaryFeMaleFaithMinisters'].value}}"
+                                value="{{generalForm.get('School13.permanentFeMaleFaithMinisters')?.value+generalForm.get('School13.temporaryFeMaleFaithMinisters')?.value}}"
                                 required class="form-control">
                         </div>
 
@@ -3241,31 +3246,31 @@
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('permanentMaleNurse')?.invalid && generalForm.get('permanentMaleNurse')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentMaleNurse')?.invalid && generalForm.get('School13.permanentMaleNurse')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentMaleNurse" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('permanentFeMaleNurse')?.invalid && generalForm.get('permanentFeMaleNurse')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentFeMaleNurse')?.invalid && generalForm.get('School13.permanentFeMaleNurse')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentFeMaleNurse" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('temporaryMaleNurse')?.invalid && generalForm.get('temporaryMaleNurse')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryMaleNurse')?.invalid && generalForm.get('School13.temporaryMaleNurse')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryMaleNurse" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('temporaryFeMaleNurse')?.invalid && generalForm.get('temporaryFeMaleNurse')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryFeMaleNurse')?.invalid && generalForm.get('School13.temporaryFeMaleNurse')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryFeMaleNurse" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentMaleNurse'].value+generalForm.controls['temporaryMaleNurse'].value}}"
+                                value="{{generalForm.get('School13.permanentMaleNurse')?.value+generalForm.get('School13.temporaryMaleNurse')?.value}}"
                                 required class="form-control">
                         </div>
                         <div class="col-md-2">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentFeMaleNurse'].value+generalForm.controls['temporaryFeMaleNurse'].value}}"
+                                value="{{generalForm.get('School13.permanentFeMaleNurse')?.value+generalForm.get('School13.temporaryFeMaleNurse')?.value}}"
                                 required class="form-control">
                         </div>
 
@@ -3280,32 +3285,32 @@
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('permanentMalePTTeachers')?.invalid && generalForm.get('permanentMalePTTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentMalePTTeachers')?.invalid && generalForm.get('School13.permanentMalePTTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentMalePTTeachers" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('permanentFeMalePTTeachers')?.invalid && generalForm.get('permanentFeMalePTTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.permanentFeMalePTTeachers')?.invalid && generalForm.get('School13.permanentFeMalePTTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="permanentFeMalePTTeachers" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
-                            <span *ngIf="generalForm.get('temporaryMalePTTeachers')?.invalid && generalForm.get('temporaryMalePTTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryMalePTTeachers')?.invalid && generalForm.get('School13.temporaryMalePTTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryMalePTTeachers" required class="form-control">
                         </div>
                         <div class="col-md-2">
-                            <span *ngIf="generalForm.get('temporaryFeMalePTTeachers')?.invalid && generalForm.get('temporaryFeMalePTTeachers')?.touched" style="color:red;">*</span>
+                            <span *ngIf="generalForm.get('School13.temporaryFeMalePTTeachers')?.invalid && generalForm.get('School13.temporaryFeMalePTTeachers')?.touched" style="color:red;">*</span>
                             <input type="number" formControlName="temporaryFeMalePTTeachers" required class="form-control">
                         </div>
 
                         <div class="col-md-1">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentMalePTTeachers'].value+generalForm.controls['temporaryMalePTTeachers'].value}}"
+                                value="{{generalForm.get('School13.permanentMalePTTeachers')?.value+generalForm.get('School13.temporaryMalePTTeachers')?.value}}"
                                 required class="form-control">
                         </div>
                         <div class="col-md-2">
                             <input type="number" readonly
-                                value="{{generalForm.controls['permanentFeMalePTTeachers'].value+generalForm.controls['temporaryFeMalePTTeachers'].value}}"
-                                required class="form-control">
+                            value="{{generalForm.get('School13.permanentFeMalePTTeachers')?.value+generalForm.get('School13.temporaryFeMalePTTeachers')?.value}}"
+                            required class="form-control">
                         </div>
 
                     </div>
@@ -3321,41 +3326,40 @@
                         </div>
 
                         <div class="col-md-1">
-                            <input type="number" value="{{generalForm.controls['permanentMaleForPrincipalOrHM'].value+generalForm.controls['permanentMaleForVicePrincipalOrHM'].value+generalForm.controls['permanentMalePostGraduateTeachers'].value+generalForm.controls['permanentMaleTrainedGraduateTeachers'].value+generalForm.controls['permanentMalePrimaryTeachers'].value
-                        +generalForm.controls['permanentMaleNurseryTrainedTeachers'].value+generalForm.controls['permanentMaleUntrainedTeachers'].value+generalForm.controls['permanentMaleLibrarian'].value+generalForm.controls['permanentMaleArtsDanceMusicTeachers'].value+generalForm.controls['permanentMaleCounsilors'].value+generalForm.controls['permanentMaleComputerLiteracy'].value+generalForm.controls['permanentMaleFaithMinisters'].value+generalForm.controls['permanentMaleNurse'].value
-                        +generalForm.controls['permanentMalePTTeachers'].value}}" class="form-control" required readonly>
+                            <input type="number" value="{{generalForm.get('School13.permanentMaleForPrincipalOrHM')?.value+generalForm.get('School13.permanentMaleForVicePrincipalOrHM')?.value+generalForm.get('School13.permanentMalePostGraduateTeachers')?.value+generalForm.get('School13.permanentMaleTrainedGraduateTeachers')?.value+generalForm.get('School13.permanentMalePrimaryTeachers')?.value
+                        +generalForm.get('School13.permanentMaleNurseryTrainedTeachers')?.value+generalForm.get('School13.permanentMaleUntrainedTeachers')?.value+generalForm.get('School13.permanentMaleLibrarian')?.value+generalForm.get('School13.permanentMaleArtsDanceMusicTeachers')?.value+generalForm.get('School13.permanentMaleCounsilors')?.value+generalForm.get('School13.permanentMaleComputerLiteracy')?.value+generalForm.get('School13.permanentMaleFaithMinisters')?.value+generalForm.get('School13.permanentMaleNurse')?.value
+                        +generalForm.get('School13.permanentMalePTTeachers')?.value}}" class="form-control" required readonly>
                         </div>
                         <div class="col-md-2">
-                            <input type="number" value="{{generalForm.controls['permanentFeMaleForPrincipalOrHM'].value+generalForm.controls['permanentFeMaleForVicePrincipalOrHM'].value+generalForm.controls['permanentFeMalePostGraduateTeachers'].value+generalForm.controls['permanentFeMaleTrainedGraduateTeachers'].value+generalForm.controls['permanentFeMalePrimaryTeachers'].value
-                        +generalForm.controls['permanentFeMaleNurseryTrainedTeachers'].value+generalForm.controls['permanentFeMaleUntrainedTeachers'].value+generalForm.controls['permanentFeMaleLibrarian'].value+generalForm.controls['permanentFeMaleArtsDanceMusicTeachers'].value+generalForm.controls['permanentFeMaleCounsilors'].value+generalForm.controls['permanentFeMaleComputerLiteracy'].value+generalForm.controls['permanentFeMaleFaithMinisters'].value+generalForm.controls['permanentFeMaleNurse'].value
-                        +generalForm.controls['permanentFeMalePTTeachers'].value}}" class="form-control" class="form-control" required
-                                readonly>
+                            <input type="number" value="{{generalForm.get('School13.permanentFeMaleForPrincipalOrHM')?.value+generalForm.get('School13.permanentFeMaleForVicePrincipalOrHM')?.value+generalForm.get('School13.permanentFeMalePostGraduateTeachers')?.value+generalForm.get('School13.permanentFeMaleTrainedGraduateTeachers')?.value+generalForm.get('School13.permanentFeMalePrimaryTeachers')?.value
+                            +generalForm.get('School13.permanentFeMaleNurseryTrainedTeachers')?.value+generalForm.get('School13.permanentFeMaleUntrainedTeachers')?.value+generalForm.get('School13.permanentFeMaleLibrarian')?.value+generalForm.get('School13.permanentFeMaleArtsDanceMusicTeachers')?.value+generalForm.get('School13.permanentFeMaleCounsilors')?.value+generalForm.get('School13.permanentFeMaleComputerLiteracy')?.value+generalForm.get('School13.permanentFeMaleFaithMinisters')?.value+generalForm.get('School13.permanentFeMaleNurse')?.value
+                            +generalForm.get('School13.permanentFeMalePTTeachers')?.value}}" class="form-control" required readonly>
                         </div>
 
                         <div class="col-md-1">
-                            <input type="number" value="{{generalForm.controls['temporaryMaleForPrincipalOrHM'].value+generalForm.controls['temporaryMaleForVicePrincipalOrHM'].value+generalForm.controls['temporaryMalePostGraduateTeachers'].value+generalForm.controls['temporaryMaleTrainedGraduateTeachers'].value+generalForm.controls['temporaryMalePrimaryTeachers'].value
-                        +generalForm.controls['temporaryMaleNurseryTrainedTeachers'].value+generalForm.controls['temporaryMaleUntrainedTeachers'].value+generalForm.controls['temporaryMaleLibrarian'].value+generalForm.controls['temporaryMaleArtsDanceMusicTeachers'].value+generalForm.controls['temporaryMaleCounsilors'].value+generalForm.controls['temporaryMaleComputerLiteracy'].value+generalForm.controls['temporaryMaleFaithMinisters'].value+generalForm.controls['temporaryMaleNurse'].value
-                        +generalForm.controls['temporaryMalePTTeachers'].value}}" class="form-control" required readonly>
+                            <input type="number" value="{{generalForm.get('School13.temporaryMaleForPrincipalOrHM')?.value+generalForm.get('School13.temporaryMaleForVicePrincipalOrHM')?.value+generalForm.get('School13.temporaryMalePostGraduateTeachers')?.value+generalForm.get('School13.temporaryMaleTrainedGraduateTeachers')?.value+generalForm.get('School13.temporaryMalePrimaryTeachers')?.value
+                        +generalForm.get('School13.temporaryMaleNurseryTrainedTeachers')?.value+generalForm.get('School13.UTtmtemporaryMaleUntrainedTeachersale')?.value+generalForm.get('School13.temporaryMaleLibrarian')?.value+generalForm.get('School13.temporaryMaleArtsDanceMusicTeachers')?.value+generalForm.get('School13.temporaryMaleCounsilors')?.value+generalForm.get('School13.temporaryMaleComputerLiteracy')?.value+generalForm.get('School13.temporaryMaleFaithMinisters')?.value+generalForm.get('School13.temporaryMaleNurse')?.value
+                        +generalForm.get('School13.temporaryMalePTTeachers')?.value}}" class="form-control" required readonly>
                         </div>
                         <div class="col-md-2">
-                            <input type="number" value="{{generalForm.controls['temporaryFeMaleForPrincipalOrHM'].value+generalForm.controls['temporaryFeMaleForVicePrincipalOrHM'].value+generalForm.controls['temporaryFeMalePostGraduateTeachers'].value+generalForm.controls['temporaryFeMaleTrainedGraduateTeachers'].value+generalForm.controls['temporaryFeMalePrimaryTeachers'].value
-                        +generalForm.controls['temporaryFeMaleNurseryTrainedTeachers'].value+generalForm.controls['temporaryFeMaleUntrainedTeachers'].value+generalForm.controls['temporaryFeMaleLibrarian'].value+generalForm.controls['temporaryFeMaleArtsDanceMusicTeachers'].value+generalForm.controls['temporaryFeMaleCounsilors'].value+generalForm.controls['temporaryFeMaleComputerLiteracy'].value+generalForm.controls['temporaryFeMaleFaithMinisters'].value+generalForm.controls['temporaryFeMaleNurse'].value
-                        +generalForm.controls['temporaryFeMalePTTeachers'].value}}" class="form-control" required readonly>
+                            <input type="number" value="{{generalForm.get('School13.temporaryFeMaleForPrincipalOrHM')?.value+generalForm.get('School13.temporaryFeMaleForVicePrincipalOrHM')?.value+generalForm.get('School13.temporaryFeMalePostGraduateTeachers')?.value+generalForm.get('School13.temporaryFeMaleTrainedGraduateTeachers')?.value+generalForm.get('School13.temporaryFeMalePrimaryTeachers')?.value
+                            +generalForm.get('School13.temporaryFeMaleNurseryTrainedTeachers')?.value+generalForm.get('School13.temporaryFeMaleUntrainedTeachers')?.value+generalForm.get('School13.temporaryFeMaleLibrarian')?.value+generalForm.get('School13.temporaryFeMaleArtsDanceMusicTeachers')?.value+generalForm.get('School13.temporaryFeMaleCounsilors')?.value+generalForm.get('School13.temporaryFeMaleComputerLiteracy')?.value+generalForm.get('School13.temporaryFeMaleFaithMinisters')?.value+generalForm.get('School13.temporaryFeMaleNurse')?.value
+                            +generalForm.get('School13.temporaryFeMalePTTeachers')?.value}}" class="form-control" required readonly>
                         </div>
 
                         <div class="col-md-1">
-                            <input type="number" value="{{(generalForm.controls['permanentMaleForPrincipalOrHM'].value+generalForm.controls['permanentMaleForVicePrincipalOrHM'].value+generalForm.controls['permanentMalePostGraduateTeachers'].value+generalForm.controls['permanentMaleTrainedGraduateTeachers'].value+generalForm.controls['permanentMalePrimaryTeachers'].value
-                        +generalForm.controls['permanentMaleNurseryTrainedTeachers'].value+generalForm.controls['permanentMaleUntrainedTeachers'].value+generalForm.controls['permanentMaleLibrarian'].value+generalForm.controls['permanentMaleArtsDanceMusicTeachers'].value+generalForm.controls['permanentMaleCounsilors'].value+generalForm.controls['permanentMaleComputerLiteracy'].value+generalForm.controls['permanentMaleFaithMinisters'].value+generalForm.controls['permanentMaleNurse'].value
-                        +generalForm.controls['permanentMalePTTeachers'].value)+(generalForm.controls['temporaryMaleForPrincipalOrHM'].value+generalForm.controls['temporaryMaleForVicePrincipalOrHM'].value+generalForm.controls['temporaryMalePostGraduateTeachers'].value+generalForm.controls['temporaryMaleTrainedGraduateTeachers'].value+generalForm.controls['temporaryMalePrimaryTeachers'].value
-                        +generalForm.controls['temporaryMaleNurseryTrainedTeachers'].value+generalForm.controls['temporaryMaleUntrainedTeachers'].value+generalForm.controls['temporaryMaleLibrarian'].value+generalForm.controls['temporaryMaleArtsDanceMusicTeachers'].value+generalForm.controls['temporaryMaleCounsilors'].value+generalForm.controls['temporaryMaleComputerLiteracy'].value+generalForm.controls['temporaryMaleFaithMinisters'].value+generalForm.controls['temporaryMaleNurse'].value
-                        +generalForm.controls['temporaryMalePTTeachers'].value)}}" class="form-control" required readonly>
+                            <input type="number" value="{{(generalForm.get('School13.permanentMaleForPrincipalOrHM')?.value+generalForm.get('School13.permanentMaleForVicePrincipalOrHM')?.value+generalForm.get('School13.permanentMalePostGraduateTeachers')?.value+generalForm.get('School13.permanentMaleTrainedGraduateTeachers')?.value+generalForm.get('School13.permanentMalePrimaryTeachers')?.value
+                            +generalForm.get('School13.permanentMaleNurseryTrainedTeachers')?.value+generalForm.get('School13.permanentMaleUntrainedTeachers')?.value+generalForm.get('School13.permanentMaleLibrarian')?.value+generalForm.get('School13.permanentMaleArtsDanceMusicTeachers')?.value+generalForm.get('School13.permanentMaleCounsilors')?.value+generalForm.get('School13.permanentMaleComputerLiteracy')?.value+generalForm.get('School13.permanentMaleFaithMinisters')?.value+generalForm.get('School13.permanentMaleNurse')?.value
+                            +generalForm.get('School13.permanentMalePTTeachers')?.value)+(generalForm.get('School13.temporaryMaleForPrincipalOrHM')?.value+generalForm.get('School13.temporaryMaleForVicePrincipalOrHM')?.value+generalForm.get('School13.temporaryMalePostGraduateTeachers')?.value+generalForm.get('School13.temporaryMaleTrainedGraduateTeachers')?.value+generalForm.get('School13.temporaryMalePrimaryTeachers')?.value
+                            +generalForm.get('School13.temporaryMaleNurseryTrainedTeachers')?.value+generalForm.get('School13.UTtmtemporaryMaleUntrainedTeachersale')?.value+generalForm.get('School13.temporaryMaleLibrarian')?.value+generalForm.get('School13.temporaryMaleArtsDanceMusicTeachers')?.value+generalForm.get('School13.temporaryMaleCounsilors')?.value+generalForm.get('School13.temporaryMaleComputerLiteracy')?.value+generalForm.get('School13.temporaryMaleFaithMinisters')?.value+generalForm.get('School13.temporaryMaleNurse')?.value
+                            +generalForm.get('School13.temporaryMalePTTeachers')?.value)}}" class="form-control" required readonly>
                         </div>
                         <div class="col-md-2">
-                            <input type="number" value="{{(generalForm.controls['permanentFeMaleForPrincipalOrHM'].value+generalForm.controls['permanentFeMaleForVicePrincipalOrHM'].value+generalForm.controls['permanentFeMalePostGraduateTeachers'].value+generalForm.controls['permanentFeMaleTrainedGraduateTeachers'].value+generalForm.controls['permanentFeMalePrimaryTeachers'].value
-                        +generalForm.controls['permanentFeMaleNurseryTrainedTeachers'].value+generalForm.controls['permanentFeMaleUntrainedTeachers'].value+generalForm.controls['permanentFeMaleLibrarian'].value+generalForm.controls['permanentFeMaleArtsDanceMusicTeachers'].value+generalForm.controls['permanentFeMaleCounsilors'].value+generalForm.controls['permanentFeMaleComputerLiteracy'].value+generalForm.controls['permanentFeMaleFaithMinisters'].value+generalForm.controls['permanentFeMaleNurse'].value
-                        +generalForm.controls['permanentFeMalePTTeachers'].value)+(generalForm.controls['temporaryFeMaleForPrincipalOrHM'].value+generalForm.controls['temporaryFeMaleForVicePrincipalOrHM'].value+generalForm.controls['temporaryFeMalePostGraduateTeachers'].value+generalForm.controls['temporaryFeMaleTrainedGraduateTeachers'].value+generalForm.controls['temporaryFeMalePrimaryTeachers'].value
-                        +generalForm.controls['temporaryFeMaleNurseryTrainedTeachers'].value+generalForm.controls['temporaryFeMaleUntrainedTeachers'].value+generalForm.controls['temporaryFeMaleLibrarian'].value+generalForm.controls['temporaryFeMaleArtsDanceMusicTeachers'].value+generalForm.controls['temporaryFeMaleCounsilors'].value+generalForm.controls['temporaryFeMaleComputerLiteracy'].value+generalForm.controls['temporaryFeMaleFaithMinisters'].value+generalForm.controls['temporaryFeMaleNurse'].value
-                        +generalForm.controls['temporaryFeMalePTTeachers'].value)}}" class="form-control" required readonly>
+                            <input type="number" value="{{(generalForm.get('School13.permanentFeMaleForPrincipalOrHM')?.value+generalForm.get('School13.permanentFeMaleForVicePrincipalOrHM')?.value+generalForm.get('School13.permanentFeMalePostGraduateTeachers')?.value+generalForm.get('School13.permanentFeMaleTrainedGraduateTeachers')?.value+generalForm.get('School13.permanentFeMalePrimaryTeachers')?.value
+                            +generalForm.get('School13.permanentFeMaleNurseryTrainedTeachers')?.value+generalForm.get('School13.permanentFeMaleUntrainedTeachers')?.value+generalForm.get('School13.permanentFeMaleLibrarian')?.value+generalForm.get('School13.permanentFeMaleArtsDanceMusicTeachers')?.value+generalForm.get('School13.permanentFeMaleCounsilors')?.value+generalForm.get('School13.permanentFeMaleComputerLiteracy')?.value+generalForm.get('School13.permanentFeMaleFaithMinisters')?.value+generalForm.get('School13.permanentFeMaleNurse')?.value
+                            +generalForm.get('School13.permanentFeMalePTTeachers')?.value)+(generalForm.get('School13.temporaryFeMaleForPrincipalOrHM')?.value+generalForm.get('School13.temporaryFeMaleForVicePrincipalOrHM')?.value+generalForm.get('School13.temporaryFeMalePostGraduateTeachers')?.value+generalForm.get('School13.temporaryFeMaleTrainedGraduateTeachers')?.value+generalForm.get('School13.temporaryFeMalePrimaryTeachers')?.value
+                            +generalForm.get('School13.temporaryFeMaleNurseryTrainedTeachers')?.value+generalForm.get('School13.temporaryFeMaleUntrainedTeachers')?.value+generalForm.get('School13.temporaryFeMaleLibrarian')?.value+generalForm.get('School13.temporaryFeMaleArtsDanceMusicTeachers')?.value+generalForm.get('School13.temporaryFeMaleCounsilors')?.value+generalForm.get('School13.temporaryFeMaleComputerLiteracy')?.value+generalForm.get('School13.temporaryFeMaleFaithMinisters')?.value+generalForm.get('School13.temporaryFeMaleNurse')?.value
+                            +generalForm.get('School13.temporaryFeMalePTTeachers')?.value)}}" class="form-control" required readonly>
                         </div>
 
                     </div>
@@ -3384,12 +3388,13 @@
                         </div>
                     </div>
 
-
+                </div>
                 </div>
 
 
                 <!-- 14th row -->
                 <div *ngIf="step==14">
+                    <div formGroupName="School14">
                     <div class="row">
                         <div class="col-md-4" style="background-color:#155B97;"></div>
                         <div class="col-md-5" style="background-color:#155B97;">
@@ -3456,7 +3461,7 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="permanentOfficeManagers" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('permanentOfficeManagers')?.invalid && generalForm.get('permanentOfficeManagers')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School14.permanentOfficeManagers')?.invalid && generalForm.get('School14.permanentOfficeManagers')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-3">
                             <div class="input-group">
@@ -3464,7 +3469,7 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="temporaryOfficeManagers" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('temporaryOfficeManagers')?.invalid && generalForm.get('temporaryOfficeManagers')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School14.temporaryOfficeManagers')?.invalid && generalForm.get('School14.temporaryOfficeManagers')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-2">
@@ -3473,14 +3478,14 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="partTimeOfficeManagers" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('partTimeOfficeManagers')?.invalid && generalForm.get('partTimeOfficeManagers')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School14.partTimeOfficeManagers')?.invalid && generalForm.get('School14.partTimeOfficeManagers')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-2">
                             <div class="input-group">
                                 <span class="input-group-text btn btn-success" style="background-color: #4FA813;"><i
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number"
-                                    value="{{generalForm.controls['permanentOfficeManagers'].value+generalForm.controls['temporaryOfficeManagers'].value+generalForm.controls['partTimeOfficeManagers'].value}}"
+                                    value="{{generalForm.get('School14.permanentOfficeManagers')?.value+generalForm.get('School14.temporaryOfficeManagers')?.value+generalForm.get('School14.partTimeOfficeManagers')?.value}}"
                                     required class="form-control" readonly>
                             </div>
                         </div>
@@ -3503,7 +3508,7 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="permanentOfficeAssistant" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('permanentOfficeAssistant')?.invalid && generalForm.get('permanentOfficeAssistant')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School14.permanentOfficeAssistant')?.invalid && generalForm.get('School14.permanentOfficeAssistant')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-3">
                             <div class="input-group">
@@ -3511,7 +3516,7 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="temporaryOfficeAssistant" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('temporaryOfficeAssistant')?.invalid && generalForm.get('temporaryOfficeAssistant')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School14.temporaryOfficeAssistant')?.invalid && generalForm.get('School14.temporaryOfficeAssistant')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-2">
@@ -3520,14 +3525,14 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="partTimeOfficeAssistant" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('partTimeOfficeAssistant')?.invalid && generalForm.get('partTimeOfficeAssistant')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School14.partTimeOfficeAssistant')?.invalid && generalForm.get('School14.partTimeOfficeAssistant')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-2">
                             <div class="input-group">
                                 <span class="input-group-text btn btn-success" style="background-color: #4FA813;"><i
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number"
-                                    value="{{generalForm.controls['permanentOfficeAssistant'].value+generalForm.controls['temporaryOfficeAssistant'].value+generalForm.controls['partTimeOfficeAssistant'].value}}"
+                                    value="{{generalForm.get('School14.permanentOfficeAssistant')?.value+generalForm.get('School14.temporaryOfficeAssistant')?.value+generalForm.get('School14.partTimeOfficeAssistant')?.value}}"
                                     required class="form-control" readonly>
                             </div>
                         </div>
@@ -3550,7 +3555,7 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="permanentClerks" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('permanentClerks')?.invalid && generalForm.get('permanentClerks')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School14.permanentClerks')?.invalid && generalForm.get('School14.permanentClerks')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-3">
                             <div class="input-group">
@@ -3558,7 +3563,7 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="temporaryClerks" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('temporaryClerks')?.invalid && generalForm.get('temporaryClerks')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School14.temporaryClerks')?.invalid && generalForm.get('School14.temporaryClerks')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-2">
@@ -3567,14 +3572,14 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="partTimeClerks" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('partTimeClerks')?.invalid && generalForm.get('partTimeClerks')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School14.partTimeClerks')?.invalid && generalForm.get('School14.partTimeClerks')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-2">
                             <div class="input-group">
                                 <span class="input-group-text btn btn-success" style="background-color: #4FA813;"><i
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number"
-                                    value="{{generalForm.controls['permanentClerks'].value+generalForm.controls['temporaryClerks'].value+generalForm.controls['partTimeClerks'].value}}"
+                                    value="{{generalForm.get('School14.permanentClerks')?.value+generalForm.get('School14.temporaryClerks')?.value+generalForm.get('School14.partTimeClerks')?.value}}"
                                     required class="form-control" readonly>
                             </div>
                         </div>
@@ -3597,7 +3602,7 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="permanentLabAttendants" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('permanentLabAttendants')?.invalid && generalForm.get('permanentLabAttendants')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School14.permanentLabAttendants')?.invalid && generalForm.get('School14.permanentLabAttendants')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-3">
                             <div class="input-group">
@@ -3605,7 +3610,7 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="temporaryLabAttendants" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('temporaryLabAttendants')?.invalid && generalForm.get('temporaryLabAttendants')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School14.temporaryLabAttendants')?.invalid && generalForm.get('School14.temporaryLabAttendants')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-2">
@@ -3614,14 +3619,14 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="partTimeLabAttendants" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('partTimeLabAttendants')?.invalid && generalForm.get('partTimeLabAttendants')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School14.partTimeLabAttendants')?.invalid && generalForm.get('School14.partTimeLabAttendants')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-2">
                             <div class="input-group">
                                 <span class="input-group-text btn btn-success" style="background-color: #4FA813;"><i
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="labtotal"
-                                    value="{{generalForm.controls['permanentLabAttendants'].value+generalForm.controls['temporaryLabAttendants'].value+generalForm.controls['partTimeLabAttendants'].value}}"
+                                    value="{{generalForm.get('School14.permanentLabAttendants')?.value+generalForm.get('School14.temporaryLabAttendants')?.value+generalForm.get('School14.partTimeLabAttendants')?.value}}"
                                     required class="form-control" readonly>
                             </div>
                         </div>
@@ -3644,7 +3649,7 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="permanentAccountant" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('permanentAccountant')?.invalid && generalForm.get('permanentAccountant')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School14.permanentAccountant')?.invalid && generalForm.get('School14.permanentAccountant')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-3">
                             <div class="input-group">
@@ -3652,7 +3657,7 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="temporaryAccountant" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('temporaryAccountant')?.invalid && generalForm.get('temporaryAccountant')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School14.temporaryAccountant')?.invalid && generalForm.get('School14.temporaryAccountant')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-2">
@@ -3661,14 +3666,14 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="partTimeAccountant" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('partTimeAccountant')?.invalid && generalForm.get('partTimeAccountant')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School14.partTimeAccountant')?.invalid && generalForm.get('School14.partTimeAccountant')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-2">
                             <div class="input-group">
                                 <span class="input-group-text btn btn-success" style="background-color: #4FA813;"><i
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number"
-                                    value="{{generalForm.controls['permanentAccountant'].value+generalForm.controls['temporaryAccountant'].value+generalForm.controls['partTimeAccountant'].value}}"
+                                    value="{{generalForm.get('School14.permanentAccountant')?.value+generalForm.get('School14.temporaryAccountant')?.value+generalForm.get('School14.partTimeAccountant')?.value}}"
                                     required class="form-control" readonly>
                             </div>
                         </div>
@@ -3692,7 +3697,7 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="permanentPeonsOrClerks" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('permanentPeonsOrClerks')?.invalid && generalForm.get('permanentPeonsOrClerks')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School14.permanentPeonsOrClerks')?.invalid && generalForm.get('School14.permanentPeonsOrClerks')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-3">
                             <div class="input-group">
@@ -3700,7 +3705,7 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="temporaryPeonsOrClerks" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('temporaryPeonsOrClerks')?.invalid && generalForm.get('temporaryPeonsOrClerks')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School14.temporaryPeonsOrClerks')?.invalid && generalForm.get('School14.temporaryPeonsOrClerks')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-2">
@@ -3709,14 +3714,14 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="partTimePeonsOrClerks" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('partTimePeonsOrClerks')?.invalid && generalForm.get('partTimePeonsOrClerks')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School14.partTimePeonsOrClerks')?.invalid && generalForm.get('School14.partTimePeonsOrClerks')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-2">
                             <div class="input-group">
                                 <span class="input-group-text btn btn-success" style="background-color: #4FA813;"><i
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number"
-                                    value="{{generalForm.controls['permanentPeonsOrClerks'].value+generalForm.controls['temporaryPeonsOrClerks'].value+generalForm.controls['partTimePeonsOrClerks'].value}}"
+                                    value="{{generalForm.get('School14.permanentPeonsOrClerks')?.value+generalForm.get('School14.temporaryPeonsOrClerks')?.value+generalForm.get('School14.partTimePeonsOrClerks')?.value}}"
                                     required class="form-control" readonly>
                             </div>
                         </div>
@@ -3741,7 +3746,7 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="permanentOthers" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('permanentOthers')?.invalid && generalForm.get('permanentOthers')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School14.permanentOthers')?.invalid && generalForm.get('School14.permanentOthers')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-3">
                             <div class="input-group">
@@ -3749,7 +3754,7 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="temporaryOthers" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('temporaryOthers')?.invalid && generalForm.get('temporaryOthers')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School14.temporaryOthers')?.invalid && generalForm.get('School14.temporaryOthers')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-2">
@@ -3758,14 +3763,14 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="partTimeOthers" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('partTimeOthers')?.invalid && generalForm.get('partTimeOthers')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School14.partTimeOthers')?.invalid && generalForm.get('School14.partTimeOthers')?.touched" style="color:red;">required</span>
                         </div>
                         <div class="col-md-2">
                             <div class="input-group">
                                 <span class="input-group-text btn btn-success" style="background-color: #4FA813;"><i
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number"
-                                    value="{{generalForm.controls['permanentOthers'].value+generalForm.controls['temporaryOthers'].value+generalForm.controls['partTimeOthers'].value}}"
+                                    value="{{generalForm.get('School14.permanentOthers')?.value+generalForm.get('School14.temporaryOthers')?.value+generalForm.get('School14.partTimeOthers')?.value}}"
                                     required class="form-control" readonly>
                             </div>
                         </div>
@@ -3791,13 +3796,14 @@
                             </div>
                         </div>
                     </div>
-
+                </div>
 
                 </div>
 
 
                 <!-- 15th row -->
                 <div *ngIf="step==15">
+                    <div formGroupName="School15">
                     <div class="row">
                         <div class="col-md-3" style="background-color:#155B97;"></div>
                         <div class="col-md-8" style="background-color:#155B97 ;">
@@ -3829,7 +3835,7 @@
                                     <input type="number" formControlName="noOfActivitiesCarriedOut" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfActivitiesCarriedOut')?.invalid && generalForm.get('noOfActivitiesCarriedOut')?.touched" style="color:red;">required</span>                            </div><br />
+                                <span *ngIf="generalForm.get('School15.noOfActivitiesCarriedOut')?.invalid && generalForm.get('School15.noOfActivitiesCarriedOut')?.touched" style="color:red;">required</span>                            </div><br />
                         </div>
 
                         <div class="col-md-4">
@@ -3840,7 +3846,7 @@
                                             class="fa fa-sort-numeric-down"></i></span>
                                     <input type="number" formControlName="noOfGroupsClubsMovementsPresent" required class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfGroupsClubsMovementsPresent')?.invalid && generalForm.get('noOfGroupsClubsMovementsPresent')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School15.noOfGroupsClubsMovementsPresent')?.invalid && generalForm.get('School15.noOfGroupsClubsMovementsPresent')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3853,7 +3859,7 @@
                                     <input type="number" formControlName="noOfCommunityServicesDoneInLastYear" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfCommunityServicesDoneInLastYear')?.invalid && generalForm.get('noOfCommunityServicesDoneInLastYear')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School15.noOfCommunityServicesDoneInLastYear')?.invalid && generalForm.get('School15.noOfCommunityServicesDoneInLastYear')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3881,7 +3887,7 @@
                                     <input type="number" formControlName="noOfSportsSchool" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfSportsSchool')?.invalid && generalForm.get('noOfSportsSchool')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School15.noOfSportsSchool')?.invalid && generalForm.get('School15.noOfSportsSchool')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3894,7 +3900,7 @@
                                     <input type="number" formControlName="noOfSportsZonal" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfSportsZonal')?.invalid && generalForm.get('noOfSportsZonal')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School15.noOfSportsZonal')?.invalid && generalForm.get('School15.noOfSportsZonal')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3907,7 +3913,7 @@
                                     <input type="number" formControlName="noOfSportsDistrict" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfSportsDistrict')?.invalid && generalForm.get('noOfSportsDistrict')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School15.noOfSportsDistrict')?.invalid && generalForm.get('School15.noOfSportsDistrict')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3921,7 +3927,7 @@
                                     <input type="number" formControlName="noOfSportsState" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfSportsState')?.invalid && generalForm.get('noOfSportsState')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School15.noOfSportsState')?.invalid && generalForm.get('School15.noOfSportsState')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3935,7 +3941,7 @@
                                     <input type="number" formControlName="noOfSportsNational" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfSportsNational')?.invalid && generalForm.get('noOfSportsNational')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School15.noOfSportsNational')?.invalid && generalForm.get('School15.noOfSportsNational')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3949,7 +3955,7 @@
                                     <input type="number" formControlName="noOfSportsInternational" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfSportsInternational')?.invalid && generalForm.get('noOfSportsInternational')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School15.noOfSportsInternational')?.invalid && generalForm.get('School15.noOfSportsInternational')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3978,7 +3984,7 @@
                                     <input type="number" formControlName="noOfCompetitionsParticipatedLastYearInSchool" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfCompetitionsParticipatedLastYearInSchool')?.invalid && generalForm.get('noOfCompetitionsParticipatedLastYearInSchool')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School15.noOfCompetitionsParticipatedLastYearInSchool')?.invalid && generalForm.get('School15.noOfCompetitionsParticipatedLastYearInSchool')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -3991,7 +3997,7 @@
                                     <input type="number" formControlName="noOfCompetitionsParticipatedLastYearInZonal" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfCompetitionsParticipatedLastYearInZonal')?.invalid && generalForm.get('noOfCompetitionsParticipatedLastYearInZonal')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School15.noOfCompetitionsParticipatedLastYearInZonal')?.invalid && generalForm.get('School15.noOfCompetitionsParticipatedLastYearInZonal')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -4004,7 +4010,7 @@
                                     <input type="number" formControlName="noOfCompetitionsParticipatedLastYearInDistrict" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfCompetitionsParticipatedLastYearInDistrict')?.invalid && generalForm.get('noOfCompetitionsParticipatedLastYearInDistrict')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School15.noOfCompetitionsParticipatedLastYearInDistrict')?.invalid && generalForm.get('School15.noOfCompetitionsParticipatedLastYearInDistrict')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -4018,7 +4024,7 @@
                                     <input type="number" formControlName="noOfCompetitionsParticipatedLastYearInState" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfCompetitionsParticipatedLastYearInState')?.invalid && generalForm.get('noOfCompetitionsParticipatedLastYearInState')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School15.noOfCompetitionsParticipatedLastYearInState')?.invalid && generalForm.get('School15.noOfCompetitionsParticipatedLastYearInState')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -4032,7 +4038,7 @@
                                     <input type="number" formControlName="noOfCompetitionsParticipatedLastYearInNational" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfCompetitionsParticipatedLastYearInNational')?.invalid && generalForm.get('noOfCompetitionsParticipatedLastYearInNational')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School15.noOfCompetitionsParticipatedLastYearInNational')?.invalid && generalForm.get('School15.noOfCompetitionsParticipatedLastYearInNational')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -4046,7 +4052,7 @@
                                     <input type="number" formControlName="noOfCompetitionsParticipatedLastYearInInterNational" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfCompetitionsParticipatedLastYearInInterNational')?.invalid && generalForm.get('noOfCompetitionsParticipatedLastYearInInterNational')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School15.noOfCompetitionsParticipatedLastYearInInterNational')?.invalid && generalForm.get('School15.noOfCompetitionsParticipatedLastYearInInterNational')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -4079,7 +4085,7 @@
                                     <input type="number" formControlName="noOfInterSchoolProgramsOrganizedInSchoolLevel" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfInterSchoolProgramsOrganizedInSchoolLevel')?.invalid && generalForm.get('noOfInterSchoolProgramsOrganizedInSchoolLevel')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School15.noOfInterSchoolProgramsOrganizedInSchoolLevel')?.invalid && generalForm.get('School15.noOfInterSchoolProgramsOrganizedInSchoolLevel')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -4092,7 +4098,7 @@
                                     <input type="number" formControlName="noOfInterSchoolProgramsOrganizedInZonalLevel" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfInterSchoolProgramsOrganizedInZonalLevel')?.invalid && generalForm.get('noOfInterSchoolProgramsOrganizedInZonalLevel')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School15.noOfInterSchoolProgramsOrganizedInZonalLevel')?.invalid && generalForm.get('School15.noOfInterSchoolProgramsOrganizedInZonalLevel')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -4105,7 +4111,7 @@
                                     <input type="number" formControlName="noOfInterSchoolProgramsOrganizedInDistrictLevel" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfInterSchoolProgramsOrganizedInDistrictLevel')?.invalid && generalForm.get('noOfInterSchoolProgramsOrganizedInDistrictLevel')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School15.noOfInterSchoolProgramsOrganizedInDistrictLevel')?.invalid && generalForm.get('School15.noOfInterSchoolProgramsOrganizedInDistrictLevel')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -4119,7 +4125,7 @@
                                     <input type="number" formControlName="noOfInterSchoolProgramsOrganizedInStateLevel" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfInterSchoolProgramsOrganizedInStateLevel')?.invalid && generalForm.get('noOfInterSchoolProgramsOrganizedInStateLevel')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School15.noOfInterSchoolProgramsOrganizedInStateLevel')?.invalid && generalForm.get('School15.noOfInterSchoolProgramsOrganizedInStateLevel')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -4133,7 +4139,7 @@
                                     <input type="number" formControlName="noOfInterSchoolProgramsOrganizedInNationalLevel" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfInterSchoolProgramsOrganizedInNationalLevel')?.invalid && generalForm.get('noOfInterSchoolProgramsOrganizedInNationalLevel')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School15.noOfInterSchoolProgramsOrganizedInNationalLevel')?.invalid && generalForm.get('School15.noOfInterSchoolProgramsOrganizedInNationalLevel')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -4147,7 +4153,7 @@
                                     <input type="number" formControlName="noOfInterSchoolProgramsOrganizedInInterNationalLevel" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfInterSchoolProgramsOrganizedInInterNationalLevel')?.invalid && generalForm.get('noOfInterSchoolProgramsOrganizedInInterNationalLevel')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School15.noOfInterSchoolProgramsOrganizedInInterNationalLevel')?.invalid && generalForm.get('School15.noOfInterSchoolProgramsOrganizedInInterNationalLevel')?.touched" style="color:red;">required</span>
                             </div><br />
                         </div>
 
@@ -4171,7 +4177,7 @@
                         </div>
                     </div>
 
-
+                </div>
                 </div>
 
 
@@ -4179,6 +4185,7 @@
 
                 <!-- 16th row -->
                 <div *ngIf="step==16">
+                    <div formGroupName="School16">
                     <div class="row">
                         <div class="col-md-4" style="background-color:#155B97 ;"></div>
                         <div class="col-md-5" style="background-color:#155B97 ;">
@@ -4284,7 +4291,7 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="noOfWorkingDaysIn21To22" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('noOfWorkingDaysIn21To22')?.invalid && generalForm.get('noOfWorkingDaysIn21To22')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School16.noOfWorkingDaysIn21To22')?.invalid && generalForm.get('School16.noOfWorkingDaysIn21To22')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-3">
@@ -4294,7 +4301,7 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="noOfWorkingDaysIn20To21" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('noOfWorkingDaysIn20To21')?.invalid && generalForm.get('noOfWorkingDaysIn20To21')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School16.noOfWorkingDaysIn20To21')?.invalid && generalForm.get('School16.noOfWorkingDaysIn20To21')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-3">
@@ -4304,7 +4311,7 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="noOfWorkingDaysIn19To20" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('noOfWorkingDaysIn19To20')?.invalid && generalForm.get('noOfWorkingDaysIn19To20')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School16.noOfWorkingDaysIn19To20')?.invalid && generalForm.get('School16.noOfWorkingDaysIn19To20')?.touched" style="color:red;">required</span>
 
                         </div>
 
@@ -4325,7 +4332,7 @@
                                 <input type="number" formControlName="hoursOfAcademicWorkEachDay21To22" required
                                     class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('hoursOfAcademicWorkEachDay21To22')?.invalid && generalForm.get('hoursOfAcademicWorkEachDay21To22')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School16.hoursOfAcademicWorkEachDay21To22')?.invalid && generalForm.get('School16.hoursOfAcademicWorkEachDay21To22')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-3">
@@ -4336,7 +4343,7 @@
                                 <input type="number" formControlName="hoursOfAcademicWorkEachDay20To21" required
                                     class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('hoursOfAcademicWorkEachDay20To21')?.invalid && generalForm.get('hoursOfAcademicWorkEachDay20To21')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School16.hoursOfAcademicWorkEachDay20To21')?.invalid && generalForm.get('School16.hoursOfAcademicWorkEachDay20To21')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-3">
@@ -4347,7 +4354,7 @@
                                 <input type="number" formControlName="hoursOfAcademicWorkEachDay19To20" required
                                     class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('hoursOfAcademicWorkEachDay19To20')?.invalid && generalForm.get('hoursOfAcademicWorkEachDay19To20')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School16.hoursOfAcademicWorkEachDay19To20')?.invalid && generalForm.get('School16.hoursOfAcademicWorkEachDay19To20')?.touched" style="color:red;">required</span>
 
                         </div>
 
@@ -4367,7 +4374,7 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="totalInstructionalHours21To22" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('totalInstructionalHours21To22')?.invalid && generalForm.get('totalInstructionalHours21To22')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School16.totalInstructionalHours21To22')?.invalid && generalForm.get('School16.totalInstructionalHours21To22')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-3">
@@ -4377,7 +4384,7 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="totalInstructionalHours20To21" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('totalInstructionalHours20To21')?.invalid && generalForm.get('totalInstructionalHours20To21')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School16.totalInstructionalHours20To21')?.invalid && generalForm.get('School16.totalInstructionalHours20To21')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-3">
@@ -4387,7 +4394,7 @@
                                         class="fa fa-sort-numeric-down"></i></span>
                                 <input type="number" formControlName="totalInstructionalHours19To20" required class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('totalInstructionalHours19To20')?.invalid && generalForm.get('totalInstructionalHours19To20')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School16.totalInstructionalHours19To20')?.invalid && generalForm.get('School16.totalInstructionalHours19To20')?.touched" style="color:red;">required</span>
 
                         </div>
 
@@ -4409,7 +4416,7 @@
                                 <input type="number" formControlName="nonInstructionalWorkingDaysForStaffIn21To22" required
                                     class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('nonInstructionalWorkingDaysForStaffIn21To22')?.invalid && generalForm.get('nonInstructionalWorkingDaysForStaffIn21To22')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School16.nonInstructionalWorkingDaysForStaffIn21To22')?.invalid && generalForm.get('School16.nonInstructionalWorkingDaysForStaffIn21To22')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-3">
@@ -4420,7 +4427,7 @@
                                 <input type="number" formControlName="nonInstructionalWorkingDaysForStaffIn20To21" required
                                     class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('nonInstructionalWorkingDaysForStaffIn20To21')?.invalid && generalForm.get('nonInstructionalWorkingDaysForStaffIn20To21')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School16.nonInstructionalWorkingDaysForStaffIn20To21')?.invalid && generalForm.get('School16.nonInstructionalWorkingDaysForStaffIn20To21')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-3">
@@ -4431,7 +4438,7 @@
                                 <input type="number" formControlName="nonInstructionalWorkingDaysForStaffIn19To20" required
                                     class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('nonInstructionalWorkingDaysForStaffIn19To20')?.invalid && generalForm.get('nonInstructionalWorkingDaysForStaffIn19To20')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School16.nonInstructionalWorkingDaysForStaffIn19To20')?.invalid && generalForm.get('School16.nonInstructionalWorkingDaysForStaffIn19To20')?.touched" style="color:red;">required</span>
 
                         </div>
 
@@ -4457,7 +4464,7 @@
                                 <input type="number" formControlName="noOfHolidaysExceptNationalHolidays21To22" required
                                     class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('noOfHolidaysExceptNationalHolidays21To22')?.invalid && generalForm.get('noOfHolidaysExceptNationalHolidays21To22')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School16.noOfHolidaysExceptNationalHolidays21To22')?.invalid && generalForm.get('School16.noOfHolidaysExceptNationalHolidays21To22')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-3">
@@ -4468,7 +4475,7 @@
                                 <input type="number" formControlName="noOfHolidaysExceptNationalHolidays20To21" required
                                     class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('noOfHolidaysExceptNationalHolidays20To21')?.invalid && generalForm.get('noOfHolidaysExceptNationalHolidays20To21')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School16.noOfHolidaysExceptNationalHolidays20To21')?.invalid && generalForm.get('School16.noOfHolidaysExceptNationalHolidays20To21')?.touched" style="color:red;">required</span>
                         </div>
 
                         <div class="col-md-3">
@@ -4479,7 +4486,7 @@
                                 <input type="number" formControlName="noOfHolidaysExceptNationalHolidays19To20" required
                                     class="form-control">
                             </div>
-                            <span *ngIf="generalForm.get('noOfHolidaysExceptNationalHolidays19To20')?.invalid && generalForm.get('noOfHolidaysExceptNationalHolidays19To20')?.touched" style="color:red;">required</span>
+                            <span *ngIf="generalForm.get('School16.noOfHolidaysExceptNationalHolidays19To20')?.invalid && generalForm.get('School16.noOfHolidaysExceptNationalHolidays19To20')?.touched" style="color:red;">required</span>
 
                         </div>
 
@@ -4505,14 +4512,14 @@
                             </div>
                         </div>
                     </div>
-
-
+                    </div>
                 </div>
 
 
 
                 <!-- 17th row -->
                 <div *ngIf="step==17">
+                    <div formGroupName="School17">
                     <div class="row">
                         <div class="col-md-4" style="background-color:#155B97 ;"></div>
                         <div class="col-md-5" style="background-color:#155B97;">
@@ -4537,7 +4544,7 @@
                                     <input type="number" formControlName="noOfTeachingPeriodPerWeek" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfTeachingPeriodPerWeek')?.invalid && generalForm.get('noOfTeachingPeriodPerWeek')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School17.noOfTeachingPeriodPerWeek')?.invalid && generalForm.get('School17.noOfTeachingPeriodPerWeek')?.touched" style="color:red;">required</span>
                             </div>
                         </div>
 
@@ -4554,7 +4561,7 @@
                                     <input type="number" formControlName="noOfFaithPeriodsPerWeek" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfFaithPeriodsPerWeek')?.invalid && generalForm.get('noOfFaithPeriodsPerWeek')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School17.noOfFaithPeriodsPerWeek')?.invalid && generalForm.get('School17.noOfFaithPeriodsPerWeek')?.touched" style="color:red;">required</span>
                             </div>
                         </div>
 
@@ -4576,7 +4583,7 @@
                                     <input type="number" formControlName="teachingPeriodDuration" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('teachingPeriodDuration')?.invalid && generalForm.get('teachingPeriodDuration')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School17.teachingPeriodDuration')?.invalid && generalForm.get('School17.teachingPeriodDuration')?.touched" style="color:red;">required</span>
                             </div>
                         </div>
 
@@ -4593,7 +4600,7 @@
                                     <input type="number" formControlName="noOfHoursForActivitiesInTheClubs" required
                                         class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('noOfHoursForActivitiesInTheClubs')?.invalid && generalForm.get('noOfHoursForActivitiesInTheClubs')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School17.noOfHoursForActivitiesInTheClubs')?.invalid && generalForm.get('School17.noOfHoursForActivitiesInTheClubs')?.touched" style="color:red;">required</span>
                             </div>
                         </div>
 
@@ -4614,7 +4621,7 @@
                                             class="fa fa-clock"></i></span>
                                     <input type="time" formControlName="schoolTimeInSummerToCome" required class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('schoolTimeInSummerToCome')?.invalid && generalForm.get('schoolTimeInSummerToCome')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School17.schoolTimeInSummerToCome')?.invalid && generalForm.get('School17.schoolTimeInSummerToCome')?.touched" style="color:red;">required</span>
                             </div>
                         </div>
 
@@ -4630,7 +4637,7 @@
                                             class="fa fa-clock"></i></span>
                                     <input type="time" formControlName="schoolTimeInSummerToOut" required class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('schoolTimeInSummerToOut')?.invalid && generalForm.get('schoolTimeInSummerToOut')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School17.schoolTimeInSummerToOut')?.invalid && generalForm.get('School17.schoolTimeInSummerToOut')?.touched" style="color:red;">required</span>
                             </div>
                         </div>
 
@@ -4646,7 +4653,7 @@
                                             class="fa fa-clock"></i></span>
                                     <input type="time" formControlName="schoolTimeInWinterToCome" required class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('schoolTimeInWinterToCome')?.invalid && generalForm.get('schoolTimeInWinterToCome')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School17.schoolTimeInWinterToCome')?.invalid && generalForm.get('School17.schoolTimeInWinterToCome')?.touched" style="color:red;">required</span>
                             </div>
                         </div>
 
@@ -4663,7 +4670,7 @@
                                             class="fa fa-clock"></i></span>
                                     <input type="time" formControlName="schoolTimeInWinterToOut" required class="form-control">
                                 </div>
-                                <span *ngIf="generalForm.get('schoolTimeInWinterToOut')?.invalid && generalForm.get('schoolTimeInWinterToOut')?.touched" style="color:red;">required</span>
+                                <span *ngIf="generalForm.get('School17.schoolTimeInWinterToOut')?.invalid && generalForm.get('School17.schoolTimeInWinterToOut')?.touched" style="color:red;">required</span>
                             </div>
                         </div>
 
@@ -4708,7 +4715,7 @@
                             
                         </div>
                     </div>
-
+                </div>
 
                 </div>
 

@@ -130,72 +130,75 @@ export class GeneralComponent implements OnInit {
         noOfStairCase:[''],
         noOfLifts:[''],
       }),
-      
+      School9:this.fb.group({
+        classRooms:[''],
+        staffRooms:[''],
+        physicsLab:[''],
+        chemistryLab:[''],
+        biologyLab:[''],
+        mathsLab:[''],
+        computerScienceLab:[''],
+        languageLab:[''],
+        homeScienceLab:[''],
+        library:[''],
+        auditorium:[''],
+        counselorsRoom:[''],
+        visitorsParlor:[''],
+        prayerRoomChapel:[''],
+        sickRoomOrInfirmary:[''],
+        canteen:[''],
+        securityRoom:[''],
+        otherRoomsHalls:[''],
+        staffUrinalsOrToilets:[''],
+        studentUrinalsOrToilets:[''],
+        rooms:[''],
+        isChildNeedSpecialNeeds:[''],
+        teachersToHandleSpecialChild:[''],
+      }),
+      School10:this.fb.group({
+        boundaryWall:[''],
+        ifYesBoundaryWall:[''],
+        cctv:[''],
+        isDataSaved:[''],
+        noOfCameras:[''],
+        maleSecurityGuard:[''],
+        noOfMaleSecurity:[''],
+        femaleSecurityGuards:[''],
+        noOfFemaleSecurity:[''],
+        drinkingWaterFacility:[''],
+        properDrainageFacility:[''],
 
-      
+      }),
+      School11:this.fb.group({
+        middayMealScheme:[''],
+        noOfSchoolBuses:[''],
+        gpsEnabledCamera:[''],
+        noOfLadyAttendor:[''],
+        firstAidKit:[''],
+        drinkingWater:[''],
+        noOfBusesSubContracted:[''],
+        govtFreeBusPassEligiblity:[''],
+        IsSchoolOffersFreeTransportFacility:[''],
+      }),
+      School12:this.fb.group({
+        libraryOpenTime:[''],
+        libraryCloseTime:[''],
+        totalNoOfLibraryBooks:[''],
+        totalNoOfLibraryMagazines:[''],
+        totalNoOfLibraryDailyNewspapers:[''],
+        totalNoOfEbooks:[''],
+        onlineAccessForLibraryBooks:[''],
+        seperateLibraryForPrimarySection:[''],
+        provisionForRemedialTeaching:[''],
+        televisionFacilityInSchool:[''],
+        digitalBoardsFacilityInSchool:[''],
+        multimediaFacilityInSchool:[''],
+        projectorFacilityInSchool:[''],
+        tapeRecorderFacilityInSchool:[''],
 
+      }),
       
-
-      
-
-      classRooms:[''],
-      staffRooms:[''],
-      physicsLab:[''],
-      chemistryLab:[''],
-      biologyLab:[''],
-      mathsLab:[''],
-      computerScienceLab:[''],
-      languageLab:[''],
-      homeScienceLab:[''],
-      library:[''],
-      auditorium:[''],
-      counselorsRoom:[''],
-      visitorsParlor:[''],
-      prayerRoomChapel:[''],
-      sickRoomOrInfirmary:[''],
-      canteen:[''],
-      securityRoom:[''],
-      otherRoomsHalls:[''],
-      staffUrinalsOrToilets:[''],
-      studentUrinalsOrToilets:[''],
-      rooms:[''],
-      isChildNeedSpecialNeeds:[''],
-      teachersToHandleSpecialChild:[''],
-      boundaryWall:[''],
-      ifYesBoundaryWall:[''],
-      cctv:[''],
-      isDataSaved:[''],
-      noOfCameras:[''],
-      maleSecurityGuard:[''],
-      noOfMaleSecurity:[''],
-      femaleSecurityGuards:[''],
-      noOfFemaleSecurity:[''],
-      drinkingWaterFacility:[''],
-      properDrainageFacility:[''],
-      middayMealScheme:[''],
-      noOfSchoolBuses:[''],
-      gpsEnabledCamera:[''],
-      noOfLadyAttendor:[''],
-      firstAidKit:[''],
-      drinkingWater:[''],
-      noOfBusesSubContracted:[''],
-      govtFreeBusPassEligiblity:[''],
-      IsSchoolOffersFreeTransportFacility:[''],
-      // mmfainsch:[''],
-      libraryOpenTime:[''],
-      libraryCloseTime:[''],
-      totalNoOfLibraryBooks:[''],
-      totalNoOfLibraryMagazines:[''],
-      totalNoOfLibraryDailyNewspapers:[''],
-      totalNoOfEbooks:[''],
-      onlineAccessForLibraryBooks:[''],
-      seperateLibraryForPrimarySection:[''],
-      provisionForRemedialTeaching:[''],
-      televisionFacilityInSchool:[''],
-      digitalBoardsFacilityInSchool:[''],
-      multimediaFacilityInSchool:[''],
-      projectorFacilityInSchool:[''],
-      tapeRecorderFacilityInSchool:[''],
+      School13:this.fb.group({
       permanentMaleForPrincipalOrHM:[''],
       permanentFeMaleForPrincipalOrHM:[''],
       temporaryMaleForPrincipalOrHM:[''],
@@ -241,7 +244,7 @@ export class GeneralComponent implements OnInit {
       temporaryMaleComputerLiteracy:[''],
       temporaryFeMaleComputerLiteracy:[''],
       permanentMaleFaithMinisters:[''],
-      permanentFeMaleFaithMinisters:[''],
+      permanentFeMaleFaithMinisters:[''], 
       temporaryMaleFaithMinisters:[''],
       temporaryFeMaleFaithMinisters:[''],
       permanentMaleNurse:[''],
@@ -252,78 +255,96 @@ export class GeneralComponent implements OnInit {
       permanentFeMalePTTeachers:[''],
       temporaryMalePTTeachers:[''],
       temporaryFeMalePTTeachers:[''],
-      permanentOfficeManagers:[''],
-      temporaryOfficeManagers:[''],
-      partTimeOfficeManagers:[''],
-      permanentOfficeAssistant:[''],
-      temporaryOfficeAssistant:[''],
-      partTimeOfficeAssistant:[''],
-      permanentClerks:[''],
-      temporaryClerks:[''],
-      partTimeClerks:[''],
-      permanentLabAttendants:[''],
-      temporaryLabAttendants:[''],
-      partTimeLabAttendants:[''],
-      permanentAccountant:[''],
-      temporaryAccountant:[''],
-      partTimeAccountant:[''],
-      permanentPeonsOrClerks:[''],
-      temporaryPeonsOrClerks:[''],
-      partTimePeonsOrClerks:[''],
-      permanentOthers:[''],
-      temporaryOthers:[''],
-      partTimeOthers:[''],
-      noOfActivitiesCarriedOut:[''],
-      noOfGroupsClubsMovementsPresent:[''],
-      noOfCommunityServicesDoneInLastYear:[''],
-      noOfSportsSchool:[''],
-      noOfSportsZonal:[''],
-      noOfSportsDistrict:[''],
-      noOfSportsState:[''],
-      noOfSportsNational:[''],
-      noOfSportsInternational:[''],
-      noOfCompetitionsParticipatedLastYearInSchool:[''],
-      noOfCompetitionsParticipatedLastYearInZonal:[''],
-      noOfCompetitionsParticipatedLastYearInDistrict:[''],
-      noOfCompetitionsParticipatedLastYearInState:[''],
-      noOfCompetitionsParticipatedLastYearInNational:[''],
-      noOfCompetitionsParticipatedLastYearInInterNational:[''],
-      noOfInterSchoolProgramsOrganizedInSchoolLevel:[''],
-      noOfInterSchoolProgramsOrganizedInZonalLevel:[''],
-      noOfInterSchoolProgramsOrganizedInDistrictLevel:[''],
-      noOfInterSchoolProgramsOrganizedInStateLevel:[''],
-      noOfInterSchoolProgramsOrganizedInNationalLevel:[''],
-      noOfInterSchoolProgramsOrganizedInInterNationalLevel:[''],
-      academicYearBeginMonth:[''],
-      academicYearEndMonth:[''],
-      noOfWorkingDaysIn21To22:[''],
-      noOfWorkingDaysIn20To21:[''],
-      noOfWorkingDaysIn19To20:[''],
-      hoursOfAcademicWorkEachDay21To22:[''],
-      hoursOfAcademicWorkEachDay20To21:[''],
-      hoursOfAcademicWorkEachDay19To20:[''],
-      totalInstructionalHours21To22:[''],
-      totalInstructionalHours20To21:[''],
-      totalInstructionalHours19To20:[''],
-      nonInstructionalWorkingDaysForStaffIn21To22:[''],
-      nonInstructionalWorkingDaysForStaffIn20To21:[''],
-      nonInstructionalWorkingDaysForStaffIn19To20:[''],
-      noOfHolidaysExceptNationalHolidays21To22:[''],
-      noOfHolidaysExceptNationalHolidays20To21:[''],
-      noOfHolidaysExceptNationalHolidays19To20:[''],
-      noOfTeachingPeriodPerWeek:[''],
-      noOfFaithPeriodsPerWeek:[''],
-      teachingPeriodDuration:[''],
-      noOfHoursForActivitiesInTheClubs:[''],
-      schoolTimeInSummerToCome:[''],
-      schoolTimeInSummerToOut :[''],
-      schoolTimeInWinterToCome:[''],
-      schoolTimeInWinterToOut:[''],
-      isSchoolWorkingInShifts:[''],
+
+      }),
+      School14:this.fb.group({
+        permanentOfficeManagers:[''],
+        temporaryOfficeManagers:[''],
+        partTimeOfficeManagers:[''],
+        permanentOfficeAssistant:[''],
+        temporaryOfficeAssistant:[''],
+        partTimeOfficeAssistant:[''],
+        permanentClerks:[''],
+        temporaryClerks:[''],
+        partTimeClerks:[''],
+        permanentLabAttendants:[''],
+        temporaryLabAttendants:[''],
+        partTimeLabAttendants:[''],
+        permanentAccountant:[''],
+        temporaryAccountant:[''],
+        partTimeAccountant:[''],
+        permanentPeonsOrClerks:[''],
+        temporaryPeonsOrClerks:[''],
+        partTimePeonsOrClerks:[''],
+        permanentOthers:[''],
+        temporaryOthers:[''],
+        partTimeOthers:[''],
+
+      }),
+
+      School15:this.fb.group({
+        noOfActivitiesCarriedOut:[''],
+        noOfGroupsClubsMovementsPresent:[''],
+        noOfCommunityServicesDoneInLastYear:[''],
+        noOfSportsSchool:[''],
+        noOfSportsZonal:[''],
+        noOfSportsDistrict:[''],
+        noOfSportsState:[''],
+        noOfSportsNational:[''],
+        noOfSportsInternational:[''],
+        noOfCompetitionsParticipatedLastYearInSchool:[''],
+        noOfCompetitionsParticipatedLastYearInZonal:[''],
+        noOfCompetitionsParticipatedLastYearInDistrict:[''],
+        noOfCompetitionsParticipatedLastYearInState:[''],
+        noOfCompetitionsParticipatedLastYearInNational:[''],
+        noOfCompetitionsParticipatedLastYearInInterNational:[''],
+        noOfInterSchoolProgramsOrganizedInSchoolLevel:[''],
+        noOfInterSchoolProgramsOrganizedInZonalLevel:[''],
+        noOfInterSchoolProgramsOrganizedInDistrictLevel:[''],
+        noOfInterSchoolProgramsOrganizedInStateLevel:[''],
+        noOfInterSchoolProgramsOrganizedInNationalLevel:[''],
+        noOfInterSchoolProgramsOrganizedInInterNationalLevel:[''],
+
+      }),
+
+      School16:this.fb.group({
+        academicYearBeginMonth:[''],
+        academicYearEndMonth:[''],
+        noOfWorkingDaysIn21To22:[''],
+        noOfWorkingDaysIn20To21:[''],
+        noOfWorkingDaysIn19To20:[''],
+        hoursOfAcademicWorkEachDay21To22:[''],
+        hoursOfAcademicWorkEachDay20To21:[''],
+        hoursOfAcademicWorkEachDay19To20:[''],
+        totalInstructionalHours21To22:[''],
+        totalInstructionalHours20To21:[''],
+        totalInstructionalHours19To20:[''],
+        nonInstructionalWorkingDaysForStaffIn21To22:[''],
+        nonInstructionalWorkingDaysForStaffIn20To21:[''],
+        nonInstructionalWorkingDaysForStaffIn19To20:[''],
+        noOfHolidaysExceptNationalHolidays21To22:[''],
+        noOfHolidaysExceptNationalHolidays20To21:[''],
+        noOfHolidaysExceptNationalHolidays19To20:[''],
+
+      }),
+      School17:this.fb.group({
+        noOfTeachingPeriodPerWeek:[''],
+        noOfFaithPeriodsPerWeek:[''],
+        teachingPeriodDuration:[''],
+        noOfHoursForActivitiesInTheClubs:[''],
+        schoolTimeInSummerToCome:[''],
+        schoolTimeInSummerToOut :[''],
+        schoolTimeInWinterToCome:[''],
+        schoolTimeInWinterToOut:[''],
+        isSchoolWorkingInShifts:[''],
+      }),
+
+
       School18:this.fb.group({
         scholarship:this.fb.array([]),
 
       }),
+      
       School19:this.fb.group({
         enrollment:this.fb.array([]),
 
@@ -762,27 +783,33 @@ export class GeneralComponent implements OnInit {
 
   // if you want to register through this UI just uncomment it and use it for post method
 
-  // submit(){
+  // submit(data1:any){
   //   console.log("data",this.generalForm.value);
 
-  //   this.sub.po(this.generalForm.value).subscribe((data:any)=>{
+  //   this.sub.po(this.generalForm.controls[data1].value).subscribe((data:any)=>{
   //     console.log(data);
   //     this.Data=data;
+  //     Swal.fire({
+  //             title:'Saved Successfully',
+  //             showConfirmButton:false,
+  //             text:'',
+  //             icon:'success',
+  //             timer:1500
+  //           })
   //     this.route.navigate(['/home'])
 
   //   })
-    // console.log("data",this.Data);
+  //   console.log("data",this.Data);
   // }
 
 
 
 
   submit(data:any){
-    
-    // console.log("before form 1",this.generalForm.controls[name].value);
-    
+        
     this.sub.profileput(this.generalForm.controls[data].value).subscribe((data:any)=>{
       console.log(data);
+      // this.data='mercy'+data
       this.Data=data;
       Swal.fire({
         title:'Saved Successfully',
@@ -791,10 +818,8 @@ export class GeneralComponent implements OnInit {
         icon:'success',
         timer:1500
       })
-      // this.route.navigate(['/home'])
 
     })
-    // console.log("data",this.Data);
   }
   }
  
